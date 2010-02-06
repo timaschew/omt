@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+
+<suite name="TestForm Tests" verbose="2" parallel="false">
+   <test name="TestForm Test">
+     <classes>
+       <class name="de.freebits.omt.test.TestFormTest"/>       
+     </classes>
+   </test>	
+</suite>
