@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://freebits.de/OMT-engine/schemas/MotivEXtraction" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:mex="http://freebits.de/OMT-engine/schemas/MotivEXtraction">
+
+    <element name="mex" type="mex:mexType">
+    	<annotation>
+    		<documentation>Wurzelelement eines MotivEXtraction Dokumentes</documentation>
+    	</annotation>
+    </element>
+    
+    <complexType name="mexType">
+        <annotation>
+        	<documentation>Container für die Beschreibung eines Musikstücks</documentation>
+        </annotation>
+        <all maxOccurs="1" minOccurs="1">
+        	<element name="patterns" type="mex:patternsType" minOccurs="1"
+        		maxOccurs="1">
+        	</element>
+        	<element name="chords" type="mex:chordsType" maxOccurs="1" minOccurs="1"></element>
+        	<element name="melody" type="mex:melodyType" maxOccurs="1" minOccurs="1"></element>
+        </all>
+
+        <attribute name="leadsheet-id" type="mex:leadsheetIdAttributeType"
+    		use="required">
+    		<annotation>
+    			<documentation></documentation>
+    		</annotation>
+        </attribute>
+    	<attribute name="is-a-id" type="mex:leadsheetIdAttributeType"
+    		use="required">
+    		<annotation>
+    			<documentation>Referenz auf das übergeordnete Leadsheet
+    			</documentation>
+    		</annotation>
+    	</attribute>
+    	<attribute name="title" type="mex:titleAttributeType" use="required">
+    		<annotation>
+    			<documentation></documentation>
+    		</annotation>
+    	</attribute>
+    </complexType>
+
+    <complexType name="patternsType">
+        <annotation>
+        	<documentation>Motivcontainer</documentation>
+        </annotation>
+        <sequence maxOccurs="unbounded" minOccurs="1">
+    		<element name="node" type="mex:pattersNodeType"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="pattersNodeType">
+        <annotation>
+        	<documentation>Motivbeschreibung</documentation>
+        </annotation>
+        <complexContent>
+    		<extension base="mex:nodeType">
+
+
+
+    			<sequence>
+    				<element name="note" type="mex:noteType" maxOccurs="unbounded" minOccurs="0">
+    					<annotation>
+    						<documentation></documentation>
+    					</annotation></element>
+    			</sequence>
+    			<attribute name="tempo" type="mex:tempoAttributeType" use="required">
+    				<annotation>
+    					<documentation>gültiges Tempo</documentation>
+    				</annotation></attribute>
+
+    			<attribute name="beats-per-metre"
+    				type="mex:beatsPerMetreAttributeType" use="required">
+                    <annotation>
+                    	<documentation></documentation>
+                    </annotation>
+    			</attribute>
+
+    			<attribute name="beatlength" type="mex:beatlengthAttributeType" use="required">
+    				<annotation>
+    					<documentation></documentation>
+    				</annotation></attribute>
+
+    			<attribute name="deltatime-metre" type="mex:deltatimeMetreAttributeType" use="required">
+    				<annotation>
+    					<documentation></documentation>
+    				</annotation></attribute>
+
+    		</extension>
+    	</complexContent>
+    </complexType>
+
+    <complexType name="nodeType">
+        <annotation>
+        	<documentation>allgemeiner Knotentyp</documentation>
+        </annotation>
+        <attribute name="id" type="mex:idAttributeType" use="required"></attribute>
+    	<attribute name="length" type="mex:lengthAttributeType" use="required"></attribute>
+        <attribute name="deltalength" type="mex:deltalengthAttributeType" use="required"></attribute>
+    </complexType>
+
+    <complexType name="noteType">
+        <annotation>
+        	<documentation>Notenereignis innerhalb eines Motives</documentation></annotation>
+        <attribute name="deltatone" type="mex:deltatoneAttributeType" use="required">
+        	<annotation>
+        		<documentation></documentation>
+        	</annotation></attribute>
+    	<attribute name="deltatime" type="mex:deltatimeAttributeType" use="required"></attribute>
+    	<attribute name="length" type="mex:lengthAttributeType" use="required"></attribute>
+    </complexType>
+
+    <complexType name="chordsType">
+        <annotation>
+        	<documentation>Harmoniecontainer</documentation>
+        </annotation>
+        <sequence>
+    		<element name="node" type="mex:chordsNodeType"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="chordsNodeType">
+        <annotation>
+        	<documentation>Container für eine Folge von Harmonien</documentation>
+        </annotation>
+        <complexContent>
+    		<extension base="mex:nodeType">
+    			<sequence>
+    				<element name="chord" type="mex:chordType" maxOccurs="unbounded" minOccurs="0"></element>
+    			</sequence>
+    			<attribute name="root" type="mex:rootAttributeType" use="required"></attribute>
+    			<attribute name="level" type="mex:levelAttributeType" use="required"></attribute>
+    			<attribute name="deltatime" type="mex:deltatimeAttributeType" use="required"></attribute>
+    			<attribute name="deltatone" type="mex:deltatoneAttributeType" use="required"></attribute>
+    		</extension>
+    	</complexContent>
+    </complexType>
+
+    <complexType name="chordType">
+        <annotation>
+        	<documentation>Beschreibung einer Harmonie</documentation>
+        </annotation>
+        <attribute name="deltatone" type="mex:deltatoneAttributeType" use="required"></attribute>
+    	<attribute name="time" type="mex:timeAttributeType" use="required"></attribute>
+    	<attribute name="deltatime" type="mex:deltatimeAttributeType" use="required"></attribute>
+    	<attribute name="harmonyform" use="required" type="mex:harmonyformAttributeType">
+    	</attribute>
+    	<attribute name="length" type="mex:lengthAttributeType" use="required"></attribute>
+    </complexType>
+
+    <complexType name="melodyType">
+        <annotation>
+        	<documentation>Melodiecontainer</documentation>
+        </annotation>
+        <sequence>
+    		<element name="node" type="mex:melodyNodeType" maxOccurs="unbounded" minOccurs="0"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="melodyNodeType">
+        <annotation>
+        	<documentation>Beschreibung einer Melodie</documentation>
+        </annotation>
+        <complexContent>
+    		<extension base="mex:nodeType">
+    			<sequence>
+    				<element name="validation-notes"
+    					type="mex:validationNotesType" maxOccurs="1"
+    					minOccurs="0">
+    				</element>
+    				<element name="node"
+    					type="mex:melodyNodeNodeType" maxOccurs="unbounded"
+    					minOccurs="0">
+    				</element>
+    			</sequence>
+    			<attribute name="root" type="mex:rootAttributeType"
+    				use="required">
+    			</attribute>
+    			<attribute name="level" type="mex:levelAttributeType"
+    				use="required">
+    			</attribute>
+    			<attribute name="basicnote" type="mex:basicnoteAttributeType"
+    				use="optional">
+    			</attribute>
+    			<attribute name="deltatime" type="mex:deltatimeAttributeType" use="optional"></attribute>
+    		</extension>
+    	</complexContent>
+    </complexType>
+
+    <complexType name="validationNotesType">
+        <annotation>
+        	<documentation>Container für Validierungstöne</documentation>
+        </annotation>
+        <sequence>
+    		<element name="note" type="mex:validationNoteType" maxOccurs="unbounded" minOccurs="1"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="validationNoteType">
+        <annotation>
+        	<documentation>Beschreibung eines Validierungstones</documentation>
+        </annotation>
+        <attribute name="time" type="mex:timeAttributeType" use="required"></attribute>
+    	<attribute name="deltatone" type="mex:deltatoneAttributeType" use="required"></attribute>
+    </complexType>
+
+    <complexType name="melodyNodeNodeType">
+        <annotation>
+        	<documentation>Bestandteil einer Melodie</documentation>
+        </annotation>
+        <attribute name="id" type="mex:idAttributeType" use="required"></attribute>
+    	<attribute name="time" type="mex:timeAttributeType" use="required"></attribute>
+    	<attribute name="deltatime" type="mex:deltatimeAttributeType" use="required"></attribute>
+    	<attribute name="deltatone" type="mex:deltatoneAttributeType" use="required"></attribute>
+    </complexType>
+
+    <simpleType name="deltatoneAttributeType">
+        <annotation>
+        	<documentation>relative Tonhöhendifferenz (in Halbtönen) des Ereignisses zum Vorgänger-Ereignis</documentation>
+        </annotation>
+        <restriction base="int"></restriction>
+    </simpleType>
+
+    <simpleType name="deltatimeAttributeType">
+        <annotation>
+        	<documentation>relativer Einsatzzeitpunkt zum vorangegangenen Ereignis</documentation>
+        </annotation>
+        <restriction base="float"></restriction>
+    </simpleType>
+
+    <simpleType name="lengthAttributeType">
+        <annotation>
+        	<documentation>länge des Ereignisses in relativer Notendauerkodierung</documentation>
+        </annotation>
+        <restriction base="float"></restriction>
+    </simpleType>
+
+    <simpleType name="deltatimeMetreAttributeType">
+        <annotation>
+        	<documentation>TODO: Beschreibung</documentation>
+        </annotation>
+        <restriction base="float"></restriction>
+    </simpleType>
+
+    <simpleType name="beatlengthAttributeType">
+        <annotation>
+        	<documentation>Gesamtlänge relativ zur Taktlänge</documentation>
+        </annotation>
+        <restriction base="float"></restriction>
+    </simpleType>
+
+    <simpleType name="beatsPerMetreAttributeType">
+        <annotation>
+        	<documentation>Taktschläge pro Zählzeit</documentation></annotation>
+        <restriction base="int"></restriction>
+    </simpleType>
+
+    <simpleType name="tempoAttributeType">
+    	<restriction base="nonNegativeInteger"></restriction>
+    </simpleType>
+
+    <simpleType name="deltalengthAttributeType">
+        <annotation>
+        	<documentation>relative Dauer des Ereignisses (in relativer Notendauerkodierung) zum Vorgängerereignis</documentation>
+        </annotation>
+        <restriction base="float"></restriction>
+    </simpleType>
+
+    <simpleType name="idAttributeType">
+        <annotation>
+        	<documentation>Identifikator für den aktuell gültigen Kontext in der LS-Datenbank</documentation>
+        </annotation>
+        <restriction base="nonNegativeInteger"></restriction>
+    </simpleType>
+
+    <simpleType name="leadsheetIdAttributeType">
+        <annotation>
+        	<documentation>ID des zugehörigen Leadsheets</documentation>
+        </annotation>
+        <restriction base="mex:idAttributeType"></restriction>
+    </simpleType>
+
+    <simpleType name="titleAttributeType">
+        <annotation>
+        	<documentation>Titelbezeichnung</documentation>
+        </annotation>
+        <restriction base="string"></restriction>
+    </simpleType>
+
+    <simpleType name="rootAttributeType">
+        <annotation>
+        	<documentation>TODO: Beschreibung</documentation>
+        </annotation>
+        <restriction base="nonNegativeInteger"></restriction>
+    </simpleType>
+
+    <simpleType name="levelAttributeType">
+        <annotation>
+        	<documentation>TODO: Beschreibung</documentation>
+        </annotation>
+        <restriction base="nonNegativeInteger"></restriction>
+    </simpleType>
+
+    <simpleType name="timeAttributeType">
+        <annotation>
+        	<documentation>absoluter Einsatzzeitpunkt innerhalb des aktuell gültigen Kontext</documentation>
+        </annotation>
+        <restriction base="float"></restriction>
+    </simpleType>
+
+    <simpleType name="harmonyformAttributeType">
+        <annotation>
+        	<documentation>Harmoniespezifikation: Die ersten zwölf Bits dienen zur Spezifikation eines sich vom Basiston des Akkords unterscheidenden Basstons. Besteht kein Unterschied, sind alle Bits 0. Die nächsten 20 Bits spezifizieren den Akkord, indem die Existenz bzw. Nichtexistenz eines Akkordtons durch eine 1 bzw. 0 ausgedrückt wird. Beispiel: C/G -> 00000001000010001001000000000000</documentation>
+        </annotation>
+        <restriction base="string">
+    		<pattern value="(0|1){32}"></pattern>
+    	</restriction>
+    </simpleType>
+
+    <simpleType name="basicnoteAttributeType">
+        <annotation>
+        	<documentation>Startnotenwert des aktuellen Kontext</documentation>
+        </annotation>
+        <restriction base="int"></restriction>
+    </simpleType>
+</schema>
