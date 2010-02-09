@@ -1,0 +1,51 @@
+
+<rich:toolBar xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:s="http://jboss.com/products/seam/taglib"
+	xmlns:rich="http://richfaces.org/rich">
+	<rich:toolBarGroup>
+		<h:outputText value="Online Music Tutor:" />
+		<s:link id="menuHomeId" view="/home.xhtml" propagation="none">
+			<h:panelGroup>
+				<h:graphicImage value="/img/icons/home.png" styleClass="menu_icon" />
+				<h:outputText value="Home" />
+			</h:panelGroup>
+		</s:link>
+	</rich:toolBarGroup>
+	<rich:dropDownMenu showDelay="250" hideDelay="0" submitMode="none">
+		<f:facet name="label">
+			<h:panelGroup>
+				<h:graphicImage value="/img/icons/midikeys.png"
+					styleClass="menu_icon" />
+				<h:outputText value="Tools" />
+			</h:panelGroup>
+		</f:facet>
+		<rich:menuItem>
+			<s:link view="/midiUpload.xhtml" id="MidiUploadId"
+				includePageParams="false" propagation="none" value="Midi Upload" />
+		</rich:menuItem>
+	</rich:dropDownMenu>
+	<!-- @newMenuItem@ -->
+	<rich:toolBarGroup location="right">
+		<h:outputText id="menuWelcomeId"
+			value="signed in as: #{credentials.username}"
+			rendered="#{identity.loggedIn}" />
+		<s:link id="menuLoginId" view="/login.xhtml"
+			rendered="#{not identity.loggedIn}" propagation="none">
+			<h:panelGroup>
+				<h:graphicImage value="/img/icons/key.png" styleClass="menu_icon" />
+				<h:outputText value="Login" />
+			</h:panelGroup>
+		</s:link>
+		<s:link id="menuLogoutId" view="/home.xhtml"
+			action="#{identity.logout}" rendered="#{identity.loggedIn}"
+			propagation="none">
+			<h:panelGroup>
+				<h:graphicImage value="/img/icons/logout.png" styleClass="menu_icon" />
+				<h:outputText value="Logout" />
+			</h:panelGroup>
+		</s:link>
+	</rich:toolBarGroup>
+</rich:toolBar>
