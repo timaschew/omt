@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mex 
+	leadsheet-id="125" is-a-id="0" 
+	title="A Felicidade" 
+	xmlns="http://freebits.de/OMT-engine/schemas/MotivEXtraction" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://freebits.de/OMT-engine/schemas/MotivEXtraction motifextration.xsd ">
+	<patterns>
+		<node id="1" deltalength="2.0000" length="3.7500" tempo="180" beats-per-metre="2" beatlength="0.5000" deltatime-metre="0.0000">
+			<note deltatone="0" deltatime="0.0000" length="1.2500" />
+			<note deltatone="3" deltatime="1.2500" length="0.2500" />
+			<note deltatone="-1" deltatime="0.2500" length="0.2500" />
+			<note deltatone="-4" deltatime="0.2500" length="0.2500" />
+			<note deltatone="-3" deltatime="0.2500" length="1.7500" />
+		</node>
+		<node id="2" deltalength="2.0000" length="4.0000" tempo="180" beats-per-metre="2" beatlength="0.5000" deltatime-metre="0.0000">
+			<note deltatone="0" deltatime="0.0000" length="0.7500" />
+			<note deltatone="-3" deltatime="0.7500" length="0.2500" />
+			<note deltatone="2" deltatime="0.2500" length="0.7500" />
+			<note deltatone="-3" deltatime="0.7500" length="0.2500" />
+			<note deltatone="1" deltatime="0.2500" length="2.0000" />
+		</node>
+		<node id="3" deltalength="3.0000" length="3.7500" tempo="180" beats-per-metre="2" beatlength="0.5000" deltatime-metre="0.0000">
+			<note deltatone="0" deltatime="0.0000" length="1.2500" />
+			<note deltatone="3" deltatime="1.2500" length="0.2500" />
+			<note deltatone="-2" deltatime="0.2500" length="0.2500" />
+			<note deltatone="-1" deltatime="0.2500" length="0.2500" />
+			<note deltatone="0" deltatime="0.2500" length="0.2500" />
+			<note deltatone="-2" deltatime="0.2500" length="0.2500" />
+			<note deltatone="-1" deltatime="0.2500" length="0.2500" />
+			<note deltatone="1" deltatime="0.2500" length="0.2500" />
+			<note deltatone="3" deltatime="0.2500" length="0.7500" />
+		</node>
+		<node id="4" deltalength="2.0000" length="4.0000" tempo="180" beats-per-metre="2" beatlength="0.5000" deltatime-metre="0.0000">
+			<note deltatone="0" deltatime="0.0000" length="0.2500" />
+			<note deltatone="-2" deltatime="0.2500" length="0.2500" />
+			<note deltatone="-1" deltatime="0.2500" length="0.2500" />
+			<note deltatone="1" deltatime="0.2500" length="0.2500" />
+			<note deltatone="4" deltatime="0.2500" length="0.2500" />
+			<note deltatone="-2" deltatime="0.2500" length="0.2500" />
+			<note deltatone="-2" deltatime="0.2500" length="0.2500" />
+			<note deltatone="2" deltatime="0.2500" length="0.2500" />
+			<note deltatone="-4" deltatime="0.2500" length="2.0000" />
+		</node>
+		<node id="5" deltalength="0.7500" length="1.5000" tempo="180" beats-per-metre="2" beatlength="0.5000" deltatime-metre="0.2500">
+			<note deltatone="0" deltatime="0.0000" length="0.2500" />
+			<note deltatone="3" deltatime="0.2500" length="0.2500" />
+			<note deltatone="2" deltatime="0.2500" length="0.2500" />
+			<note deltatone="2" deltatime="0.2500" length="0.7500" />
+		</node>
+		<node id="6" deltalength="1.0000" length="1.7500" tempo="180" beats-per-metre="2" beatlength="0.5000" deltatime-metre="0.0000">
+			<note deltatone="0" deltatime="0.0000" length="0.2500" />
+			<note deltatone="3" deltatime="0.2500" length="0.2500" />
+			<note deltatone="2" deltatime="0.2500" length="0.2500" />
+			<note deltatone="2" deltatime="0.2500" length="0.2500" />
+			<note deltatone="-2" deltatime="0.2500" length="0.7500" />
+		</node>
+		<node id="7" deltalength="2.0000" length="4.0000" tempo="180" beats-per-metre="2" beatlength="0.5000" deltatime-metre="0.0000">
+			<note deltatone="0" deltatime="0.0000" length="0.2500" />
+			<note deltatone="-1" deltatime="0.2500" length="0.2500" />
+			<note deltatone="-1" deltatime="0.2500" length="0.2500" />
+			<note deltatone="-7" deltatime="0.2500" length="0.2500" />
+			<note deltatone="4" deltatime="0.2500" length="0.2500" />
+			<note deltatone="-1" deltatime="0.2500" length="0.2500" />
+			<note deltatone="-1" deltatime="0.2500" length="0.2500" />
+			<note deltatone="-2" deltatime="0.2500" length="0.2500" />
+			<note deltatone="-3" deltatime="0.2500" length="2.0000" />
+		</node>
+		<node id="8" deltalength="2.0000" length="2.2500" tempo="180" beats-per-metre="2" beatlength="0.5000" deltatime-metre="0.0000">
+			<note deltatone="0" deltatime="0.0000" length="0.2500" />
+			<note deltatone="2" deltatime="0.2500" length="0.2500" />
+			<note deltatone="2" deltatime="0.2500" length="0.2500" />
+			<note deltatone="1" deltatime="0.2500" length="0.2500" />
+			<note deltatone="-3" deltatime="0.2500" length="0.2500" />
+			<note deltatone="2" deltatime="0.2500" length="0.2500" />
+			<note deltatone="1" deltatime="0.2500" length="0.2500" />
+			<note deltatone="2" deltatime="0.2500" length="0.2500" />
+			<note deltatone="-3" deltatime="0.2500" length="0.2500" />
+		</node>
+		<node id="9" deltalength="2.0000" length="3.7500" tempo="180" beats-per-metre="2" beatlength="0.5000" deltatime-metre="0.0000">
+			<note deltatone="0" deltatime="0.0000" length="0.2500" />
+			<note deltatone="2" deltatime="0.2500" length="0.2500" />
+			<note deltatone="2" deltatime="0.2500" length="0.2500" />
+			<note deltatone="1" deltatime="0.2500" length="0.2500" />
+			<note deltatone="-3" deltatime="0.2500" length="0.2500" />
+			<note deltatone="2" deltatime="0.2500" length="0.2500" />
+			<note deltatone="-4" deltatime="0.2500" length="0.2500" />
+			<note deltatone="4" deltatime="0.2500" length="0.2500" />
+			<note deltatone="-2" deltatime="0.2500" length="1.7500" />
+		</node>
+		<node id="10" deltalength="1.0000" length="1.7500" tempo="180" beats-per-metre="2" beatlength="0.5000" deltatime-metre="0.0000">
+			<note deltatone="0" deltatime="0.0000" length="0.5000" />
+			<note deltatone="-5" deltatime="0.5000" length="0.2500" />
+			<note deltatone="5" deltatime="0.2500" length="0.2500" />
+			<note deltatone="0" deltatime="0.2500" length="0.7500" />
+		</node>
+		<node id="11" deltalength="0.7500" length="1.0000" tempo="180" beats-per-metre="2" beatlength="0.5000" deltatime-metre="0.0000">
+			<note deltatone="0" deltatime="0.0000" length="0.2500" />
+			<note deltatone="-2" deltatime="0.2500" length="0.2500" />
+			<note deltatone="-2" deltatime="0.2500" length="0.2500" />
+			<note deltatone="-1" deltatime="0.2500" length="0.2500" />
+		</node>
+		<node id="12" deltalength="0.7500" length="1.0000" tempo="180" beats-per-metre="2" beatlength="0.5000" deltatime-metre="0.0000">
+			<note deltatone="0" deltatime="0.0000" length="0.2500" />
+			<note deltatone="0" deltatime="0.2500" length="0.2500" />
+			<note deltatone="-2" deltatime="0.2500" length="0.2500" />
+			<note deltatone="-1" deltatime="0.2500" length="0.2500" />
+		</node>
+		<node id="13" deltalength="1.8330" length="2.0000" tempo="180" beats-per-metre="2" beatlength="0.5000" deltatime-metre="0.0000">
+			<note deltatone="0" deltatime="0.0000" length="0.5000" />
+			<note deltatone="2" deltatime="0.5000" length="0.2500" />
+			<note deltatone="2" deltatime="0.2500" length="0.2500" />
+			<note deltatone="5" deltatime="0.2500" length="0.2500" />
+			<note deltatone="-5" deltatime="0.2500" length="0.2500" />
+			<note deltatone="-2" deltatime="0.2500" length="0.1660" />
+			<note deltatone="-2" deltatime="0.1660" length="0.1670" />
+			<note deltatone="-3" deltatime="0.1670" length="0.1670" />
+		</node>
+		<node id="14" deltalength="2.0000" length="3.7500" tempo="180" beats-per-metre="2" beatlength="0.5000" deltatime-metre="0.0000">
+			<note deltatone="0" deltatime="0.0000" length="0.2500" />
+			<note deltatone="-1" deltatime="0.2500" length="0.2500" />
+			<note deltatone="-1" deltatime="0.2500" length="0.2500" />
+			<note deltatone="-7" deltatime="0.2500" length="0.2500" />
+			<note deltatone="4" deltatime="0.2500" length="0.2500" />
+			<note deltatone="-1" deltatime="0.2500" length="0.2500" />
+			<note deltatone="-1" deltatime="0.2500" length="0.2500" />
+			<note deltatone="-2" deltatime="0.2500" length="0.2500" />
+			<note deltatone="-3" deltatime="0.2500" length="1.7500" />
+		</node>
+	</patterns>
+	<chords>
+		<node id="1" root="1" level="0" deltatime="1.0000" deltatone="0" deltalength="70.0000" length="72.0000">
+			<chord deltatone="0" time="0.0000" deltatime="0.0000" length="4.0000" harmonyform="00000000000010010001000000000000" />
+			<chord deltatone="7" time="4.0000" deltatime="4.0000" length="1.0000" harmonyform="00000000000010010001000000000000" />
+			<chord deltatone="7" time="5.0000" deltatime="1.0000" length="1.0000" harmonyform="00000000000010001001000000000000" />
+			<chord deltatone="5" time="6.0000" deltatime="1.0000" length="2.0000" harmonyform="00000000000010010001000000000000" />
+			<chord deltatone="8" time="8.0000" deltatime="2.0000" length="2.0000" harmonyform="00000000000010001001000000000000" />
+			<chord deltatone="2" time="10.0000" deltatime="2.0000" length="1.0000" harmonyform="00000000000010010001000000000000" />
+			<chord deltatone="2" time="11.0000" deltatime="1.0000" length="1.0000" harmonyform="00000000000010001001000000000000" />
+			<chord deltatone="5" time="12.0000" deltatime="1.0000" length="2.0000" harmonyform="00000000000010010001000000000000" />
+			<chord deltatone="10" time="14.0000" deltatime="2.0000" length="1.0000" harmonyform="00000000000010010001000000000000" />
+			<chord deltatone="5" time="15.0000" deltatime="1.0000" length="1.0000" harmonyform="00000000000010001001000000000000" />
+			<chord deltatone="5" time="16.0000" deltatime="1.0000" length="1.0000" harmonyform="00000000000010001001000000000000" />
+			<chord deltatone="11" time="17.0000" deltatime="1.0000" length="1.0000" harmonyform="00000000000010001001000000000000" />
+			<chord deltatone="5" time="18.0000" deltatime="1.0000" length="1.0000" harmonyform="00000000000010010001000000000000" />
+			<chord deltatone="7" time="19.0000" deltatime="1.0000" length="1.0000" harmonyform="00000000000010001001000000000000" />
+			<chord deltatone="5" time="20.0000" deltatime="1.0000" length="1.0000" harmonyform="00000000000010010001000000000000" />
+			<chord deltatone="7" time="21.0000" deltatime="1.0000" length="1.0000" harmonyform="00000000000010001001000000000000" />
+			<chord deltatone="5" time="22.0000" deltatime="1.0000" length="2.0000" harmonyform="00000000000010010001000000000000" />
+			<chord deltatone="3" time="24.0000" deltatime="2.0000" length="1.0000" harmonyform="00000000000010001001000000000000" />
+			<chord deltatone="5" time="25.0000" deltatime="1.0000" length="1.0000" harmonyform="00000000000010001001000000000000" />
+			<chord deltatone="7" time="26.0000" deltatime="1.0000" length="2.0000" harmonyform="00000000000010001001000000000000" />
+			<chord deltatone="7" time="28.0000" deltatime="2.0000" length="1.0000" harmonyform="00000000000010010001000000000000" />
+			<chord deltatone="5" time="29.0000" deltatime="1.0000" length="1.0000" harmonyform="00000000000010001001000000000000" />
+			<chord deltatone="5" time="30.0000" deltatime="1.0000" length="2.0000" harmonyform="00000000000010001001000000000000" />
+			<chord deltatone="9" time="32.0000" deltatime="2.0000" length="1.0000" harmonyform="00000000000010010001000000000000" />
+			<chord deltatone="5" time="33.0000" deltatime="1.0000" length="1.0000" harmonyform="00000000000010001001000000000000" />
+			<chord deltatone="5" time="34.0000" deltatime="1.0000" length="2.0000" harmonyform="00000000000010001001000000000000" />
+			<chord deltatone="4" time="36.0000" deltatime="2.0000" length="1.0000" harmonyform="00000000000010010001000000000000" />
+			<chord deltatone="7" time="37.0000" deltatime="1.0000" length="1.0000" harmonyform="00000000000010001001000000000000" />
+			<chord deltatone="5" time="38.0000" deltatime="1.0000" length="1.0000" harmonyform="00000000000010010001000000000000" />
+			<chord deltatone="10" time="39.0000" deltatime="1.0000" length="1.0000" harmonyform="00000000000010010001000000000000" />
+			<chord deltatone="10" time="40.0000" deltatime="1.0000" length="2.0000" harmonyform="00000000000010001001000000000000" />
+			<chord deltatone="2" time="42.0000" deltatime="2.0000" length="1.0000" harmonyform="00000000000010010001000000000000" />
+			<chord deltatone="2" time="43.0000" deltatime="1.0000" length="1.0000" harmonyform="00000000000010001001000000000000" />
+			<chord deltatone="5" time="44.0000" deltatime="1.0000" length="1.0000" harmonyform="00000000000010010001000000000000" />
+			<chord deltatone="7" time="45.0000" deltatime="1.0000" length="1.0000" harmonyform="00000000000010001001000000000000" />
+			<chord deltatone="5" time="46.0000" deltatime="1.0000" length="2.0000" harmonyform="00000000000010010001000000000000" />
+			<chord deltatone="0" time="48.0000" deltatime="2.0000" length="4.0000" harmonyform="00000000000010010001000000000000" />
+			<chord deltatone="7" time="52.0000" deltatime="4.0000" length="1.0000" harmonyform="00000000000010010001000000000000" />
+			<chord deltatone="7" time="53.0000" deltatime="1.0000" length="1.0000" harmonyform="00000000000010001001000000000000" />
+			<chord deltatone="5" time="54.0000" deltatime="1.0000" length="2.0000" harmonyform="00000000000010010001000000000000" />
+			<chord deltatone="8" time="56.0000" deltatime="2.0000" length="2.0000" harmonyform="00000000000010001001000000000000" />
+			<chord deltatone="2" time="58.0000" deltatime="2.0000" length="1.0000" harmonyform="00000000000010010001000000000000" />
+			<chord deltatone="2" time="59.0000" deltatime="1.0000" length="1.0000" harmonyform="00000000000010001001000000000000" />
+			<chord deltatone="5" time="60.0000" deltatime="1.0000" length="2.0000" harmonyform="00000000000010010001000000000000" />
+			<chord deltatone="10" time="62.0000" deltatime="2.0000" length="1.0000" harmonyform="00000000000010010001000000000000" />
+			<chord deltatone="5" time="63.0000" deltatime="1.0000" length="1.0000" harmonyform="00000000000010001001000000000000" />
+			<chord deltatone="5" time="64.0000" deltatime="1.0000" length="1.0000" harmonyform="00000000000010001001000000000000" />
+			<chord deltatone="11" time="65.0000" deltatime="1.0000" length="1.0000" harmonyform="00000000000010001001000000000000" />
+			<chord deltatone="5" time="66.0000" deltatime="1.0000" length="1.0000" harmonyform="00000000000010010001000000000000" />
+			<chord deltatone="7" time="67.0000" deltatime="1.0000" length="1.0000" harmonyform="00000000000010001001000000000000" />
+			<chord deltatone="5" time="68.0000" deltatime="1.0000" length="1.0000" harmonyform="00000000000010010001000000000000" />
+			<chord deltatone="7" time="69.0000" deltatime="1.0000" length="1.0000" harmonyform="00000000000010001001000000000000" />
+			<chord deltatone="5" time="70.0000" deltatime="1.0000" length="2.0000" harmonyform="00000000000010010001000000000000" />
+		</node>
+	</chords>
+	<melody>
+		<node id="1" root="0" level="0" deltalength="2.0000" length="3.7500"/>
+		<node id="2" root="0" level="0" deltalength="2.0000" length="4.0000"/>
+		<node id="3" root="0" level="0" deltalength="3.0000" length="3.7500"/>
+		<node id="4" root="0" level="0" deltalength="2.0000" length="4.0000"/>
+		<node id="5" root="0" level="0" deltalength="0.7500" length="1.5000"/>
+		<node id="6" root="0" level="0" deltalength="1.0000" length="1.7500"/>
+		<node id="7" root="0" level="0" deltalength="2.0000" length="4.0000"/>
+		<node id="8" root="0" level="0" deltalength="2.0000" length="2.2500"/>
+		<node id="9" root="0" level="0" deltalength="2.0000" length="3.7500"/>
+		<node id="10" root="0" level="0" deltalength="1.0000" length="1.7500"/>
+		<node id="11" root="0" level="0" deltalength="0.7500" length="1.0000"/>
+		<node id="12" root="0" level="0" deltalength="0.7500" length="1.0000"/>
+		<node id="13" root="0" level="0" deltalength="1.8330" length="2.0000"/>
+		<node id="14" root="0" level="0" deltalength="2.0000" length="3.7500"/>
+		<node id="15" root="0" level="1" deltalength="6.0000" length="8.0000">
+			<validation-notes>
+				<note time="-0.2500" deltatone="5" />
+				<note time="3.7500" deltatone="5" />
+			</validation-notes>
+			<node id="1" time="0.0000" deltatime="0.0000" deltatone="0" />
+			<node id="2" time="4.0000" deltatime="4.0000" deltatone="-2" />
+		</node>
+		<node id="16" root="0" level="1" deltalength="6.0000" length="8.0000">
+			<validation-notes>
+				<note time="3.7500" deltatone="0" />
+			</validation-notes>
+			<node id="3" time="0.0000" deltatime="0.0000" deltatone="0" />
+			<node id="4" time="4.0000" deltatime="4.0000" deltatone="-2" />
+		</node>
+		<node id="17" root="0" level="1" deltalength="5.7500" length="7.7500">
+			<validation-notes>
+				<note time="1.5000" deltatone="-3" />
+				<note time="3.5000" deltatone="-7" />
+			</validation-notes>
+			<node id="5" time="0.0000" deltatime="0.0000" deltatone="0" />
+			<node id="6" time="1.7500" deltatime="1.7500" deltatone="0" />
+			<node id="7" time="3.7500" deltatime="2.0000" deltatone="12" />
+		</node>
+		<node id="18" root="0" level="1" deltalength="6.0000" length="7.7500">
+			<validation-notes>
+				<note time="2.2500" deltatone="-2" />
+				<note time="2.5000" deltatone="-4" />
+			</validation-notes>
+			<node id="8" time="0.0000" deltatime="0.0000" deltatone="0" />
+			<node id="9" time="4.0000" deltatime="4.0000" deltatone="5" />
+		</node>
+		<node id="19" root="0" level="1" deltalength="6.7500" length="7.0000">
+			<validation-notes>
+				<note time="-0.2500" deltatone="0" />
+				<note time="1.7500" deltatone="-2" />
+				<note time="3.7500" deltatone="-4" />
+				<note time="7.0000" deltatone="2" />
+			</validation-notes>
+			<node id="10" time="0.0000" deltatime="0.0000" deltatone="0" />
+			<node id="10" time="2.0000" deltatime="2.0000" deltatone="2" />
+			<node id="11" time="4.0000" deltatime="2.0000" deltatone="2" />
+			<node id="12" time="5.0000" deltatime="1.0000" deltatone="-2" />
+			<node id="12" time="6.0000" deltatime="1.0000" deltatone="-2" />
+		</node>
+		<node id="20" root="0" level="1" deltalength="6.0000" length="7.7500">
+			<validation-notes>
+				<note time="-0.2500" deltatone="-4" />
+				<note time="2.0000" deltatone="-2" />
+				<note time="3.7500" deltatone="-4" />
+			</validation-notes>
+			<node id="13" time="0.0000" deltatime="0.0000" deltatone="0" />
+			<node id="14" time="4.0000" deltatime="4.0000" deltatone="9" />
+		</node>
+		<node id="21" root="0" level="2" deltalength="22.0000" length="24.0000">
+			<node id="15" time="0.0000" deltatime="0.0000" deltatone="0" />
+			<node id="16" time="8.0000" deltatime="8.0000" deltatone="-5" />
+			<node id="17" time="16.2500" deltatime="8.2500" deltatone="-7" />
+		</node>
+		<node id="22" root="0" level="2" deltalength="22.0000" length="23.7500">
+			<node id="18" time="0.0000" deltatime="0.0000" deltatone="0" />
+			<node id="19" time="8.0000" deltatime="8.0000" deltatone="12" />
+			<node id="20" time="16.0000" deltatime="8.0000" deltatone="-7" />
+		</node>
+		<node id="23" root="1" level="3" deltatime="1.0000" basicnote="72" deltalength="70.0000" length="72.0000">
+			<node id="21" time="0.0000" deltatime="0.0000" deltatone="0" />
+			<node id="22" time="24.0000" deltatime="24.0000" deltatone="-14" />
+			<node id="21" time="48.0000" deltatime="24.0000" deltatone="14" />
+		</node>
+	</melody>
+</mex>
