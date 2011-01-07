@@ -226,3 +226,7 @@ table.radio input[type=radio] {
 	margin-bottom: -4px;
 	margin-right: 2px;
 }
+
+.top {
+	vertical-align: top;
+}
