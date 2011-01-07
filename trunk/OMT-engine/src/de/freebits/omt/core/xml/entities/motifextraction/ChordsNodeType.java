@@ -18,7 +18,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * Container für eine Folge von Harmonien
+ * Container fÃ¼r eine Folge von Harmonien
  * 
  * <p>Java class for chordsNodeType complex type.
  * 

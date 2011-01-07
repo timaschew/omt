@@ -20,7 +20,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * Repräsentation des Leadsheets eines Musikstückes
+ * ReprÃ¤sentation des Leadsheets eines MusikstÃ¼ckes
  * 
  * <p>Java class for leadsheetNodeType complex type.
  * 

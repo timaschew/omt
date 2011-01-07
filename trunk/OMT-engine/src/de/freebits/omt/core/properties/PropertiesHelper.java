@@ -5,6 +5,11 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
+/**
+ * Helper for properties management.
+ * 
+ * @author Marcel Karras
+ */
 public class PropertiesHelper {
 
 	/**

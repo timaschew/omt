@@ -17,7 +17,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * Container für Validierungstöne
+ * Container fï¿½r ValidierungstÃ¶ne
  * 
  * <p>Java class for validationNotesType complex type.
  * 

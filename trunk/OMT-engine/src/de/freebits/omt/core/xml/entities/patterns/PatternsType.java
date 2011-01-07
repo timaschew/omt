@@ -19,7 +19,7 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * 
- *     			Element-Typ für Knoten zur Auflistung einzelner Motive
+ *     			Element-Typ fÃ¼r Knoten zur Auflistung einzelner Motive
  *     		
  * 
  * <p>Java class for patternsType complex type.

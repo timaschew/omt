@@ -17,7 +17,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * Container für die Beschreibung eines Musikstücks
+ * Container fÃ¼r die Beschreibung eines MusikstÃ¼ckes
  * 
  * <p>Java class for mexType complex type.
  * 

@@ -16,7 +16,7 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * Stimme innerhalb eines Musikstücks
+ * Stimme innerhalb eines MusikstÃ¼ckes
  * 
  * <p>Java class for voiceNodeType complex type.
  * 
