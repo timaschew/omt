@@ -1,64 +1,58 @@
 package de.freebits.omt.forms;
 
+import java.io.IOException;
+import java.io.OutputStream;
 import java.util.ArrayList;
 
 import javax.ejb.Remove;
 import javax.ejb.Stateful;
 
+import jm.music.data.Score;
+import jm.util.Read;
+
 import org.jboss.seam.ScopeType;
-import org.jboss.seam.annotations.Begin;
 import org.jboss.seam.annotations.Create;
 import org.jboss.seam.annotations.Destroy;
-import org.jboss.seam.annotations.End;
 import org.jboss.seam.annotations.Logger;
 import org.jboss.seam.annotations.Name;
 import org.jboss.seam.annotations.Scope;
+import org.jboss.seam.annotations.security.Restrict;
 import org.jboss.seam.log.Log;
 import org.richfaces.event.UploadEvent;
 import org.richfaces.model.UploadItem;
 
 @Stateful
 @Name("midiUpload")
-@Scope(ScopeType.CONVERSATION)
+@Scope(ScopeType.SESSION)
+@Restrict
 public class MidiUploadBean implements MidiUpload {
+
+	private static final long serialVersionUID = -3089339676458374970L;
 
 	@Logger
 	Log log;
 
 	private ArrayList<UploadItem> uploadItems = new ArrayList<UploadItem>();
-	private int uploadsAvailable = 5;
+	private int uploadsAvailable = 1;
 	private boolean useFlash = true;
+	private String analyzerResult = "<no result yet>";
+	private boolean analyzeState = false;
 
 	@Create
 	public void create() {
 		log.info("Create midiUpload");
 	}
 
+	@Remove
 	@Destroy
-	public void destroy() {
+	public void remove() {
 		log.info("Destroy midiUpload");
 	}
 
-	@Remove
-	public void remove() {
-		log.info("Remove midiUpload");
-	}
-
-	public void listener(UploadEvent event) throws Exception {
-		UploadItem item = event.getUploadItem();
-		uploadItems.add(item);
+	public void upload(UploadEvent event) throws Exception {
+		// UploadItem item = event.getUploadItem();
+		// uploadItems.add(item);
 		uploadsAvailable--;
-		if (uploadsAvailable == 0) {
-			endConv();
-		}
-		log.info("Uploads available = #0", uploadsAvailable);
-	}
-
-	@End
-	public void endConv() {
-	}
-	@Begin
-	public void beginConv() {
 	}
 
 	public String clearUploadData() {
@@ -114,5 +108,39 @@ public class MidiUploadBean implements MidiUpload {
 
 	public int getSize() {
 		return uploadItems.size();
+	}
+
+	public String getAnalyzerResult() {
+		return analyzerResult;
+	}
+
+	public void analyze() {
+		Score s = new Score();
+		Read.midi(s, uploadItems.get(0).getFile().getAbsolutePath());
+		analyzerResult = "Highest pitch = " + s.getHighestPitch();
+		analyzeState = true;
+	}
+
+	public void playAudio(OutputStream stream, Object value) throws IOException {
+		float[] data = Read.audio(uploadItems.get(0).getFile()
+				.getAbsolutePath());
+		log.info(data);
+		// stream.write(data);
+		stream.flush();
+		stream.close();
+	}
+
+	public boolean isAnalyzeState() {
+		return analyzeState;
+	}
+
+	public void setAnalyzeState(boolean analyzeState) {
+		this.analyzeState = analyzeState;
+	}
+
+	public void resetView() {
+		uploadItems.clear();
+		setUploadsAvailable(1);
+		setAnalyzeState(false);
 	}
 }
