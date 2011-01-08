@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. -->
+<project basedir="." default="build" name="OMT-test">
+    <property environment="env"/>
+    <property name="OMT.location" value="../OMT"/>
+    <property name="ECLIPSE_HOME" value="../../../../Eclipse Helios J2EE"/>
+    <property name="OMT-ejb.location" value="../OMT-ejb"/>
+    <property name="OMT-engine.location" value="../OMT-engine"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.5"/>
+    <property name="source" value="1.5"/>
+    <path id="JBoss 5.1 Runtime [JBoss 5.1 Runtime].libraryclasspath">
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/FastInfoset.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/activation.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/antlr.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/antlr.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/autonumber-plugin.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/avalon-framework.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/bcel.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/bsf.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/bsh.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/commons-collections.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/commons-logging.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/commons-logging.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/concurrent.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/lib/concurrent.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/lib/dom4j.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/dtdparser121.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/ejb3-persistence.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/ejb3-persistence.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/el-api.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/getopt.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/lib/getopt.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/hibernate-annotations.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/hibernate-annotations.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/hibernate-commons-annotations.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/hibernate-core.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/hibernate-entitymanager.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/hibernate-jmx.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/hibernate-validator.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/hsqldb-plugin.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/hsqldb.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jacorb.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/javassist.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/lib/javassist.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jaxb-api.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jaxb-impl.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/lib/jaxb-impl.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jaxen.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jaxws-rt.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jaxws-tools.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/lib/jboss-aop-asintegration-core.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/lib/jboss-aop-asintegration-jmx.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/lib/jboss-aop-asintegration-mc.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/server/default/deployers/jboss-aop-jboss5.deployer/jboss-aop-aspects.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jboss-aop-client.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/lib/jboss-aop-deployers.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/lib/jboss-aop-jboss5.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/lib/jboss-aop-mc-int.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/lib/jboss-aop.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jboss-appclient.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jboss-aspect-jdk50-client.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/server/default/deployers/jboss-aop-jboss5.deployer/jboss-aspect-library.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/lib/jboss-bootstrap.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/lib/jboss-classloader.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/lib/jboss-classloading-spi.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/lib/jboss-classloading-vfs.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/lib/jboss-classloading.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jboss-client.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jboss-common-core.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/lib/jboss-common-core.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jboss-common-jdbc-wrapper.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jboss-current-invocation-aspects.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/lib/jboss-dependency.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jboss-deployers-client-spi.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/lib/jboss-deployers-client-spi.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jboss-deployers-client.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/lib/jboss-deployers-client.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jboss-deployers-core-spi.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/lib/jboss-deployers-core-spi.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jboss-deployers-core.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/lib/jboss-deployers-core.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/lib/jboss-deployers-impl.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/lib/jboss-deployers-spi.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/lib/jboss-deployers-structure-spi.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jboss-deployers-vfs-spi.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/lib/jboss-deployers-vfs-spi.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jboss-deployers-vfs.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/lib/jboss-deployers-vfs.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jboss-deployment.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jboss-ejb3-cache.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jboss-ejb3-common-client.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jboss-ejb3-common.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jboss-ejb3-core-client.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jboss-ejb3-core.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/server/default/deployers/ejb3.deployer/jboss-ejb3-deployer.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jboss-ejb3-deployers.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jboss-ejb3-endpoint.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jboss-ejb3-ext-api-impl.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jboss-ejb3-ext-api-impl.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jboss-ejb3-ext-api.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jboss-ejb3-ext-api.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/server/default/deployers/ejb3.deployer/jboss-ejb3-iiop.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jboss-ejb3-interceptors.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jboss-ejb3-mc-int.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jboss-ejb3-metadata.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jboss-ejb3-proxy-clustered-client.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jboss-ejb3-proxy-clustered.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jboss-ejb3-proxy-impl-client.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jboss-ejb3-proxy-impl.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jboss-ejb3-proxy-spi-client.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jboss-ejb3-proxy-spi.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jboss-ejb3-security-client.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jboss-ejb3-security.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jboss-ejb3-timerservice-spi.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jboss-ejb3-transactions.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/server/default/deploy/jbossweb.sar/jsf-libs/jboss-faces.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jboss-ha-client.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jboss-ha-client.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jboss-ha-legacy-client.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jboss-ha-server-api.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jboss-ha-server-cache-jbc.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jboss-ha-server-cache-spi.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jboss-hibernate.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jboss-iiop-client.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jboss-iiop.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jboss-integration.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jboss-integration.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jboss-j2se.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/lib/jboss-j2se.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jboss-jaspi-api.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jboss-jaspi-api.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jboss-javaee.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jboss-javaee.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jboss-jca.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jboss-jmx-remoting.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/lib/jboss-jmx.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jboss-jpa-deployers.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jboss-jsr77-client.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jboss-jsr77.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jboss-jsr88.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/lib/jboss-kernel.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/lib/jboss-logbridge.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jboss-logging-jdk.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/lib/jboss-logging-jdk.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jboss-logging-log4j.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/lib/jboss-logging-log4j.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jboss-logging-spi.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/lib/jboss-logging-spi.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/lib/jboss-logmanager.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jboss-main-client.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/lib/jboss-main.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/lib/jboss-managed.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jboss-management.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/lib/jboss-mbeans.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jboss-mdr.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/lib/jboss-mdr.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jboss-messaging-client.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jboss-messaging-int.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jboss-messaging.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jboss-metadata.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jboss-metadata.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/lib/jboss-metatype.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jboss-monitoring.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jboss-negotiation.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/lib/jboss-profileservice-spi.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jboss-profileservice.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/lib/jboss-reflect.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jboss-remoting-aspects.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jboss-remoting.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jboss-remoting.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jboss-security-aspects.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jboss-security-spi.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jboss-security-spi.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jboss-serialization.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jboss-serialization.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jboss-srp-client.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jboss-srp.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jboss-system-client.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jboss-system-jmx-client.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/lib/jboss-system-jmx.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/lib/jboss-system.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jboss-threads.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jboss-transaction-aspects.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/lib/jboss-vfs.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/server/default/deploy/jbossweb.sar/jboss-web-service.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jboss-xml-binding.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/lib/jboss-xml-binding.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jboss.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jbossall-client.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jbossas-remoting.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jbosscx-client.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jbossha.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jbossjmx-ant.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jbossjts-integration.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jbossjts-integration.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jbossjts-jacorb.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jbossjts.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jbossjts.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jbosssx-as-client.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jbosssx-client.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jbosssx-server.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jbosssx.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jbossts-common.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jbossws-common.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jbossws-common.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jbossws-framework.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jbossws-framework.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jbossws-jboss50.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jbossws-native-client.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jbossws-native-core.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jbossws-native-jaxrpc.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jbossws-native-jaxrpc.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jbossws-native-jaxws-ext.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jbossws-native-jaxws-ext.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jbossws-native-jaxws.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jbossws-native-jaxws.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jbossws-native-saaj.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jbossws-native-saaj.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jbossws-spi.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jbossws-spi.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jbossxacml.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jettison.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jmx-adaptor-plugin.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jmx-client.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jmx-invoker-adaptor-client.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/jnp-client.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jnpserver.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/joesnmp.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/server/default/deployers/jboss-aop-jboss5.deployer/jrockit-pluggable-instrumentor.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/server/default/deploy/jbossweb.sar/jsf-libs/jsf-api.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/server/default/deploy/jbossweb.sar/jsf-libs/jsf-impl.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/jsp-api.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/server/default/deployers/webbeans.deployer/jsr299-api.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/server/default/deploy/jbossweb.sar/jstl.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/lib/log4j-boot.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/log4j-snmp-appender.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/log4j.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/log4j.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/logkit.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/mail-plugin.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/mail.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/mail.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/server/default/lib/mysql-connector-java-5.1.11-bin.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/lib/osgi.core.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/server/default/deployers/jboss-aop-jboss5.deployer/pluggable-instrumentor.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/policy.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/properties-plugin.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/quartz.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/scheduler-plugin-example.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/scheduler-plugin.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/scout.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/servlet-api.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/slf4j-api.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/slf4j-api.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/slf4j-jboss-logging.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/slf4j-jboss-logging.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/stax-api.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/stax-ex.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/streambuffer.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/trove.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/lib/trove.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/wsdl4j.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/wstx.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/lib/wstx.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/client/xmlsec.jar"/>
+        <pathelement location="../../../../Programmierung/jboss-5.1.0.GA/common/lib/xnio-api.jar"/>
+    </path>
+    <path id="Web App Libraries.libraryclasspath">
+        <pathelement location="../OMT/WebContent/WEB-INF/lib/commons-digester.jar"/>
+        <pathelement location="../OMT/WebContent/WEB-INF/lib/itext-rtf.jar"/>
+        <pathelement location="../OMT/WebContent/WEB-INF/lib/itext.jar"/>
+        <pathelement location="../OMT/WebContent/WEB-INF/lib/jboss-seam-debug.jar"/>
+        <pathelement location="../OMT/WebContent/WEB-INF/lib/jboss-seam-excel.jar"/>
+        <pathelement location="../OMT/WebContent/WEB-INF/lib/jboss-seam-ioc.jar"/>
+        <pathelement location="../OMT/WebContent/WEB-INF/lib/jboss-seam-mail.jar"/>
+        <pathelement location="../OMT/WebContent/WEB-INF/lib/jboss-seam-pdf.jar"/>
+        <pathelement location="../OMT/WebContent/WEB-INF/lib/jboss-seam-remoting.jar"/>
+        <pathelement location="../OMT/WebContent/WEB-INF/lib/jboss-seam-ui.jar"/>
+        <pathelement location="../OMT/WebContent/WEB-INF/lib/jcommon.jar"/>
+        <pathelement location="../OMT/WebContent/WEB-INF/lib/jfreechart.jar"/>
+        <pathelement location="../OMT/WebContent/WEB-INF/lib/jsf-facelets.jar"/>
+        <pathelement location="../OMT/WebContent/WEB-INF/lib/jxl.jar"/>
+        <pathelement location="../OMT/WebContent/WEB-INF/lib/richfaces-impl.jar"/>
+        <pathelement location="../OMT/WebContent/WEB-INF/lib/richfaces-ui.jar"/>
+        <pathelement location="../../../../OMT/WebContent/WEB-INF/classes"/>
+    </path>
+    <path id="EAR Libraries.libraryclasspath">
+        <pathelement location="../../../../OMT-ear/EarContent/lib/antlr-runtime.jar"/>
+        <pathelement location="../../../../OMT-ear/EarContent/lib/commons-beanutils.jar"/>
+        <pathelement location="../../../../OMT-ear/EarContent/lib/drools-api.jar"/>
+        <pathelement location="../../../../OMT-ear/EarContent/lib/drools-compiler.jar"/>
+        <pathelement location="../../../../OMT-ear/EarContent/lib/drools-core.jar"/>
+        <pathelement location="../../../../OMT-ear/EarContent/lib/jMusic1.6.01.jar"/>
+        <pathelement location="../../../../OMT-ear/EarContent/lib/jaxb-api.jar"/>
+        <pathelement location="../../../../OMT-ear/EarContent/lib/jboss-el.jar"/>
+        <pathelement location="../../../../OMT-ear/EarContent/lib/jbpm-jpdl.jar"/>
+        <pathelement location="../../../../OMT-ear/EarContent/lib/mvel2.jar"/>
+        <pathelement location="../../../../OMT-ear/EarContent/lib/richfaces-api.jar"/>
+    </path>
+    <path id="JUnit 4.libraryclasspath">
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.junit_4.8.1.v4_8_1_v20100427-1100/junit.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.hamcrest.core_1.1.0.v20090501071000.jar"/>
+    </path>
+    <path id="OMT-engine.classpath">
+        <pathelement location="${OMT-engine.location}/bin"/>
+        <pathelement location="${OMT-engine.location}/lib/jaxb-api.jar"/>
+        <path refid="JUnit 4.libraryclasspath"/>
+    </path>
+    <path id="OMT.classpath">
+        <pathelement location="${OMT.location}/build/classes"/>
+        <path refid="JBoss 5.1 Runtime [JBoss 5.1 Runtime].libraryclasspath"/>
+        <path refid="Web App Libraries.libraryclasspath"/>
+        <path refid="EAR Libraries.libraryclasspath"/>
+        <path refid="OMT-engine.classpath"/>
+    </path>
+    <path id="OMT-ejb.classpath">
+        <pathelement location="${OMT-ejb.location}/build/classes"/>
+        <path refid="EAR Libraries.libraryclasspath"/>
+        <path refid="JBoss 5.1 Runtime [JBoss 5.1 Runtime].libraryclasspath"/>
+    </path>
+    <path id="OMT-test.classpath">
+        <pathelement location="bin"/>
+        <pathelement location="bootstrap"/>
+        <pathelement location="lib/hibernate-all.jar"/>
+        <pathelement location="lib/testng.jar"/>
+        <pathelement location="lib/jboss-embedded-api.jar"/>
+        <pathelement location="lib/core.jar"/>
+        <pathelement location="lib/thirdparty-all.jar"/>
+        <pathelement location="lib/jboss-embedded-all.jar"/>
+        <pathelement location="${OMT.location}/WebContent"/>
+        <path refid="OMT.classpath"/>
+        <path refid="OMT-ejb.classpath"/>
+    </path>
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="test-src">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target depends="clean" name="cleanall">
+        <ant antfile="build.xml" dir="${OMT-ejb.location}" inheritAll="false" target="clean"/>
+        <ant antfile="build.xml" dir="${OMT-engine.location}" inheritAll="false" target="clean"/>
+        <ant antfile="build.xml" dir="${OMT.location}" inheritAll="false" target="clean"/>
+    </target>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects">
+        <ant antfile="build.xml" dir="${OMT-ejb.location}" inheritAll="false" target="build-project">
+            <propertyset>
+                <propertyref name="build.compiler"/>
+            </propertyset>
+        </ant>
+        <ant antfile="build.xml" dir="${OMT-engine.location}" inheritAll="false" target="build-project">
+            <propertyset>
+                <propertyref name="build.compiler"/>
+            </propertyset>
+        </ant>
+        <ant antfile="build.xml" dir="${OMT.location}" inheritAll="false" target="build-project">
+            <propertyset>
+                <propertyref name="build.compiler"/>
+            </propertyset>
+        </ant>
+    </target>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" source="${source}" target="${target}">
+            <src path="test-src"/>
+            <classpath refid="OMT-test.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+</project>
