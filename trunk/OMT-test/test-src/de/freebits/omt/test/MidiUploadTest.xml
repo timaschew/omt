@@ -1,9 +1,0 @@
-<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
-
-<suite name="MidiUpload Tests" verbose="2" parallel="false">
-   <test name="MidiUpload Test">
-     <classes>
-       <class name="de.freebits.omt.test.MidiUploadTest"/>       
-     </classes>
-   </test>	
-</suite>

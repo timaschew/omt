@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="de.freebits.omt.test.PingTest" failures="0" tests="1" time="2.25" errors="0">
-  <properties/>
-  <testcase name="test_ping" time="0.125" classname="de.freebits.omt.test.PingTest"/>
-</testsuite>
