@@ -1,0 +1,143 @@
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:s="http://jboss.com/products/seam/taglib"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:a="http://richfaces.org/a4j" template="layout/template.xhtml">
+	<ui:define name="head">
+		<a:loadScript src="resource://jquery.js" />
+		<a:loadScript
+			src="resource:///javascript/libraries/vexflow/vexflow-free.js" />
+		<script type="text/javascript">
+	//          
+	jQuery(document).ready(
+			function() {
+				jQuery.testmethode = function() {
+					jQuery('div#canvas_viewport_1').replaceWith(
+							'<canvas id="canvas_viewport_1"></canvas>');
+					jQuery('#canvas_viewport_1').width(800);
+					jQuery('#canvas_viewport_1').attr('width', 800);
+					jQuery('#canvas_viewport_1').attr('height', 400);
+					var ctx = Vex.getCanvasContext('canvas_viewport_1');
+					ctx.scale(0.9, 0.9);
+					ctx.fillStyle = '#221';
+					ctx.strokeStyle = '#221';
+
+					// Get test voices.
+					var notes1 = [
+							new Vex.Flow.StaveNote({
+								keys : [ 'c/4', 'e/4', 'a/4' ],
+								stem_direction : -1,
+								duration : 'h'
+							}).addAccidental(0, new Vex.Flow.Accidental('bb'))
+									.addAccidental(1,
+											new Vex.Flow.Accidental('n')),
+							new Vex.Flow.StaveNote({
+								keys : [ 'd/4', 'e/4', 'f/4' ],
+								stem_direction : -1,
+								duration : '8'
+							}),
+							new Vex.Flow.StaveNote({
+								keys : [ 'd/4', 'f/4', 'a/4' ],
+								stem_direction : -1,
+								duration : '8'
+							}),
+							new Vex.Flow.StaveNote({
+								keys : [ 'f/4', 'a/4', 'c/4' ],
+								stem_direction : -1,
+								duration : 'q'
+							}).addAccidental(0, new Vex.Flow.Accidental('n'))
+									.addAccidental(1,
+											new Vex.Flow.Accidental('#')) ];
+					var notes2 = [
+							new Vex.Flow.StaveNote({
+								keys : [ 'b/4', 'e/5', 'a/5' ],
+								stem_direction : 1,
+								duration : 'q'
+							}).addAccidental(0, new Vex.Flow.Accidental('b'))
+									.addAccidental(1,
+											new Vex.Flow.Accidental('#')),
+							new Vex.Flow.StaveNote({
+								keys : [ 'd/5', 'e/5', 'f/5' ],
+								stem_direction : 1,
+								duration : 'h'
+							}),
+							new Vex.Flow.StaveNote({
+								keys : [ 'f/5', 'a/5', 'c/5' ],
+								stem_direction : 1,
+								duration : 'q'
+							}).addAccidental(0, new Vex.Flow.Accidental('##'))
+									.addAccidental(1,
+											new Vex.Flow.Accidental('b')) ];
+					var stave = new Vex.Flow.Stave(10, 10, 800)
+							.addTrebleGlyph().setContext(ctx).draw();
+
+					var voice1 = new Vex.Flow.Voice({
+						num_beats : 4,
+						beat_value : 4,
+						resolution : Vex.Flow.RESOLUTION
+					});
+					var voice2 = new Vex.Flow.Voice({
+						num_beats : 4,
+						beat_value : 4,
+						resolution : Vex.Flow.RESOLUTION
+					});
+
+					voice1.addTickables(notes1);
+					voice2.addTickables(notes2);
+
+					var formatter = new Vex.Flow.Formatter().joinVoices(
+							[ voice1, voice2 ]).format([ voice1, voice2 ], 0);
+
+					voice1.draw(ctx, stave);
+					voice2.draw(ctx, stave);
+				};
+			});
+	//
+</script>
+	</ui:define>
+	<ui:define name="body">
+		<rich:panel>
+			<f:facet name="header">Midi Upload</f:facet>
+			<h:form id="midiUploadForm">
+				<s:decorate template="layout/display.xhtml">
+					<h:outputText>
+						Please upload a midi file and press "Analyze" to start
+						evaluation!
+					</h:outputText>
+					<h:panelGrid columns="2" columnClasses="top,top">
+						<rich:fileUpload onclear="onClear()" uploadData="#{midiUpload.uploadItems}"
+							listHeight="100px" addControlLabel="Add midi file..."
+							fileUploadListener="#{midiUpload.upload}"
+							maxFilesQuantity="#{midiUpload.uploadsAvailable}" id="upload"
+							acceptedTypes="mid, midi" allowFlash="#{midiUpload.useFlash}">
+							<a:support event="onuploadcomplete" />
+						</rich:fileUpload>
+						<a:outputPanel ajaxRendered="true">
+							<rich:panel rendered="#{midiUpload.analyzeState}"
+								style="width : 500px; height : 138px;">
+								#{midiUpload.analyzerResult}								
+							</rich:panel>
+						</a:outputPanel>
+						<a:outputPanel ajaxRendered="true">
+							<a:commandButton value="Analyze" ajaxRendered="true"
+								rendered="#{midiUpload.size>0}" action="#{midiUpload.analyze}"
+								oncomplete="javascript:jQuery.testmethode()" />
+						</a:outputPanel>
+						<a:outputPanel ajaxRendered="true">
+							<rich:panel rendered="#{midiUpload.analyzeState}">  
+								<div id="canvas_viewport_1"></div>
+							</rich:panel>
+						</a:outputPanel>
+						<a:jsFunction name="onClear" action="#{midiUpload.resetView}" reRender="upload"/>
+					</h:panelGrid>
+				</s:decorate>
+				<div style="clear: both" />
+			</h:form>
+		</rich:panel>
+	</ui:define>
+
+</ui:composition>

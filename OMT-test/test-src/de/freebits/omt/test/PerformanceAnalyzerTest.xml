@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+
+<suite name="PerformanceAnalyzer Tests" verbose="2" parallel="false">
+   <test name="PerformanceAnalyzer Test">
+     <classes>
+       <class name="de.freebits.omt.test.PerformanceAnalyzerTest"/>       
+     </classes>
+   </test>	
+</suite>
