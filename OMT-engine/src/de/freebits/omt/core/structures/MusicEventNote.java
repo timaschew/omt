@@ -70,6 +70,22 @@ public class MusicEventNote extends Note {
 	}
 
 	/**
+	 * Get the virtual endtime of the music event note. The virtual endtime is
+	 * equal to real entime for notes that won't be perceived as an impuls. If
+	 * the impuls character is given, the virtual endtime is just a view
+	 * microseconds greater than the start time.
+	 * 
+	 * @return virtual end time
+	 */
+	public final double getVirtualEndTime() {
+		// does note has impulse character?
+		if (getEndTime() - getSampleStartTime() <= AcousticConstants.MAX_IMPULSE_NOTE_DURATION) {
+			return getSampleStartTime() + 0.001;
+		}
+		return getEndTime();
+	}
+
+	/**
 	 * Check if the given event note is simultaneous in time to this note.
 	 * 
 	 * @param e
@@ -190,6 +206,15 @@ public class MusicEventNote extends Note {
 		return 0.0;
 	}
 
+	/**
+	 * Calculate the rating for interval jumps within a stream.
+	 * 
+	 * @param pitchDiff1
+	 *            first pitch difference
+	 * @param pitchDiff2
+	 *            second pitch difference
+	 * @return rating for pitch differences
+	 */
 	private final double calcPitchDiffRating(final double pitchDiff1,
 			final double pitchDiff2) {
 		return Math
@@ -220,10 +245,11 @@ public class MusicEventNote extends Note {
 
 	@Override
 	public String toString() {
-		return "MusicEventNote: " + "[Note="
-				+ jMusicHelper.getNameOfMidiPitch(getPitch()) + "] [StartTime="
-				+ getSampleStartTime() + "] [Endtime=" + getEndTime()
-				+ "] [RhythmValue=" + getRhythmValue() + "] [FreqMel="
-				+ getPitchMel() + "]";
+		return "MusicEventNote: " + "["
+				+ ((me instanceof Chord) ? "ChordNote" : "SingleNote") + "]"
+				+ "[Note=" + jMusicHelper.getNameOfMidiPitch(getPitch())
+				+ "] [StartTime=" + getSampleStartTime() + "] [Endtime="
+				+ getEndTime() + "] [RhythmValue=" + getRhythmValue()
+				+ "] [FreqMel=" + getPitchMel() + "]";
 	}
 }

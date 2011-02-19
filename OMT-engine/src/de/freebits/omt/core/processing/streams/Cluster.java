@@ -3,6 +3,7 @@ package de.freebits.omt.core.processing.streams;
 import java.util.ArrayList;
 
 import de.freebits.omt.core.AcousticConstants;
+import de.freebits.omt.core.structures.Chord;
 import de.freebits.omt.core.structures.MusicEventNote;
 
 /**
@@ -174,5 +175,55 @@ public class Cluster extends ArrayList<MusicEventNote> {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	/**
+	 * Get the maximum pitch value of the whole cluster. (cluster must have
+	 * notes)
+	 * 
+	 * @return maximum pitch as MIDI note number
+	 */
+	public final int getMaxPitch() {
+		assert (this.size() > 0);
+		int maxPitch = Integer.MIN_VALUE;
+		for (final MusicEventNote men : this) {
+			if (maxPitch < men.getPitch()) {
+				maxPitch = men.getPitch();
+			}
+		}
+		return maxPitch;
+	}
+
+	/**
+	 * Get the minimum pitch value of the whole cluster. (cluster must have
+	 * notes)
+	 * 
+	 * @return minimum pitch as MIDI note number
+	 */
+	public final int getMinPitch() {
+		assert (this.size() > 0);
+		int minPitch = Integer.MAX_VALUE;
+		for (final MusicEventNote men : this) {
+			if (minPitch > men.getPitch()) {
+				minPitch = men.getPitch();
+			}
+		}
+		return minPitch;
+	}
+
+	/**
+	 * Calculate the chord bias for the given cluster. This bias is an indicator
+	 * for the chord-nature of a cluster/stream.
+	 * 
+	 * @return bias factor for the chord nature
+	 */
+	public final double calcChordBias() {
+		double chords = 0.0;
+		for (final MusicEventNote men : this) {
+			if (men.getMusicEvent() instanceof Chord) {
+				chords++;
+			}
+		}
+		return chords / this.size();
 	}
 }

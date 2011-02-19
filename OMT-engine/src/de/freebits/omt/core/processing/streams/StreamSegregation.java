@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import de.freebits.omt.core.AcousticConstants;
 import de.freebits.omt.core.structures.MusicEvent;
 import de.freebits.omt.core.structures.MusicEventNote;
 import de.freebits.omt.core.tools.events.ProgressEvent;
@@ -37,7 +38,13 @@ public class StreamSegregation {
 	 * TODO: needs to be quite dynamic (parallel chord movements can make
 	 * problems when pitch weight is too low)
 	 */
-	private static final double PITCH_WEIGHT = 10.0;
+	private static final double PITCH_WEIGHT = 1.0;
+
+	/**
+	 * The stream chord bias weight factor defines how much the chord bias of a
+	 * cluster/stream will affect the cluster merging.
+	 */
+	private static final double STREAM_CHORD_BIAS_WEIGHT = 10.0;
 
 	/**
 	 * Calculate the distance in pitch between two music events.
@@ -131,6 +138,7 @@ public class StreamSegregation {
 		}
 		// calculate distance
 		double dist = Double.POSITIVE_INFINITY;
+		// 1. simultaneous notes (chords)
 		if (c1.isEqualIOITo(c2)) {
 			// simultaneous note must have pitch co-modulation
 			System.out.println("Cluster " + c1.getName() + " || to cluster "
@@ -141,9 +149,24 @@ public class StreamSegregation {
 			// check cluster movements
 			if (coModRating >= 0) {
 				System.out.println(c1.getName() + " comods " + c2.getName());
-				dist = 0;
+				// assert that the current chord only contains notes that are
+				// playable by one hand
+				final int c1MaxPitch = c1.getMaxPitch(), c2MaxPitch = c2
+						.getMaxPitch(), c1MinPitch = c1.getMinPitch(), c2MinPitch = c2
+						.getMinPitch();
+				final int upperPitchBound = c1MaxPitch > c2MaxPitch ? c1MaxPitch
+						: c2MaxPitch;
+				final int lowerPitchBound = c1MinPitch < c2MinPitch ? c1MinPitch
+						: c2MinPitch;
+
+				if (Math.abs(upperPitchBound - lowerPitchBound) <= AcousticConstants.MAX_CHORD_INTERVAL) {
+					if (c1.size() + c2.size() <= AcousticConstants.MAX_CHORD_NOTES)
+						dist = 0;
+				}
 			}
-		} else if (!c1.isSimultaneousTo(c2)) {
+		}
+		// 2. non-simultaneous notes
+		else if (!c1.isSimultaneousTo(c2)) {
 			// get minimum inter-event distance for every pair of events between
 			// the two clusters
 			for (int i = 0; i < c1.size(); i++) {
@@ -151,7 +174,16 @@ public class StreamSegregation {
 					// get inter-event distance
 					double ied = calcInterEventDistance(c1.get(i), c2.get(j));
 					if (ied < dist) {
-						dist = ied;
+						// the chord bias of both clusters shouldn't differ too
+						// much
+						double chordsBias1 = c1.calcChordBias();
+						double chordsBias2 = c2.calcChordBias();
+						// chord bias distance
+						double chordBiasDist = calcChordBiasDistance(
+								chordsBias1, chordsBias2);
+						assert (ied > 0);
+						dist = Math.sqrt(Math.pow(ied, 2)
+								+ Math.pow(chordBiasDist, 2));
 					}
 				}
 			}
@@ -197,14 +229,32 @@ public class StreamSegregation {
 				// minimal distance to not break calculation (precision 8)
 				etd = 0.00000001;
 			}
-			double epd = calcEventPitchDistance(e1, e2);
-			dist = Math.sqrt(Math.pow(TIME_WEIGHT * etd, 2)
-					+ Math.pow(PITCH_WEIGHT * epd, 2));
+			// maximum pause time between two notes must not exceed limit
+			//else if (etd <= AcousticConstants.MAX_PAUSE) {
+				double epd = calcEventPitchDistance(e1, e2);
+				dist = Math.sqrt(Math.pow(TIME_WEIGHT * etd, 2)
+						+ Math.pow(PITCH_WEIGHT * epd, 2));
+			//}
 		}
 		// create hashtable entries
 		interEventDistanceHash.put(key, dist);
 		interEventDistanceHash.put(key_rev, dist);
 		return dist;
+	}
+
+	/**
+	 * Calculate the chord bias distance of two given chord bias values.
+	 * 
+	 * @param cBias1
+	 *            first bias
+	 * @param cBias2
+	 *            second bias
+	 * @return chord bias distance
+	 * @see {@link #STREAM_CHORD_BIAS_WEIGHT}
+	 */
+	private final double calcChordBiasDistance(final double cBias1,
+			final double cBias2) {
+		return Math.abs(cBias1 - cBias2) * STREAM_CHORD_BIAS_WEIGHT;
 	}
 
 	/**
