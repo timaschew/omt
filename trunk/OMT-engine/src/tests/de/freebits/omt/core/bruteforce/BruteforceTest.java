@@ -26,6 +26,7 @@ public class BruteforceTest {
 	// midi score
 	private static Score score = null;
 	// patterns xml structure
+	@SuppressWarnings("unused")
 	private static PatternsType patterns = null;
 
 	/**

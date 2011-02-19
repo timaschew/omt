@@ -14,6 +14,12 @@ public interface AcousticConstants {
 	public static final double MIN_DURATION_DIFFERENCE = 0.025;
 
 	/**
+	 * Maximum pause time between two tones (in seconds) in order to
+	 * get grouped.
+	 */
+	public static final double MAX_PAUSE = 2.0;
+
+	/**
 	 * Maximum allowed intersecting time in seconds that classify two notes as
 	 * being simultaneous. (empirical determined)
 	 */
@@ -32,4 +38,18 @@ public interface AcousticConstants {
 	 */
 	public static final int CHORD_ENDTIMES_DIFF_WEIGHT = 3;
 
+	/**
+	 * Maximum duration of a note to be classified as an impulse.
+	 */
+	public static final double MAX_IMPULSE_NOTE_DURATION = 0.01;
+
+	/**
+	 * Maximum interval span from lowest to highest chord note.
+	 */
+	public static final int MAX_CHORD_INTERVAL = 14;
+
+	/**
+	 * Maximum amount of chord notes.
+	 */
+	public static final int MAX_CHORD_NOTES = 4;
 }

@@ -209,9 +209,15 @@ public class jMusicHelper {
 				assert (nextNote.getStartTime() >= note.getStartTime());
 				// range check for start time differences
 				if (nextNote.getStartTime() - note.getStartTime() <= AcousticConstants.MIN_DURATION_DIFFERENCE) {
+
 					chord.addNote(nextNote.getNote());
 					// increase current event list index pointer
 					index++;
+					// } else {
+					// note.getNote().setMusicEvent(note);
+					// groupedList.add(note);
+					// System.out.println("Duplicate note found: " + nextNote);
+					// }
 				} else {
 					// here we are too far away from chord origin
 					break;
@@ -225,6 +231,7 @@ public class jMusicHelper {
 			if (chordNotes.size() == 1) {
 				// current single note does not belong to a chord, so we can put
 				// it into the new grouped music event list
+				note.getNote().setMusicEvent(note);
 				groupedList.add(note);
 			} else {
 				// list of chord hypotheses
@@ -283,6 +290,31 @@ public class jMusicHelper {
 						groupedList.add(new SingleNote(men, men
 								.getSampleStartTime(), note.getTempo()));
 					} else {
+						// assert that note is of unique pitch inside the chord
+						// - notes with equal pitch are assumed to belong to
+						// other higher level structures
+						final List<MusicEventNote> toBeRemoved = new ArrayList<MusicEventNote>();
+						for (final MusicEventNote n1 : c.getNoteList()) {
+							for (final MusicEventNote n2 : c.getNoteList()) {
+								if (!((Object) n1).equals((Object) n2)
+										&& n1.getPitch() == n2.getPitch()) {
+									boolean alreadyRemoved = false;
+									for (final MusicEventNote remNote : toBeRemoved) {
+										if (remNote.getPitch() == n1.getPitch())
+											alreadyRemoved = true;
+									}
+									if (!alreadyRemoved) {
+										n1.setMusicEvent(note);
+										groupedList.add(note);
+										toBeRemoved.add(n1);
+										System.out
+												.println("Duplicate note found: "
+														+ nextNote);
+									}
+								}
+							}
+						}
+						c.getNoteList().removeAll(toBeRemoved);
 						// the chord can be placed in the grouped event list
 						groupedList.add(c);
 					}

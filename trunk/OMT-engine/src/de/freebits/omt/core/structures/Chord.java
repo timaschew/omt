@@ -5,7 +5,8 @@ import java.util.List;
 
 /**
  * A chord music event represents a list of notes that occur at the same time.
- * (do not necessarily have to be equal in length)
+ * (do not necessarily have to be equal in length) The chord notes are sorted
+ * ascending by pitch.
  * 
  * @author Marcel Karras
  */
@@ -52,7 +53,15 @@ public class Chord extends BasicMusicEvent {
 	 *            note to add
 	 */
 	public void addNote(final MusicEventNote note) {
-		noteList.add(note);
+		// add the new note in correct sort order
+		int insertIndex = 0;
+		for (final MusicEventNote men : noteList) {
+			if (men.getPitch() > note.getPitch()) {
+				break;
+			}
+			insertIndex++;
+		}
+		noteList.add(insertIndex, note);
 		note.setMusicEvent(this);
 	}
 
@@ -87,7 +96,7 @@ public class Chord extends BasicMusicEvent {
 		}
 		return time;
 	}
-	
+
 	/**
 	 * Get the maximum end time over all chord notes. (end times can vary due to
 	 * tolerances in recordings)
