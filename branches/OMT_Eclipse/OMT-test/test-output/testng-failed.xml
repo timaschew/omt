@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="5" skipfailedinvocationCounts="false" verbose="1" name="Failed suite [OMT-test]" junit="false" parallel="false" annotations="JDK">
+  <test name="de.freebits.omt.test.PingTest(failed)" junit="false" parallel="false" annotations="JDK">
+    <classes>
+      <class name="de.freebits.omt.test.PingTest">
+        <methods>
+          <include name="test_ping"/>
+          <include name="startSeam"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>
