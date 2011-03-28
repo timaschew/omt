@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://freebits.de/OMT-engine/schemas/Leadsheets" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:mdb="http://freebits.de/OMT-engine/schemas/Leadsheets">
+
+
+    <element name="leadsheets" type="mdb:leadsheetsNodeType">
+    	<annotation>
+    		<documentation>Wurzelknoten des Leadsheet-Modells</documentation>
+    	</annotation></element>
+    
+    <complexType name="leadsheetsNodeType">
+    	<annotation>
+    		<documentation>Liste aller Leadsheets
+    		</documentation>
+    	</annotation>
+    	<sequence minOccurs="1" maxOccurs="unbounded">
+    		<element name="leadsheet" type="mdb:leadsheetNodeType"></element>
+    	</sequence>
+    	<attribute name="num" type="nonNegativeInteger"></attribute>
+    </complexType>
+
+    <complexType name="voiceNodeType">
+        <annotation>
+        	<documentation>Stimme innerhalb eines Musikstücks</documentation></annotation>
+        <attribute name="reference-id" type="int" use="required">
+    		<annotation>
+    			<documentation>Referenz-ID zur Stimme</documentation>
+    		</annotation>
+    	</attribute>
+    	<attribute name="meaning" type="mdb:meaningAttributeType"
+    		use="required">
+    		<annotation>
+    			<documentation>Stimmenkontext</documentation>
+    		</annotation>
+    	</attribute>
+    	<attribute name="deltatime" type="mdb:deltaTimeAttributeType"
+    		use="required">
+    		<annotation>
+    			<documentation>
+    				Relative Zeitangabe für den Einsatzzeitpunkt.
+    			</documentation>
+    		</annotation>
+    	</attribute>
+    	<attribute name="deltatone" type="mdb:deltatoneAttributeType"
+    		use="optional">
+    		<annotation>
+    			<documentation>TODO: Relativer Versatz zum Grundton der Harmonie?
+    			</documentation>
+    		</annotation>
+    	</attribute>
+    	<attribute name="basicnote" type="mdb:basicnodeAttributeType">
+    		<annotation>
+    			<documentation>TODO: Grundton?</documentation>
+    		</annotation></attribute>
+    </complexType>
+
+    <simpleType name="meaningAttributeType">
+    	<restriction base="string">
+    		<enumeration value="chord"></enumeration>
+    		<enumeration value="melody"></enumeration>
+    		<enumeration value="accompaniment"></enumeration>
+    	</restriction>
+    </simpleType>
+
+    <simpleType name="deltaTimeAttributeType">
+    	<restriction base="float"></restriction>
+    </simpleType>
+
+    <complexType name="leadsheetNodeType">
+        <annotation>
+        	<documentation>Repräsentation des Leadsheets eines Musikstückes</documentation>
+        </annotation>
+        <sequence>
+    		<element name="voice" type="mdb:voiceNodeType" minOccurs="1" maxOccurs="unbounded"></element>
+    	</sequence>
+    	<attribute name="id" type="nonNegativeInteger" use="required">
+    		<annotation>
+    			<documentation>TODO: besser als nonNegativeInteger wäre hier ID, aber dies erlaubt keine Zahl zu Beginn</documentation>
+    		</annotation></attribute>
+    	<attribute name="is-a-id" type="nonNegativeInteger" use="required">
+            <annotation>
+            	<documentation>TODO: besser als nonNegativeInteger wäre hier IDREF, aber dies erlaubt keine Zahl zu Beginn</documentation>
+            </annotation>
+    	</attribute>
+    	<attribute name="title" type="string" use="required"></attribute>
+    </complexType>
+
+    <simpleType name="deltatoneAttributeType">
+    	<restriction base="nonNegativeInteger"></restriction>
+    </simpleType>
+
+    <simpleType name="basicnodeAttributeType">
+    	<restriction base="nonNegativeInteger"></restriction>
+    </simpleType>
+
+</schema>

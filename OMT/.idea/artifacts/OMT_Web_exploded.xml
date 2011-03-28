@@ -1,0 +1,22 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="OMT:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/OMT_Web_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="OMT/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="OMT" />
+          <element id="module-output" name="OMT-Engine" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="application" name="Mojarra.2.2.1" />
+          <element id="file-copy" path="$PROJECT_DIR$/../OMT-Engine/lib/jaxb-api.jar" />
+          <element id="file-copy" path="$APPLICATION_HOME_DIR$/plugins/testng/lib/testng-jdk15.jar" />
+          <element id="library" level="project" name="Maven: org.primefaces:primefaces:3.0-prime-1" />
+          <element id="library" level="project" name="Maven: commons-fileupload:commons-fileupload:1.2.1" />
+          <element id="library" level="project" name="Maven: commons-io:commons-io:2.0" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
