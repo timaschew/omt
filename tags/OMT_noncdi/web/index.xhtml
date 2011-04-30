@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+		PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:h="http://java.sun.com/jsf/html"
+	  xmlns:p="http://primefaces.prime.com.tr/ui" xmlns:f="http://java.sun.com/jsf/core">
+
+<h:head>
+	<link type="text/css" rel="stylesheet" href="#{request.contextPath}/resources/css/standard.css"/>
+	<title>OMT - Online Music Tutor</title>
+</h:head>
+
+<h:body onload="#{growlBean.showInitialMessage()}">
+	<!-- main menu -->
+	<p:menubar styleClass="mainmenu">
+		<p:submenu label="Help">
+			<p:menuitem value="About" url="#"/>
+		</p:submenu>
+	</p:menubar>
+
+	<!-- terminal -->
+	<p:dialog widgetVar="terminal" width="700" height="400" header="OMT Engine Debug View" showEffect="fade"
+			  hideEffect="fade" styleClass="terminalDialog">
+		<h:form>
+			<p:terminal commandHandler="#{terminalController.handleCommand}" width="100%" height="100%"
+						welcomeMessage="Welcome to the OMT Engine debug view..."/>
+		</h:form>
+	</p:dialog>
+
+	<!-- growl container -->
+	<p:growl id="messages" showDetail="true" sticky="false" showSummary="true" life="5000"/>
+
+	<!-- dock container at bottom -->
+	<p:dock position="bottom" itemWidth="50" maxWidth="150">
+		<p:menuitem value="Neu" icon="#{resource['images:music-stand.png']}" url="#"
+					onclick="creationWizard.show();"/>
+		<p:menuitem value="Einstellungen" icon="#{resource['images:config.png']}" url="#"/>
+		<p:menuitem value="Debug" icon="#{resource['images:terminal.png']}" url="#"
+					onclick="terminal.show();term.focus();"/>
+		<p:menuitem value="Zurücksetzen" icon="#{resource['images:trash.png']}" url="#"/>
+	</p:dock>
+
+	<!-- wizard dialog for the creation of new evaluation instances -->
+	<p:dialog widgetVar="creationWizard" width="750" height="400" header="Ähnlichkeits-Analyse vorbereiten"
+			  showEffect="fade" hideEffect="fade" resizable="false">
+		<h:form enctype="multipart/form-data">
+			<p:wizard styleClass="creationWizard" flowListener="#{evaluationWizardBean.handleFlow}">
+				<!-- 1. step: choose song -->
+				<p:tab title="Songauswahl" id="tabSelectSong">
+					<h:panelGrid columns="2" width="100%" styleClass="songChooserGrid">
+						<p:graphicImage value="#{resource['images/music-stand.png']}"/>
+						<p:panel header="Song auswählen" styleClass="songChooserPanel">
+							<h:panelGroup layout="block" styleClass="songChooserDescription">
+								Wählen Sie bitte den Song, für welchen Sie eine Bewertung erhalten möchten:
+							</h:panelGroup>
+							<h:panelGroup>
+								<h:selectOneRadio value="#{songDatabase.defaultSong}" layout="pageDirection">
+									<f:selectItems value="#{songDatabase.songList}"/>
+								</h:selectOneRadio>
+							</h:panelGroup>
+						</p:panel>
+					</h:panelGrid>
+				</p:tab>
+				<!-- 2. step: midi upload -->
+				<p:tab title="Hochladen" id="tabUploadSample">
+					<h:panelGrid columns="2" width="100%" styleClass="midiUploadGrid">
+						<p:graphicImage value="#{resource['images/midi.png']}"/>
+						<p:panel header="Midi Datei hochladen" styleClass="midiUploadPanel">
+							<h:panelGroup layout="block" styleClass="midiUploadDescription">
+								Wählen Sie bitte Ihre MIDI-Aufnahme, welche Sie zur Bewertung vorlegen möchten:
+							</h:panelGroup>
+							<p:fileUpload
+									uploadLabel="Hochladen"
+									cancelLabel="Abbrechen"
+									label="Datei wählen"
+									fileUploadListener="#{fileUploadBean.handleFileUpload}"
+									mode="advanced"
+									update="messages"
+									sizeLimit="100000"
+									allowTypes="midi,mid"/>
+						</p:panel>
+					</h:panelGrid>
+				</p:tab>
+				<!-- 3. step: evaluation -->
+				<p:tab title="Auswertung" id="tabSelectEvaluation">
+					TODO: Auswertung
+				</p:tab>
+			</p:wizard>
+		</h:form>
+	</p:dialog>
+
+</h:body>
+</html>
