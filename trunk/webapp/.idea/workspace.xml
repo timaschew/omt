@@ -1,0 +1,1305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CCaseConfig">
+    <option name="checkoutReserved" value="false" />
+    <option name="markExternalChangeAsUpToDate" value="true" />
+    <option name="checkInUseHijack" value="true" />
+    <option name="useUcmModel" value="true" />
+    <option name="synchOutside" value="false" />
+    <option name="isHistoryResticted" value="true" />
+    <option name="useIdenticalSwitch" value="true" />
+    <option name="synchActivitiesOnRefresh" value="true" />
+    <option name="lastScr" value="" />
+    <option name="scrTextFileName" value="" />
+    <option name="historyRevisionsNumber" value="4" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6a451d9b-263c-44e7-ad01-ef99e965c711" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jaxb-api.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/audio/io" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/audio/math" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/audio/synth" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/audio" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/constants" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/cpn/.nbattrs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/cpn/graphics/bassClef.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/cpn/graphics/crotchetDown.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/cpn/graphics/crotchetRest.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/cpn/graphics/crotchetUp.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/cpn/graphics/delete.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/cpn/graphics/dot.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/cpn/graphics/eight.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/cpn/graphics/five.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/cpn/graphics/flat.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/cpn/graphics/four.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/cpn/graphics/minimDown.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/cpn/graphics/minimRest.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/cpn/graphics/minimUp.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/cpn/graphics/natural.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/cpn/graphics/nine.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/cpn/graphics/one.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/cpn/graphics/quaverDown.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/cpn/graphics/quaverRest.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/cpn/graphics/quaverUp.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/cpn/graphics/semibreve.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/cpn/graphics/semibreveRest.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/cpn/graphics/semiquaverDown.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/cpn/graphics/semiquaverRest.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/cpn/graphics/semiquaverUp.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/cpn/graphics/seven.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/cpn/graphics/sharp.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/cpn/graphics/six.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/cpn/graphics/stave.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/cpn/graphics/three.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/cpn/graphics/tie.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/cpn/graphics/tieOver.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/cpn/graphics/tieUnder.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/cpn/graphics/trebleClef.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/cpn/graphics/two.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/cpn/graphics" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/cpn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/graph/.nbattrs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/graph" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/helper" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/histogram" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/show/.nbattrs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/show" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/sketch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/wave" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/midi/.nbattrs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/midi/event" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/midi" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/music/data/.nbattrs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/music/data" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/music/net" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/music/rt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/music/tools/fuzzy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/music/tools/ga" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/music/tools" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/music" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/util/.nbattrs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/util" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/schema/de/freebits/omt/core/xml/entities/motifextraction" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/schema/de/freebits/omt/core/xml/entities" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/schema/de/freebits/omt/core/xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/schema/de/freebits/omt/core" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/schema/de/freebits/omt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/schema/de/freebits" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/schema/de" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/schema" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/harmony/exceptions" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/harmony" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/melody/preprocessing" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/melody" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/events" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/listener" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/streams" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/rhythm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/structures" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/tools/events" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/tools" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/xml/entities/leadsheets" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/xml/entities/motifextraction" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/xml/entities/patterns" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/xml/entities" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/de/freebits/omt/core/bruteforce" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/de/freebits/omt/core/harmony" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/de/freebits/omt/core/melody/preprocessing" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/de/freebits/omt/core/melody" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/de/freebits/omt/core/rhythm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/de/freebits/omt/core/streams" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/de/freebits/omt/core/xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/de/freebits/omt/core" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/de/freebits/omt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/de/freebits" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/de" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/ressources/A Felicidade.mid" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/ressources/AcciaccaturaTest.mid" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/ressources/Alle Meine Entchen.mid" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/ressources/Alle Vögel Sind Schon Da.mid" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/ressources/Arpeggio_1.mid" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/ressources/Arpeggio_1_mod.mid" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/ressources/Arpeggio_2.mid" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/ressources/Autumn Leaves.mid" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/ressources/Beatles - Michelle.mid" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/ressources/C_chord.mid" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/ressources/ChopinPreludeNo4.mid" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/ressources/ChordTest.mid" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/ressources/Chord_Glissando.mid" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/ressources/Chord_Recognition_Blues.mid" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/ressources/Chord_Recognition_Parallel.mid" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/ressources/ClusterTest.mid" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/ressources/ClusterTest_new.mid" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/ressources/ContourHelperTest.mid" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/ressources/Marcel_Blues1.mid" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/ressources/Marcel_Blues1_Bassline.mid" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/ressources/Marcel_Blues1_Bassline_small.mid" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/ressources/Marcel_Blues1_Chords.mid" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/ressources/Marcel_Blues1_Melody_1.mid" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/ressources/Marcel_Blues1_Melody_1_short.mid" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/ressources/Mozart Sonata K332 - Allegro Assai.mid" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/ressources/PreprocessingExamples.mid" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/ressources/PreprocessingExamples2.mid" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/ressources/PreprocessingTest.mid" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/ressources/SegmentationChordsWithBreaks.mid" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/ressources/SegmentationChordsWithBreaksAndMelody.mid" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/ressources/SegmentationTest1.mid" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/ressources/SegmentationTest1_01.mid" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/ressources/SegmentationTest2.mid" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/ressources/StreamTest_BasslinePlusGlissandi.mid" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/ressources/StreamTest_ChordPlusMelody.mid" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/ressources/StreamTest_ChordPlusMelody_2.mid" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/ressources/StreamTest_ChordPlusMelody_3.mid" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/ressources/StreamTest_ChordPlusMelody_4.mid" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/ressources/StreamTest_GlissandiShort.mid" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/ressources/StreamTest_MorgenKommtDerWeihnachtsmann.mid" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/ressources/StreamTest_MorgenKommtDerWeihnachtsmann_Takt01-02.mid" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/ressources/StreamTest_MorgenKommtDerWeihnachtsmann_Takt01.mid" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/ressources/StreamTest_Parallel_Chords.mid" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/ressources/beatles_scores/michelle.mid" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/ressources/beatles_scores" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/ressources/streaming/Alle Meine Entchen.mid" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/ressources/streaming/Alle Vögel Sind Schon Da.mid" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/ressources/streaming/Marcel_Blues1.mid" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/ressources/streaming/Marcel_Blues1_Melody_1.mid" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/ressources/streaming/StreamTest_ChordPlusMelody_4.mid" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/ressources/streaming/StreamTest_MorgenKommtDerWeihnachtsmann.mid" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/ressources/streaming/StreamTest_MorgenKommtDerWeihnachtsmann_Takt01-02.mid" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/ressources/streaming/StreamTest_MorgenKommtDerWeihnachtsmann_Takt01.mid" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/ressources/streaming/StreamTest_Parallel_Chords.mid" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/ressources/streaming" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/ressources" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/images/background_music.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/images/config.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/images/midi.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/images/music-stand.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/images/piano.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/images/terminal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/images/trash.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/images" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/primefaces-dark-hive/images/ui-bg_flat_30_cccccc_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/primefaces-dark-hive/images/ui-bg_flat_50_5c5c5c_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/primefaces-dark-hive/images/ui-bg_glass_40_ffc73d_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/primefaces-dark-hive/images/ui-bg_highlight-hard_20_0972a5_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/primefaces-dark-hive/images/ui-bg_highlight-soft_33_003147_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/primefaces-dark-hive/images/ui-bg_highlight-soft_35_222222_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/primefaces-dark-hive/images/ui-bg_highlight-soft_44_444444_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/primefaces-dark-hive/images/ui-bg_highlight-soft_80_eeeeee_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/primefaces-dark-hive/images/ui-bg_loop_25_000000_21x21.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/primefaces-dark-hive/images/ui-icons_222222_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/primefaces-dark-hive/images/ui-icons_4b8e0b_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/primefaces-dark-hive/images/ui-icons_a83300_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/primefaces-dark-hive/images/ui-icons_cccccc_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/primefaces-dark-hive/images/ui-icons_ffffff_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/primefaces-dark-hive/images" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/primefaces-dark-hive" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/engine.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/JMC.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/audio/AOException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/audio/Audio.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/audio/AudioChainListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/audio/AudioObject.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/audio/Instrument.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/audio/RTMixer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/audio/io/AudioFileIn.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/audio/io/AudioFileOut.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/audio/io/PrintOut.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/audio/io/RTIn.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/audio/io/SampleIn.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/audio/io/SampleOut.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/audio/io/TextIn.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/audio/math/Factorize.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/audio/math/RealFloatFFT.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/audio/math/RealFloatFFT_Radix2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/audio/synth/ADSR.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/audio/synth/Add.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/audio/synth/AllFGTR.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/audio/synth/AllPass.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/audio/synth/Comb.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/audio/synth/Compressor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/audio/synth/Delay.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/audio/synth/EnvPoint.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/audio/synth/Envelope.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/audio/synth/FFT.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/audio/synth/FGTR.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/audio/synth/Filter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/audio/synth/Grain2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/audio/synth/Granulator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/audio/synth/InverseFFT.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/audio/synth/Invert.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/audio/synth/MassObject.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/audio/synth/Multiply.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/audio/synth/Noise.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/audio/synth/NoteBuffer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/audio/synth/NoteBufferReversed.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/audio/synth/Oscillator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/audio/synth/Pluck.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/audio/synth/ReSample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/audio/synth/Smooth.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/audio/synth/Splitter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/audio/synth/Spring.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/audio/synth/SpringObject.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/audio/synth/SpringPipe.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/audio/synth/StereoPan.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/audio/synth/TapDelay.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/audio/synth/Value.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/audio/synth/Volume.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/audio/synth/WaveTable.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/audio/synth/Wavelet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/audio/synth/Waveshaper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/audio/synth/Window.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/constants/Alignments.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/constants/Articulations.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/constants/Chords.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/constants/DrumMap.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/constants/Durations.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/constants/Dynamics.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/constants/Frequencies.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/constants/Instruments.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/constants/Noises.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/constants/Panning.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/constants/Pitches.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/constants/ProgramChanges.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/constants/Progressions.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/constants/RhythmValues.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/constants/Scales.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/constants/Tunings.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/constants/Volumes.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/constants/Waveforms.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/cpn/AppletImages.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/cpn/BassStave.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/cpn/CpnZoomScreen.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/cpn/GrandStave.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/cpn/Images.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/cpn/JGrandStave.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/cpn/JStaveActionHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/cpn/JmMidiPlayer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/cpn/KeyChangeListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/cpn/LetterNotesEditor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/cpn/Notate.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/cpn/NoteEditor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/cpn/ParmScreen.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/cpn/PhraseViewer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/cpn/PianoStave.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/cpn/Stave.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/cpn/StaveActionHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/cpn/StavePhraseProperties.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/cpn/ToolkitImages.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/cpn/TrebleStave.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/graph/GraphCanvas.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/graph/LineGraph.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/graph/LineGraphCanvas.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/graph/Statistics.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/graph/StatisticsList.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/helper/HelperGUI.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/histogram/Histogram.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/histogram/HistogramFrame.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/show/NoteGraphic.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/show/ShowArea.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/show/ShowPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/show/ShowRuler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/show/ShowScore.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/sketch/SketchRuler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/sketch/SketchScore.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/sketch/SketchScoreArea.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/wave/WaveCanvas.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/wave/WaveFileReader.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/wave/WaveRuler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/wave/WaveScrollPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/gui/wave/WaveView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/midi/MidiCommunication.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/midi/MidiInputListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/midi/MidiParser.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/midi/MidiSynth.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/midi/MidiUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/midi/RTMidiIn.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/midi/SMF.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/midi/Track.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/midi/event/ATouch.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/midi/event/CChange.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/midi/event/CPres.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/midi/event/EndTrack.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/midi/event/Event.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/midi/event/KeySig.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/midi/event/NoteOff.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/midi/event/NoteOn.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/midi/event/PChange.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/midi/event/PWheel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/midi/event/SysComEvt.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/midi/event/SysEx.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/midi/event/TempoEvent.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/midi/event/TimeSig.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/midi/event/VoiceEvt.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/music/data/Alignment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/music/data/Anchoring.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/music/data/CPhrase.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/music/data/Note.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/music/data/Part.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/music/data/Phrase.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/music/data/Rest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/music/data/Score.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/music/data/Tempo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/music/net/DSClient.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/music/net/DSClientConnector.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/music/net/DSServer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/music/net/DSServerConnector.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/music/rt/RTLine.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/music/rt/RTPhrase.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/music/tools/AdaptiveMatrix.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/music/tools/ChordAnalysis.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/music/tools/Mod.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/music/tools/NoteListException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/music/tools/PhraseAnalysis.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/music/tools/PhraseMatrix.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/music/tools/Prob.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/music/tools/QuantisationException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/music/tools/fuzzy/FuzzyNumber.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/music/tools/fuzzy/FuzzySet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/music/tools/ga/BestNSurvivorSelector.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/music/tools/ga/ClimaticPopInitialiser.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/music/tools/ga/ComplexMutater.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/music/tools/ga/ElitismSurvivorSelector.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/music/tools/ga/FitnessEvaluater.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/music/tools/ga/GAComponent.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/music/tools/ga/Mutater.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/music/tools/ga/NoTerminationCriteria.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/music/tools/ga/NormalDistributionFE.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/music/tools/ga/OnePointCrossover.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/music/tools/ga/ParentSelector.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/music/tools/ga/PhrGeneticAlgorithm.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/music/tools/ga/PopulationInitialiser.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/music/tools/ga/Recombiner.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/music/tools/ga/SimpleParentSelector.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/music/tools/ga/SurvivorSelector.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/music/tools/ga/TerminationCriteria.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/util/AbstractReadButton.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/util/AudioRTLine.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/util/AudioSampleInst.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/util/ConversionException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/util/Convert.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/util/Play.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/util/PlayCycle.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/util/PlayThread.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/util/Read.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/util/ReadFileButton.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/util/ReadFilenameFilter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/util/ReadFilesJButton.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/util/ReadFolderButton.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/util/ReadListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/util/ReadListenerLinkedList.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/util/View.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/util/Write.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/lib/jmusic/jm/util/XMLParser.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/schema/Leadsheets.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/schema/Leadsheets.xsd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/schema/Patterns.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/schema/Patterns.xsd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/schema/de/freebits/omt/core/xml/entities/motifextraction/ChordType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/schema/de/freebits/omt/core/xml/entities/motifextraction/ChordsNodeType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/schema/de/freebits/omt/core/xml/entities/motifextraction/ChordsType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/schema/de/freebits/omt/core/xml/entities/motifextraction/MelodyNodeNodeType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/schema/de/freebits/omt/core/xml/entities/motifextraction/MelodyNodeType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/schema/de/freebits/omt/core/xml/entities/motifextraction/MelodyType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/schema/de/freebits/omt/core/xml/entities/motifextraction/MexType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/schema/de/freebits/omt/core/xml/entities/motifextraction/NodeType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/schema/de/freebits/omt/core/xml/entities/motifextraction/NoteType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/schema/de/freebits/omt/core/xml/entities/motifextraction/ObjectFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/schema/de/freebits/omt/core/xml/entities/motifextraction/PatternsType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/schema/de/freebits/omt/core/xml/entities/motifextraction/PattersNodeType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/schema/de/freebits/omt/core/xml/entities/motifextraction/ValidationNoteType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/schema/de/freebits/omt/core/xml/entities/motifextraction/ValidationNotesType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/schema/de/freebits/omt/core/xml/entities/motifextraction/package-info.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/schema/motifextraction.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/schema/motifextration.xsd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/schema/xjc.bat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/AcousticConstants.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/Main.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/OMTException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/harmony/HarmonyHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/harmony/Scales.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/harmony/exceptions/ScaleNotSupportedException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/melody/ContourHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/melody/MelodicDistanceHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/melody/preprocessing/MelodicPreprocessingHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/AcciaccaturaProcessor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/ArpeggioProcessor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/DefaultProcessor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/NoteProcessor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/Processor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/TremoloProcessor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/TrillProcessor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/events/AcciaccaturaEvent.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/events/ArpeggioEvent.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/events/ProcessingEvent.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/events/TremoloEvent.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/events/TrillEvent.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/listener/ProcessingListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/streams/Cluster.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/streams/ClusterDistanceTable.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/streams/Clustering.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/streams/StreamAnalyzer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/streams/StreamSegregation.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/properties/PropertiesHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/rhythm/RhythmDistanceHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/structures/BasicMusicEvent.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/structures/Chord.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/structures/MusicEvent.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/structures/MusicEventNote.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/structures/SingleNote.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/tools/events/ProgressEvent.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/tools/events/ProgressEventListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/tools/jMusicHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/xml/JAXBHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/xml/PatternsHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/xml/entities/leadsheets/LeadsheetNodeType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/xml/entities/leadsheets/LeadsheetsNodeType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/xml/entities/leadsheets/MeaningAttributeType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/xml/entities/leadsheets/ObjectFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/xml/entities/leadsheets/VoiceNodeType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/xml/entities/leadsheets/package-info.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/xml/entities/motifextraction/ChordType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/xml/entities/motifextraction/ChordsNodeType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/xml/entities/motifextraction/ChordsType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/xml/entities/motifextraction/MelodyNodeNodeType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/xml/entities/motifextraction/MelodyNodeType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/xml/entities/motifextraction/MelodyType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/xml/entities/motifextraction/MexType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/xml/entities/motifextraction/NodeType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/xml/entities/motifextraction/NoteType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/xml/entities/motifextraction/ObjectFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/xml/entities/motifextraction/PatternsType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/xml/entities/motifextraction/PattersNodeType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/xml/entities/motifextraction/ValidationNoteType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/xml/entities/motifextraction/ValidationNotesType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/xml/entities/motifextraction/package-info.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/xml/entities/patterns/NodeType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/xml/entities/patterns/NoteType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/xml/entities/patterns/ObjectFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/xml/entities/patterns/PatternsType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/xml/entities/patterns/package-info.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/de/freebits/omt/core/MelodyTestSuite.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/de/freebits/omt/core/bruteforce/BruteforceTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/de/freebits/omt/core/harmony/HarmonyHelperTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/de/freebits/omt/core/melody/ContourHelperTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/de/freebits/omt/core/melody/preprocessing/MelodicPreprocessingHelperTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/de/freebits/omt/core/rhythm/RhythmDistanceHelperTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/de/freebits/omt/core/streams/StreamAnalyerTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/de/freebits/omt/core/streams/StreamSegregationTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/de/freebits/omt/core/xml/PatternsHelperTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/ant.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/webapp_war_exploded.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/beans.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/home.xhtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/css/standard.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/primefaces-dark-hive/theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp.iml" />
+    </list>
+    <ignored path="webapp.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CoverageDataManager" choice="3" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+    <option name="REVERSE_PATCH" value="false" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="DebuggerManager">
+    <breakpoint_any>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </breakpoint_any>
+    <breakpoint_rules />
+    <ui_properties />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="webapp" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/../engine/lib/jmusic/jm/audio/AOException.java" />
+        <option value="$PROJECT_DIR$/../engine/src/main/java/EvaluationWizardBean.java" />
+      </list>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="#JAVA_INTERNAL" />
+  </component>
+  <component name="ModuleEditorState">
+    <option name="LAST_EDITED_MODULE_NAME" />
+    <option name="LAST_EDITED_TAB_NAME" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <OptionsSetting value="true" id="Undo Check Out" />
+    <OptionsSetting value="true" id="Get Latest Version" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="engine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="engine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="engine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Favorites" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="recentsLimit" value="5" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="options.lastSelected" value="coverage" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Programmierung\OMT\trunk\engine" />
+      <recent name="C:\Programmierung\OMT\trunk\engine\src" />
+      <recent name="C:\Programmierung\OMT\trunk\webapp\web" />
+      <recent name="C:\Programmierung\OMT\trunk\webapp\web\WEB-INF" />
+    </key>
+  </component>
+  <component name="Regex">
+    <option name="pos1" value="218" />
+    <option name="pos2" value="218" />
+    <option name="pos3" value="162" />
+    <option name="pos4" value="444" />
+    <option name="pos5" value="162" />
+    <option name="autoUpdate" value="true" />
+    <option name="referenceOn" value="false" />
+    <option name="referencePos" value="0" />
+    <option name="showLabels" value="true" />
+  </component>
+  <component name="RunManager" selected="Glassfish Server.Glassfish 3.1">
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GlassfishConfiguration" factoryName="Local">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment />
+      <server-settings>
+        <option name="DOMAIN" value="" />
+        <option name="PRESERVE" value="false" />
+        <option name="USERNAME" value="admin" />
+        <option name="PASSWORD" value="" />
+      </server-settings>
+      <predefined_log_file id="Glassfish" enabled="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="9009" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="C:/bin/asadmin.bat" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value=" start-domain --debug" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="C:/bin/asadmin.bat" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value=" stop-domain" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="C:/bin/asadmin.bat" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value=" start-domain" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="C:/bin/asadmin.bat" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value=" stop-domain" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" adl_options="" air_descriptor_path="" air_program_params="" air_publisher_id="" air_root_dir_path="" air_run_mode="AppDescriptor" browser_family="FIREFOX" class_name="" debugger_sdk="Module SDK" html_or_swf_file_path="" launcher_type="OSDefault" main_class_name="" method_name="" module_name="" output_log_level="" package_name="" player_path="FlashPlayer.exe" port="0" run_mode="HtmlOrSwfFile" run_trusted="false" scope="Class" socket_policy_port="0" url_to_launch="http://">
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GlassfishConfiguration" factoryName="Remote">
+      <option name="LOCAL" value="false" />
+      <deployment />
+      <server-settings>
+        <data>
+          <option name="stagingRemotePath" value="" />
+          <option name="transportStagingTarget">
+            <TransportTarget>
+              <option name="id" value="012f4233-4ec7-415f-a949-0640368bcd64" />
+            </TransportTarget>
+          </option>
+        </data>
+      </server-settings>
+      <predefined_log_file id="Glassfish" enabled="true" />
+      <extension name="coverage" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="50647" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="false" name="Glassfish 3.1" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="Glassfish 3.1">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/OMT/" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="webapp:war exploded">
+          <settings>
+            <option name="contextRoot" value="/OMT" />
+            <option name="defaultContextRoot" value="false" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="DOMAIN" value="freebits" />
+        <option name="PRESERVE" value="false" />
+        <option name="USERNAME" value="admin" />
+        <option name="PASSWORD" value="belina" />
+      </server-settings>
+      <predefined_log_file id="Glassfish" enabled="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="9009" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="C:/glassfish310/glassfish/bin/asadmin.bat" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value=" start-domain --debug" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="C:/glassfish310/glassfish/bin/asadmin.bat" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value=" stop-domain" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="C:/glassfish310/glassfish/bin/asadmin.bat" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value=" start-domain" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="C:/glassfish310/glassfish/bin/asadmin.bat" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value=" stop-domain" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="webapp:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Glassfish Server.Glassfish 3.1" />
+    </list>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+  </component>
+  <component name="SQLPlugin.ProjectConfiguration">
+    <queries />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="DETECT_NESTED_COPIES" value="true" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <configuration useDefault="false">C:\Users\Marcel\AppData\Roaming\Subversion</configuration>
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <created>1304159444182</created>
+      <updated>1304159444182</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="SQL" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21790724" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="BSFConsole" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="simpleUML" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.78209275" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Regex" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+    </layout>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
+    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
+    <option name="ENABLE_BACKGROUND_PROCESSES" value="false" />
+    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
+    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
+    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
+    <option name="ACTIVE_VCS_NAME" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
+    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/beans.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../sources/primefaces-3.0-prime-1/primefaces-3.0-prime-1.jar!/META-INF/primefaces-p.taglib.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7959" column="4" selection-start="203769" selection-end="203769" vertical-scroll-proportion="0.33333334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/css/standard.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="36" selection-start="922" selection-end="922" vertical-scroll-proportion="0.5215909">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../engine/lib/jmusic/jm/audio/AOException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="46" selection-start="1087" selection-end="1087" vertical-scroll-proportion="0.7550143">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../engine/tests/de/freebits/omt/core/bruteforce/BruteforceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="13" selection-start="842" selection-end="842" vertical-scroll-proportion="0.8266476">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../engine/src/de/freebits/omt/core/AcousticConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/home.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="82" selection-start="3493" selection-end="3493" vertical-scroll-proportion="0.6964286">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>webapp:war exploded</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>CDI API 1.0-SP1</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>JDK 1.6.0_24</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>engine</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+  <component name="simpleUML.UMLToolWindowPlugin">
+    <General>
+      <option name="birdViewUpdateDelay" value="2000" />
+      <option name="defaultFileLocation" value="file://" />
+    </General>
+    <Classdiagram>
+      <option name="diagramTitleFont" value="SansSerif,1,12" />
+      <option name="diagramFont" value="SansSerif,0,10" />
+      <option name="defaultFieldsExpanded" value="false" />
+      <option name="defaultContructorsExpanded" value="false" />
+      <option name="defaultMethodsExpanded" value="false" />
+      <option name="showParameters" value="true" />
+      <option name="showTooltip" value="true" />
+      <option name="showReturnValues" value="true" />
+      <option name="longModifier" value="true" />
+      <option name="implementsBehaviour" value="1" />
+      <option name="extendsBehaviour" value="1" />
+      <option name="compartmentBehaviour" value="1" />
+      <option name="interfaceBackgroundColor" value="-6494306" />
+      <option name="abstractClassBackgroundColor" value="-1580132" />
+      <option name="classBackgroundColor" value="-6508057" />
+      <option name="diagramBackgroundColor" value="-1" />
+      <option name="useAntialiasedConnectors" value="true" />
+      <option name="quickSourceLinkColor" value="-16776961" />
+      <option name="quickDiagramLinkColor" value="-8454144" />
+      <option name="drawDecorations" value="false" />
+      <option name="hideFieldList" value="" />
+      <option name="showFieldList" value="" />
+      <option name="hideConstructorList" value="" />
+      <option name="showConstructorList" value="" />
+      <option name="hideMethodList" value="" />
+      <option name="showMethodList" value="" />
+      <option name="minimumFigureSize" value="0,0" />
+    </Classdiagram>
+    <Dependencydiagram>
+      <option name="diagramTitleFont" value="SansSerif,1,12" />
+      <option name="diagramFont" value="SansSerif,0,10" />
+      <option name="diagramBackgroundColor" value="-1" />
+      <option name="useAntialiasedConnectors" value="true" />
+      <option name="packageNameCompressionLevel" value="0" />
+    </Dependencydiagram>
+    <Packagediagram>
+      <option name="diagramTitleFont" value="SansSerif,0,12" />
+      <option name="diagramFont" value="SansSerif,0,10" />
+      <option name="packageBackgroundColor" value="-4144960" />
+      <option name="diagramBackgroundColor" value="-1" />
+      <option name="useAntialiasedConnectors" value="true" />
+      <option name="packageNameCompressionLevel" value="2" />
+    </Packagediagram>
+  </component>
+</project>
+
