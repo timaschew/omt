@@ -1,0 +1,21 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="webapp:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/webapp_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="webapp/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="webapp" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="application" name="Commons IO 2.0.1" />
+          <element id="library" level="application" name="Commons Fileupload 1.2.2" />
+          <element id="library" level="application" name="Mojarra.2.2.1" />
+          <element id="library" level="application" name="Primefaces 3.0 Prime 1" />
+          <element id="library" level="application" name="Java Inject" />
+          <element id="library" level="application" name="CDI API 1.0-SP1" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
