@@ -1,13 +1,11 @@
 import javax.faces.application.FacesMessage;
-import javax.faces.bean.ManagedBean;
-import javax.faces.bean.SessionScoped;
 import javax.faces.context.FacesContext;
+import javax.inject.Named;
 
 /**
  * Bean for the messages being displayed inside the primefaces growl container.
  */
-@ManagedBean(name = "growlBean")
-@SessionScoped
+@Named
 public class GrowlBean {
 
 	private static final String INITIAL_MESSAGE = "OMT Engine Initialized";

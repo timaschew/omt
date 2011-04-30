@@ -47,7 +47,7 @@ body {
 }
 
 /* panel containing the upload component */
-.creationWizard .midiUploadGrid .midiUploadPanel {
+.creationWizard .midiUploadGrid .midiUploadPanel, .songChooserPanel {
 	height: 225px;
 }
 

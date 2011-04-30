@@ -17,6 +17,16 @@
         <configuration />
       </facet>
     </facet>
+    <facet type="WebBeans" name="CDI">
+      <configuration />
+    </facet>
+    <facet type="javaeeApplication" name="javaEEApplication">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="application.xml" url="file://$MODULE_DIR$/META-INF/application.xml" />
+        </descriptors>
+      </configuration>
+    </facet>
   </component>
   <component name="NewModuleRootManager" inherit-compiler-output="false">
     <output url="file://$MODULE_DIR$/target/classes" />
@@ -30,9 +40,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Mojarra.2.2.1" level="application" />
     <orderEntry type="module" module-name="OMT-Engine" />
-    <orderEntry type="library" name="Maven: org.primefaces:primefaces:3.0-prime-1" level="project" />
-    <orderEntry type="library" name="Maven: commons-fileupload:commons-fileupload:1.2.1" level="project" />
-    <orderEntry type="library" name="Maven: commons-io:commons-io:2.0" level="project" />
+    <orderEntry type="library" name="JBoss Weld.1.0.0" level="project" />
   </component>
 </module>
 

@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="JBoss Weld.1.0.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/weld-servlet.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../../sources/cdi-api-1.0/cdi-api-1.0-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../sources/javax.inject-1.0-PFD-1/javax.inject-1.0-PFD-1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../sources/cdi-api-1.0/cdi-api-1.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../sources/javax.inject-1.0-PFD-1/javax.inject-1.0-PFD-1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
