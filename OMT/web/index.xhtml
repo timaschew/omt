@@ -46,7 +46,7 @@
 	<p:dialog widgetVar="creationWizard" width="750" height="400" header="Ähnlichkeits-Analyse vorbereiten"
 			  showEffect="fade" hideEffect="fade" resizable="false">
 		<h:form enctype="multipart/form-data">
-			<p:wizard styleClass="creationWizard">
+			<p:wizard styleClass="creationWizard" flowListener="#{evaluationWizardBean.handleFlow}">
 				<!-- 1. step: choose song -->
 				<p:tab title="Songauswahl" id="tabSelectSong">
 					<h:panelGrid columns="2" width="100%" styleClass="songChooserGrid">
@@ -56,7 +56,9 @@
 								Wählen Sie bitte den Song, für welchen Sie eine Bewertung erhalten möchten:
 							</h:panelGroup>
 							<h:panelGroup>
-
+								<h:selectOneRadio value="#{songDatabase.defaultSong}" layout="pageDirection">
+									<f:selectItems value="#{songDatabase.songList}"/>
+								</h:selectOneRadio>
 							</h:panelGroup>
 						</p:panel>
 					</h:panelGrid>

@@ -9,12 +9,8 @@
           <element id="module-output" name="OMT-Engine" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="application" name="Mojarra.2.2.1" />
           <element id="file-copy" path="$PROJECT_DIR$/../OMT-Engine/lib/jaxb-api.jar" />
           <element id="file-copy" path="$APPLICATION_HOME_DIR$/plugins/testng/lib/testng-jdk15.jar" />
-          <element id="library" level="project" name="Maven: org.primefaces:primefaces:3.0-prime-1" />
-          <element id="library" level="project" name="Maven: commons-fileupload:commons-fileupload:1.2.1" />
-          <element id="library" level="project" name="Maven: commons-io:commons-io:2.0" />
         </element>
       </element>
     </root>
