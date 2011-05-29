@@ -13,7 +13,7 @@
           <element id="library" level="application" name="Mojarra.2.2.1" />
           <element id="library" level="application" name="Primefaces 3.0 Prime 1" />
           <element id="library" level="application" name="Java Inject" />
-          <element id="library" level="application" name="CDI API 1.0-SP1" />
+          <element id="library" level="application" name="CDI API 1.0-SP2" />
         </element>
       </element>
     </root>
