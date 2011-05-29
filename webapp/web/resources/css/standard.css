@@ -57,6 +57,6 @@ body {
 }
 /* description of the midi upload */
 .midiUploadPanel .midiUploadDescription {
-	font-size: 0.9em;
+	/*font-size: 0.9em;*/
 	margin-bottom: 10px;
 }
