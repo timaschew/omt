@@ -32,7 +32,7 @@ public class MelodicPreprocessingHelperTest {
 	public static void initialize() {
 		// read midi score
 		score = new Score();
-		Read.midi(score, "src/tests/ressources/PreprocessingExamples2.mid");
+		Read.midi(score, "tests/ressources/preprocessing/Glissando_002.mid");
 	}
 
 	/**

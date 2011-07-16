@@ -6,7 +6,8 @@ import jm.music.data.Note;
 
 /**
  * Processing event for arpeggios.
- * 
+ *
+ * @see <a href="http://en.wikipedia.org/wiki/Arpeggio">Wikipedia: Arpeggio</a>
  * @author Marcel Karras
  */
 public class ArpeggioEvent implements ProcessingEvent {

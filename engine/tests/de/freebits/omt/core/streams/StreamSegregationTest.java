@@ -47,7 +47,7 @@ import de.freebits.omt.core.tools.events.ProgressEventListener;
 /**
  * Testclass for stream segregation of a given pattern. The pattern can contain
  * single/multiple voices.
- * 
+ *
  * @author Marcel Karras
  */
 public class StreamSegregationTest {
@@ -61,7 +61,7 @@ public class StreamSegregationTest {
 	private static JFrame frame = null;
 	private static JFrame fTestChooser = null;
 	private static JTextArea taskOutput = null;
-	private static JScrollPane scrollPane = null;
+	private static JScrollPane stcrollPane = null;
 	private static JComboBox cbTestChooser = null;
 	private static JButton bTestChooser = null;
 	private static JLabel lTestChooser = null;
@@ -76,32 +76,32 @@ public class StreamSegregationTest {
 		frame.setContentPane(panel);
 		frame.setSize(500, 500);
 		frame.addWindowListener(new WindowListener() {
-			
+
 			@Override
 			public void windowOpened(WindowEvent e) {
 			}
-			
+
 			@Override
 			public void windowIconified(WindowEvent e) {
 			}
-			
+
 			@Override
 			public void windowDeiconified(WindowEvent e) {
 			}
-			
+
 			@Override
 			public void windowDeactivated(WindowEvent e) {
 			}
-			
+
 			@Override
 			public void windowClosing(WindowEvent e) {
 				fTestChooser.setVisible(true);
 			}
-			
+
 			@Override
 			public void windowClosed(WindowEvent e) {
 			}
-			
+
 			@Override
 			public void windowActivated(WindowEvent e) {
 			}
@@ -115,7 +115,7 @@ public class StreamSegregationTest {
 		taskOutput.setEditable(false);
 		taskOutput.setAutoscrolls(true);
 		taskOutput.setFont(new Font("Monospaced", Font.PLAIN, 12));
-		scrollPane = new JScrollPane(taskOutput);
+		final JScrollPane scrollPane = new JScrollPane(taskOutput);
 
 		panel.add(progressBar, BorderLayout.NORTH);
 		panel.add(scrollPane, BorderLayout.CENTER);
@@ -153,7 +153,7 @@ public class StreamSegregationTest {
 				fTestChooser.setVisible(false);
 				/**
 				 * Swing Worker for the stream segregation background process.
-				 * 
+				 *
 				 * @author Marcel Karras
 				 */
 				class ClusteringWorker extends SwingWorker<Clustering, Void> {
@@ -225,11 +225,10 @@ public class StreamSegregationTest {
 			e.printStackTrace();
 		}
 	}
-	
+
 	/**
 	 * Test method for
-	 * {@link de.freebits.omt.core.processing.streams.StreamSegregation#calcEventTimeDistance(de.freebits.omt.core.str
-		  uctures.MusicEventNote, de.freebits.omt.core.structures.MusicEventNote)}
+	 * {@link de.freebits.omt.core.processing.streams.StreamSegregation#calcEventTimeDistance(de.freebits.omt.core.structures.MusicEventNote, de.freebits.omt.core.structures.MusicEventNote)}
 	 */
 	@Test
 	public void testCalcEventTimeDistance() {

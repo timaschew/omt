@@ -1,109 +1,148 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html
-		PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml"
-	  xmlns:h="http://java.sun.com/jsf/html"
-	  xmlns:p="http://primefaces.prime.com.tr/ui" xmlns:f="http://java.sun.com/jsf/core">
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.prime.com.tr/ui" xmlns:f="http://java.sun.com/jsf/core">
 
 <h:head>
-	<link type="text/css" rel="stylesheet" href="#{request.contextPath}/resources/css/standard.css"/>
-	<title>OMT - Online Music Tutor</title>
+    <link type="text/css" rel="stylesheet" href="#{request.contextPath}/resources/css/standard.css"/>
+    <title>OMT - Online Music Tutor</title>
 </h:head>
 
 <h:body onload="#{growl.showInitialMessage()}">
-	<!-- main menu -->
-	<p:menubar styleClass="mainmenu">
-		<p:submenu label="Hilfe">
-			<p:menuitem value="Über" url="#"/>
-		</p:submenu>
-	</p:menubar>
+    <!-- main menu -->
+    <p:menubar styleClass="mainmenu">
+        <p:submenu label="Hilfe">
+            <p:menuitem value="Über" url="#"/>
+        </p:submenu>
+    </p:menubar>
 
-	<!-- terminal -->
-	<p:dialog widgetVar="terminal" width="700" height="400" header="OMT Engine Debug View" showEffect="fade"
-			  hideEffect="fade" styleClass="terminalDialog">
-		<h:form>
-			<p:terminal width="100%" height="100%"
-						welcomeMessage="Welcome to the OMT Engine debug view..."/>
-		</h:form>
-	</p:dialog>
+    <!-- terminal -->
+    <p:dialog widgetVar="wvTerminalDialog" width="700" height="400" header="OMT Engine Konsole" showEffect="fade"
+              hideEffect="fade" styleClass="terminalDialog">
+        <h:form>
+            <p:terminal prompt="OMT >" width="100%" height="100%" widgetVar="wvTerminal"
+                        welcomeMessage="Geben Sie hier Befehle zur Interaktion mit der OMT Engine ein..."
+                        commandHandler="#{terminal.handleCommand}"/>
+        </h:form>
+    </p:dialog>
 
-	<!-- growl container -->
-	<p:growl id="messages" showDetail="true" sticky="false" showSummary="true" life="5000"/>
+    <!-- logging window -->
+    <p:dialog widgetVar="wvLoggingDialog" width="700" height="400" header="OMT Engine Log" showEffect="fade"
+              hideEffect="fade" styleClass="terminalDialog">
+        <h:panelGroup layout="block">
+            Test 123
+        </h:panelGroup>
+    </p:dialog>
 
-	<!-- dock container at bottom -->
-	<p:dock position="bottom" itemWidth="50" maxWidth="150">
-		<p:menuitem value="Neu" icon="#{resource['images:music-stand.png']}" url="#"
-					onclick="creationWizard.show();" action="#{evaluationWizard.wizard.setStep('tabSelectSong')}"
-					update="wizardForm"/>
-		<p:menuitem value="Einstellungen" icon="#{resource['images:config.png']}" url="#"/>
-		<p:menuitem value="Debug" icon="#{resource['images:terminal.png']}" url="#"
-					onclick="terminal.show();term.focus();"/>
-		<p:menuitem value="Zurücksetzen" icon="#{resource['images:trash.png']}" url="#"/>
-	</p:dock>
 
-	<!-- wizard dialog for the creation of new evaluation instances -->
-	<p:dialog widgetVar="creationWizard" width="750" height="400" header="Ähnlichkeits-Analyse vorbereiten"
-			  showEffect="fade" hideEffect="fade" resizable="false">
-		<h:form widgetVar="wizardForm" enctype="multipart/form-data">
-			<p:wizard styleClass="creationWizard" showNavBar="true" widgetVar="wiz"
-					  flowListener="#{evaluationWizard.onFlowProcess}"
-					  binding="#{evaluationWizard.wizard}">
-				<!-- 1. step: choose song -->
-				<p:tab title="Songauswahl" id="tabSelectSong">
-					<h:panelGrid columns="2" width="100%" styleClass="songChooserGrid">
-						<p:graphicImage value="#{resource['images/music-stand.png']}"/>
-						<p:panel header="Song auswählen" styleClass="songChooserPanel">
-							<h:panelGroup layout="block" styleClass="songChooserDescription">
-								Wählen Sie bitte den Song, für welchen Sie eine Bewertung erhalten möchten:
-							</h:panelGroup>
-							<h:panelGroup>
-								<p:selectOneRadio unselectable="false" layout="pageDirection"
-												  value="#{evaluationWizard.selectedSong}"
-												  converter="#{songConverter}">
-									<f:selectItems value="#{songDatabase.songList}"/>
-								</p:selectOneRadio>
-							</h:panelGroup>
-						</p:panel>
-					</h:panelGrid>
-				</p:tab>
-				<!-- 2. step: midi upload -->
-				<p:tab title="Hochladen" id="tabUploadSample">
-					<h:panelGrid columns="2" width="100%" styleClass="midiUploadGrid">
-						<p:graphicImage value="#{resource['images/midi.png']}"/>
-						<p:panel header="Midi Datei hochladen" styleClass="midiUploadPanel" id="midiUploadContainer">
-							<h:panelGroup rendered="#{evaluationWizard.status == null}" layout="block"
-										  styleClass="midiUploadDescription">
-								Wählen Sie bitte Ihre MIDI-Aufnahme, welche Sie zur Bewertung vorlegen möchten:
-								<br/><br/>
-								<p:fileUpload
-										id="fileupload"
-										fileUploadListener="#{evaluationWizard.handleFileUpload}"
-										uploadLabel="Hochladen"
-										cancelLabel="Abbrechen"
-										label="Datei wählen"
-										mode="advanced"
-										update="messages,wizardMidiUploadStatus,midiUploadContainer"
-										sizeLimit="100000"
-										allowTypes="midi,mid"/>
-							</h:panelGroup>
-							<h:outputText id="wizardMidiUploadStatus" value="#{evaluationWizard.status}"/>
-						</p:panel>
-					</h:panelGrid>
-				</p:tab>
-				<!-- 3. step: evaluation -->
-				<p:tab title="Auswertung" id="tabSelectEvaluation">
-					TODO: Auswertung
-				</p:tab>
-			</p:wizard>
-			<h:panelGroup layout="block" styleClass="ui-wizard-navbar">
-				<p:button widgetVar="nextButton" image="ui-button-icon-primary ui-icon-arrowthick-1-e" value="Weiter"
-						  styleClass="ui-wizard-nav-next" onclick="wiz.next();return true;"/>
-			</h:panelGroup>
+    <!-- growl container -->
+    <p:growl id="messages" showDetail="true" sticky="false" showSummary="true" life="5000"/>
 
-		</h:form>
-	</p:dialog>
+    <!-- dock container at bottom -->
+    <h:form widgetVar="dockForm" styleClass="dockingMenu">
+        <p:dock position="bottom" itemWidth="50" maxWidth="150">
+            <p:menuitem value="Neu" icon="#{resource['images:music-stand.png']}"
+                        actionListener="#{evaluationWizard.onDialogOpen}"/>
+            <p:menuitem value="Einstellungen" icon="#{resource['images:config.png']}" url="#"/>
+            <p:menuitem value="Konsole" icon="#{resource['images:keyboard.png']}" url="#"
+                        onclick="wvTerminalDialog.show();wvTerminal.focus();"/>
+            <p:menuitem value="Logfenster" icon="#{resource['images:terminal.png']}" url="#"
+                        onclick="wvLoggingDialog.show();"/>
+            <p:menuitem value="Zurücksetzen" icon="#{resource['images:trash.png']}" url="#"/>
+        </p:dock>
+    </h:form>
 
+    <!-- wizard dialog for the creation of new evaluation instances -->
+    <p:dialog widgetVar="wvCreationWizard" width="750" height="400"
+              header="Ähnlichkeits-Analyse vorbereiten"
+              showEffect="fade" hideEffect="fade" resizable="false">
+        <p:ajax event="close" listener="#{evaluationWizard.onDialogClose}" update="wvWizard"/>
+        <h:form widgetVar="wizardForm" enctype="multipart/form-data">
+            <p:wizard binding="#{evaluationWizard.wizard}" id="wizard" styleClass="creationWizard" showNavBar="false"
+                      widgetVar="wvWizard"
+                      flowListener="#{evaluationWizard.onFlowProcess}">
+                <f:event type="preRenderView" listener="#{evaluationWizard.startConversation}"/>
+                <!-- 1. step: choose song -->
+                <p:tab title="Songauswahl" id="tabSelectSong">
+                    <h:panelGrid columns="2" width="100%" styleClass="songChooserGrid">
+                        <p:graphicImage value="#{resource['images/music-stand.png']}"/>
+                        <p:panel header="Song auswählen" styleClass="songChooserPanel">
+                            <h:panelGroup layout="block" styleClass="songChooserDescription">
+                                Wählen Sie bitte den Song, für welchen Sie eine Bewertung erhalten möchten:
+                            </h:panelGroup>
+                            <h:panelGroup>
+                                <p:selectOneRadio unselectable="false" layout="pageDirection"
+                                                  value="#{evaluationWizard.selectedSong}"
+                                                  converter="#{songConverter}">
+                                    <f:selectItems value="#{songDatabase.songList}"/>
+                                </p:selectOneRadio>
+                            </h:panelGroup>
+                        </p:panel>
+                    </h:panelGrid>
+                </p:tab>
+                <!-- 2. step: midi upload -->
+                <p:tab title="Hochladen" id="tabUploadSample">
+                    <h:panelGrid columns="2" width="100%" styleClass="midiUploadGrid">
+                        <p:graphicImage value="#{resource['images/midi.png']}"/>
+                        <p:panel header="Midi Datei hochladen" styleClass="midiUploadPanel" id="midiUploadContainer">
+                            <h:panelGroup rendered="#{evaluationWizard.status == null}" layout="block"
+                                          styleClass="midiUploadDescription">
+                                Wählen Sie bitte Ihre MIDI-Aufnahme, welche Sie zur Bewertung vorlegen möchten:
+                                <br/><br/>
+                                <p:fileUpload
+                                        id="fileupload"
+                                        fileUploadListener="#{evaluationWizard.handleFileUpload}"
+                                        uploadLabel="Hochladen"
+                                        cancelLabel="Abbrechen"
+                                        label="Datei wählen"
+                                        mode="advanced"
+                                        update="messages,wizardMidiUploadStatus,midiUploadContainer"
+                                        sizeLimit="100000"
+                                        allowTypes="midi,mid"/>
+                            </h:panelGroup>
+                            <h:outputText id="wizardMidiUploadStatus" value="#{evaluationWizard.status}"/>
+                        </p:panel>
+                    </h:panelGrid>
+                </p:tab>
+                <!-- 3. step: evaluation -->
+                <p:tab title="Auswertung" id="tabSelectEvaluation">
+                    <h:panelGrid columns="2">
+                        <h:outputText value="Gwählter Song:"/>
+                        <h:outputText value="#{evaluationWizard.selectedSong}"/>
+                    </h:panelGrid>
+                </p:tab>
+            </p:wizard>
+            <h:panelGroup layout="block" styleClass="ui-wizard-navbar">
+                <p:commandButton widgetVar="nextButton" image="ui-button-icon-primary ui-icon-arrowthick-1-e"
+                                 value="Weiter" styleClass="ui-wizard-nav-next"
+                                 actionListener="#{evaluationWizard.onNext}"/>
+            </h:panelGroup>
+
+        </h:form>
+    </p:dialog>
+
+    <h:panelGroup id="additionalJavascript">
+        <script type="text/javascript">
+            /* <![CDATA[ */
+            $(function() {
+                /**
+                 * Always scroll to terminal bottom.
+                 */
+                $('div.ui-terminal form').submit(function() {
+                    $(this).find('input[type="text"]').each(function() {
+                        var terminalDialog = $('div.terminalDialog div.ui-dialog-content');
+                        $(terminalDialog).animate({
+                                    scrollTop: $(terminalDialog).find('div.ui-terminal').outerHeight()
+                                });
+                    });
+                });
+            });
+            /* ]]> */
+        </script>
+    </h:panelGroup>
 </h:body>
 </html>

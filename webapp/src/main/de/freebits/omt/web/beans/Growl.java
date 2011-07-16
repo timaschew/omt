@@ -1,5 +1,7 @@
 package de.freebits.omt.web.beans;
 
+import org.primefaces.context.RequestContext;
+
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.SessionScoped;
 import javax.faces.application.FacesMessage;
@@ -19,6 +21,7 @@ import java.util.logging.Logger;
 @SessionScoped
 public class Growl implements Serializable {
 
+	private static final String CONTAINER_ID = "messages";
 	private static final String INITIAL_MESSAGE = "OMT Engine Initialized";
 	private static final String INITIAL_MESSAGE_DESCRIPTION = "OMT Engine has been initialized successfully...";
 
@@ -79,6 +82,7 @@ public class Growl implements Serializable {
 	 */
 	public void showMessage(final String message, final String description) {
 		FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(message, description));
+		RequestContext.getCurrentInstance().addPartialUpdateTarget(CONTAINER_ID);
 	}
 
 	/**
@@ -90,5 +94,6 @@ public class Growl implements Serializable {
 	public void showErrorMessage(final String message, final String description) {
 		FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, message,
 				description));
+		RequestContext.getCurrentInstance().addPartialUpdateTarget(CONTAINER_ID);
 	}
 }

@@ -3,6 +3,8 @@ package de.freebits.omt.core.harmony;
 import jm.music.data.Note;
 import de.freebits.omt.core.harmony.exceptions.ScaleNotSupportedException;
 
+import java.util.List;
+
 /**
  * Harmony helper methods.
  * 
@@ -105,6 +107,23 @@ public class HarmonyHelper {
 	 */
 	public static final boolean isNoteInScale(final Note note, final byte[] scale) {
 		return scale[note.getPitch() % 12] == 1;
+	}
+
+    /**
+	 * Check if the given note is valid for the given scales.
+	 *
+	 * @param note
+	 *            note to be evaluated
+	 * @param scales
+	 *            the scales to be checked
+	 * @return true if the note belongs to one of the given scales, false else
+	 */
+	public static final boolean isNoteInScales(final Note note, final List<byte[]> scales) {
+        for(byte[] scale : scales){
+            if(scale[note.getPitch() % 12] == 1)
+                return true;
+        }
+		return false;
 	}
 
 	/**
