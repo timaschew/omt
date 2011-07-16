@@ -19,22 +19,13 @@
     <option name="historyRevisionsNumber" value="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="396fd103-bb4d-4791-9974-077dfbb12ea8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/OMT_Web.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/OMT_Web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/OMT_Web_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/OMT_Web_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_primefaces_primefaces_3_0_prime_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_primefaces_primefaces_3_0_prime_1.xml" />
+    <list default="true" readonly="true" id="396fd103-bb4d-4791-9974-077dfbb12ea8" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../OMT-Engine_noncdi/OMT-Engine.iml" afterPath="$PROJECT_DIR$/../OMT-Engine_noncdi/OMT-Engine.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OMT.iml" afterPath="$PROJECT_DIR$/OMT.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/EvaluationWizardBean.java" afterPath="$PROJECT_DIR$/src/main/java/EvaluationWizardBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/FileUploadBean.java" afterPath="$PROJECT_DIR$/src/main/java/FileUploadBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/GrowlBean.java" afterPath="$PROJECT_DIR$/src/main/java/GrowlBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Song.java" afterPath="$PROJECT_DIR$/src/main/java/Song.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/SongDatabase.java" afterPath="$PROJECT_DIR$/src/main/java/SongDatabase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.xhtml" afterPath="$PROJECT_DIR$/web/index.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/resources/css/standard.css" afterPath="$PROJECT_DIR$/web/resources/css/standard.css" />
     </list>
     <ignored path="OMT.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,7 +36,6 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
-  <component name="CoverageDataManager" choice="3" />
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
     <option name="REVERSE_PATCH" value="false" />
@@ -94,28 +84,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.xhtml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/index.xhtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="42" selection-start="2824" selection-end="2824" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="SongDatabase.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/SongDatabase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="61" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0">
+            <state line="10" column="54" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workspace.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="493" column="109" selection-start="22052" selection-end="22052" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="OMT.iml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OMT.iml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="12" selection-start="485" selection-end="485" vertical-scroll-proportion="0.2266881">
+            <state line="17" column="135" selection-start="1752" selection-end="1762" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -124,7 +116,7 @@
       <file leaf-file-name="Song.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Song.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="67" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0">
+            <state line="3" column="0" selection-start="56" selection-end="393" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -148,10 +140,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FileUploadBean.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="FileUploadBean.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/FileUploadBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="36" selection-start="536" selection-end="536" vertical-scroll-proportion="0.0">
+            <state line="31" column="21" selection-start="932" selection-end="932" vertical-scroll-proportion="0.32553193">
               <folding />
             </state>
           </provider>
@@ -161,6 +153,15 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/EvaluationWizardBean.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="18" column="72" selection-start="437" selection-end="437" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GrowlBean.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/GrowlBean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="79" selection-start="121" selection-end="197" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -189,9 +190,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/../OMT-Engine/tests/de/freebits/omt/core/streams/StreamSegregationTest.java" />
-        <option value="$PROJECT_DIR$/../OMT-Engine/tests/de/freebits/omt/core/MelodyTestSuite.java" />
-        <option value="$PROJECT_DIR$/src/main/java/FileUploadController.java" />
         <option value="$PROJECT_DIR$/web/resources/css/standard.css" />
         <option value="$PROJECT_DIR$/src/main/java/OmtDesktopBean.java" />
         <option value="$PROJECT_DIR$/WEB-INF/beans.xml" />
@@ -205,6 +203,9 @@
         <option value="$PROJECT_DIR$/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/web/index.xhtml" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/OMT.iml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
       </list>
     </option>
   </component>
@@ -273,7 +274,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -291,14 +291,8 @@
               <option name="myItemId" value="OMT" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="OMT" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OMT" />
+              <option name="myItemId" value="OMT_noncdi" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -308,21 +302,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="OMT" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OMT" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OMT" />
+              <option name="myItemId" value="OMT_noncdi" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -336,35 +316,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="OMT" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OMT" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OMT" />
+              <option name="myItemId" value="OMT_noncdi" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -372,7 +330,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="OMT" />
+              <option name="myItemId" value="OMT_noncdi" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -388,8 +346,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OMT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OMT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Favorites" />
       <pane id="Scope">
         <subPane>
           <PATH>
@@ -509,21 +484,11 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OMT" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
@@ -562,7 +527,7 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="OMT-Engine" />
+      <module name="OMT-Engine_noncdi" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
       <option name="PACKAGE_NAME" value="de.freebits.omt.core.streams" />
@@ -571,7 +536,7 @@
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="" />
       <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../OMT-Engine" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../OMT-Engine_noncdi" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
@@ -599,6 +564,7 @@
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
         <option name="Maven.BeforeRunTask" enabled="false" />
+        <option name="PhingTarget" enabled="false" />
       </method>
     </configuration>
     <configuration default="true" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="Glassfish 3.1">
@@ -654,6 +620,7 @@
         <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="true" />
         <option name="Maven.BeforeRunTask" enabled="false" />
+        <option name="PhingTarget" enabled="false" />
       </method>
     </configuration>
     <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" adl_options="" air_descriptor_path="" air_program_params="" air_publisher_id="" air_root_dir_path="" air_run_mode="AppDescriptor" browser_family="FIREFOX" class_name="" debugger_sdk="Module SDK" html_or_swf_file_path="" launcher_type="OSDefault" main_class_name="" method_name="" module_name="" output_log_level="" package_name="" player_path="FlashPlayer.exe" port="0" run_mode="HtmlOrSwfFile" run_trusted="false" scope="Class" socket_policy_port="0" url_to_launch="http://">
@@ -662,6 +629,7 @@
         <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="true" />
         <option name="Maven.BeforeRunTask" enabled="false" />
+        <option name="PhingTarget" enabled="false" />
       </method>
     </configuration>
     <configuration default="true" type="GlassfishConfiguration" factoryName="Remote">
@@ -692,6 +660,7 @@
         <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="true" />
         <option name="Maven.BeforeRunTask" enabled="false" />
+        <option name="PhingTarget" enabled="false" />
       </method>
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -710,6 +679,7 @@
         <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="true" />
         <option name="Maven.BeforeRunTask" enabled="false" />
+        <option name="PhingTarget" enabled="false" />
       </method>
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -743,6 +713,7 @@
         <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="true" />
         <option name="Maven.BeforeRunTask" enabled="false" />
+        <option name="PhingTarget" enabled="false" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -763,6 +734,7 @@
         <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="true" />
         <option name="Maven.BeforeRunTask" enabled="false" />
+        <option name="PhingTarget" enabled="false" />
       </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -789,6 +761,7 @@
         <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="true" />
         <option name="Maven.BeforeRunTask" enabled="false" />
+        <option name="PhingTarget" enabled="false" />
       </method>
     </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
@@ -800,6 +773,7 @@
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
         <option name="Maven.BeforeRunTask" enabled="false" />
+        <option name="PhingTarget" enabled="false" />
       </method>
     </configuration>
     <configuration default="false" name="Glassfish 3.1.0" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="Glassfish 3.1">
@@ -916,6 +890,8 @@
   <component name="SvnConfiguration" maxAnnotateRevisions="500">
     <option name="USER" value="" />
     <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
     <option name="LAST_MERGED_REVISION" />
     <option name="MERGE_DRY_RUN" value="false" />
     <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
@@ -928,29 +904,30 @@
     <option name="FORCE_UPDATE" value="false" />
     <configuration useDefault="false">C:\Users\Marcel\AppData\Roaming\Subversion</configuration>
     <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+    <supportedVersion>125</supportedVersion>
   </component>
   <component name="SvnFileUrlMappingImpl">
     <option name="myMappingRoots">
       <list>
         <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="C:\Programmierung\OMT\trunk\OMT" />
-          <option name="myCopyRoot" value="C:\Programmierung\OMT\trunk\OMT" />
+          <option name="myVcsRoot" value="C:\Programmierung\OMT\tags\OMT-Engine_noncdi" />
+          <option name="myCopyRoot" value="C:\Programmierung\OMT\tags\OMT-Engine_noncdi" />
         </SvnCopyRootSimple>
         <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="C:\Programmierung\OMT\trunk\OMT-Engine" />
-          <option name="myCopyRoot" value="C:\Programmierung\OMT\trunk\OMT-Engine" />
+          <option name="myVcsRoot" value="C:\Programmierung\OMT\tags\OMT_noncdi" />
+          <option name="myCopyRoot" value="C:\Programmierung\OMT\tags\OMT_noncdi" />
         </SvnCopyRootSimple>
       </list>
     </option>
     <option name="myMoreRealMappingRoots">
       <list>
         <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="C:\Programmierung\OMT\trunk\OMT" />
-          <option name="myCopyRoot" value="C:\Programmierung\OMT\trunk\OMT" />
+          <option name="myVcsRoot" value="C:\Programmierung\OMT\tags\OMT-Engine_noncdi" />
+          <option name="myCopyRoot" value="C:\Programmierung\OMT\tags\OMT-Engine_noncdi" />
         </SvnCopyRootSimple>
         <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="C:\Programmierung\OMT\trunk\OMT-Engine" />
-          <option name="myCopyRoot" value="C:\Programmierung\OMT\trunk\OMT-Engine" />
+          <option name="myVcsRoot" value="C:\Programmierung\OMT\tags\OMT_noncdi" />
+          <option name="myCopyRoot" value="C:\Programmierung\OMT\tags\OMT_noncdi" />
         </SvnCopyRootSimple>
       </list>
     </option>
@@ -985,10 +962,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="SQL" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -999,7 +977,6 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32994652" sideWeight="0.6030205" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="simpleUML" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32885212" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24919786" sideWeight="0.33656958" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1014,12 +991,22 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32885212" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.399137" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="myTodoPanelSettings">
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
+    </option>
     <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
     <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
     <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
@@ -1031,6 +1018,7 @@
     <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
     <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="LAST_COMMIT_MESSAGE" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
@@ -1088,29 +1076,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.6.0_24/src.zip!/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="13" selection-start="495" selection-end="495" vertical-scroll-proportion="0.23684211" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/seam-3.0.0.Final/seam-3.0.0.Final/examples/config-princess-rescue/src/main/webapp/WEB-INF/beans.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../sources/javax.inject-1.0-PFD-1/javax.inject-1.0-PFD-1-sources.jar!/javax/inject/Named.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="18" selection-start="1108" selection-end="1108" vertical-scroll-proportion="0.64849627" />
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/seam-3.0.0.Final/seam-3.0.0.Final/examples/config-princess-rescue/src/main/webapp/META-INF/MANIFEST.MF">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="171" selection-start="35" selection-end="35" vertical-scroll-proportion="0.06390978" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OMT.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
@@ -1128,14 +1096,31 @@
         <state line="64" column="42" selection-start="2824" selection-end="2824" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SongDatabase.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="61" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0" />
+        <state line="34" column="92" selection-start="1120" selection-end="1120" vertical-scroll-proportion="0.6422222" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="125" selection-start="331" selection-end="331" vertical-scroll-proportion="0.094444446" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="493" column="109" selection-start="22052" selection-end="22052" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OMT.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="135" selection-start="1752" selection-end="1762" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Song.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="67" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0" />
+        <state line="3" column="0" selection-start="56" selection-end="393" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/META-INF/beans.xml">
@@ -1151,17 +1136,20 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/FileUploadBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="36" selection-start="536" selection-end="536" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/EvaluationWizardBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="72" selection-start="437" selection-end="437" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GrowlBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="79" selection-start="121" selection-end="197" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/WEB-INF/web.xml">
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="17" selection-start="1071" selection-end="1071" vertical-scroll-proportion="0.0" />
       </provider>
@@ -1171,13 +1159,19 @@
       <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
         <state />
       </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
-        <state />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/SongDatabase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="54" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/FileUploadBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="12" selection-start="485" selection-end="485" vertical-scroll-proportion="0.2266881">
+        <state line="31" column="21" selection-start="932" selection-end="932" vertical-scroll-proportion="0.32553193">
           <folding />
         </state>
       </provider>
@@ -1205,7 +1199,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.20746888" />
+                <option value="0.24232365" />
               </list>
             </option>
           </splitter-proportions>
@@ -1237,11 +1231,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>CDI|OMT</last-edited>
+          <last-edited>OMT</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.24232365" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
