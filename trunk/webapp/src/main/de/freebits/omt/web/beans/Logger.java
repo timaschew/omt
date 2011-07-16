@@ -2,7 +2,7 @@ package de.freebits.omt.web.beans;
 
 import de.freebits.omt.web.handler.LoggingHandler;
 
-import javax.faces.bean.SessionScoped;
+import javax.enterprise.context.SessionScoped;
 import javax.inject.Named;
 import java.io.Serializable;
 import java.util.HashSet;

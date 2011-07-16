@@ -9,7 +9,7 @@ import de.freebits.omt.core.processing.events.ProcessingEvent;
 import de.freebits.omt.core.processing.listener.ProcessingListener;
 
 /**
- * Default implementation of a generic processor.
+ * Default implementation of a generic music event processor.
  * 
  * @author Marcel Karras
  */

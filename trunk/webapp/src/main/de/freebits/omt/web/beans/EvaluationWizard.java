@@ -2,15 +2,20 @@ package de.freebits.omt.web.beans;
 
 import de.freebits.omt.web.handler.LoggingHandler;
 import de.freebits.omt.web.helpers.FileHelper;
+import de.freebits.omt.web.javascript.JSWizardDialog;
 import org.primefaces.component.wizard.Wizard;
+import org.primefaces.event.CloseEvent;
 import org.primefaces.event.FileUploadEvent;
 import org.primefaces.event.FlowEvent;
 
 import javax.annotation.PostConstruct;
+import javax.enterprise.context.Conversation;
+import javax.enterprise.context.ConversationScoped;
 import javax.enterprise.context.SessionScoped;
-import javax.faces.application.FacesMessage;
+import javax.faces.bean.ViewScoped;
 import javax.faces.context.ExternalContext;
 import javax.faces.context.FacesContext;
+import javax.faces.event.ActionEvent;
 import javax.inject.Inject;
 import javax.inject.Named;
 import java.io.File;
@@ -24,124 +29,179 @@ import java.io.Serializable;
  * @author Marcel Karras
  */
 @Named
-@SessionScoped
+@ConversationScoped
 public class EvaluationWizard implements Serializable, LoggingHandler {
 
-	// selected song to be evaluated
-	private Song selectedSong;
+    /**
+     * Widget variable for the wizard component.
+     */
+    public static final String WIZARD_WIDGET_VAR = "wvWizard";
+    public static final String DIALOG_WIDGET_VAR = "wvCreationWizard";
 
-	// song database of available songs
-	@Inject
-	private SongDatabase songDatabase;
+    @Inject
+    private TestBean testBean;
 
-	// growl bean for display of messages
-	@Inject
-	private Growl growl;
+    @Inject
+    private Conversation conversation;
 
-	// uploaded midi file resource
-	private File midiUploadFile;
+    // selected song to be evaluated
+    @Inject
+    private Song selectedSong;
 
-	private String status;
+    // song database of available songs
+    @Inject
+    private SongDatabase songDatabase;
 
-	@Inject
-	private Logger logger;
+    // growl bean for display of messages
+    @Inject
+    private Growl growl;
 
-	private Wizard wizard;
+    private Wizard wizard;
 
-	public Wizard getWizard() {
-		return wizard;
-	}
+    public Wizard getWizard() {
+        return wizard;
+    }
 
-	public void setWizard(Wizard wizard) {
-		this.wizard = wizard;
-	}
+    public void setWizard(Wizard wizard) {
+        this.wizard = wizard;
+    }
 
-	/**
-	 * This method will be executed when the song database has been injected.
-	 */
-	@PostConstruct
-	private void initWizard() {
-		logger.addHandler(this);
-		// set default selected song
-		selectedSong = (Song) songDatabase.getSongList()[0].getValue();
-	}
+    // uploaded midi file resource
+    private File midiUploadFile;
 
-	/**
-	 * Set the song that to be evaluated.
-	 *
-	 * @param song song object
-	 */
-	public void setSelectedSong(final Song song) {
-		selectedSong = song;
-	}
+    private String status;
 
-	/**
-	 * Get the song that will be evaluated.
-	 *
-	 * @return song object
-	 */
-	public Song getSelectedSong() {
-		return selectedSong;
-	}
+    @Inject
+    private Logger logger;
 
-	/**
-	 * Handler for midi file uploads.
-	 *
-	 * @param event upload event
-	 */
-	public void handleFileUpload(final FileUploadEvent event) {
-		// get the real path for the upload directory
-		ExternalContext extContext = FacesContext.getCurrentInstance().getExternalContext();
-		File midiFile = new File(extContext.getRealPath("/upload") + "/" + event.getFile().getFileName());
+    /**
+     * This method will be executed after all beans have been injected.
+     */
+    @PostConstruct
+    private void initWizard() {
+        logger.addHandler(this);
+        // set default selected song
+        selectedSong = (Song) songDatabase.getSongList()[0].getValue();
+        testBean.setTestString(System.currentTimeMillis()+"");
+    }
 
-		try {
-			// write temporary file to a real file destination
-			FileHelper.writeInputToOutputStream(event.getFile().getInputstream(), new FileOutputStream(midiFile));
-			// set uploaded file for current wizard process
-			midiUploadFile = midiFile;
-			// success message
-			growl.showMessage("MIDI Upload erfolgreich", event.getFile().getFileName() +
-					" wurde erfolgreich hochgeladen.");
-			setStatus("TEST 123");
-		} catch (IOException e) {
-			// error message
-			growl.showErrorMessage("Fehler", event.getFile().getFileName() + " konnte nicht hochgeladen werden.");
-		}
-	}
+    /**
+     * Set the song that to be evaluated.
+     *
+     * @param song song object
+     */
+    public void setSelectedSong(final Song song) {
+        selectedSong = song;
+    }
 
-	public String getStatus() {
-		return status;
-	}
+    /**
+     * Get the song that will be evaluated.
+     *
+     * @return song object
+     */
+    public Song getSelectedSong() {
+        return selectedSong;
+    }
 
-	public void setStatus(String status) {
-		this.status = status;
-	}
+    /**
+     * Handler for midi file uploads.
+     *
+     * @param event upload event
+     */
+    public void handleFileUpload(final FileUploadEvent event) {
+        // get the real path for the upload directory
+        ExternalContext extContext = FacesContext.getCurrentInstance().getExternalContext();
+        File midiFile = new File(extContext.getRealPath("/upload") + "/" + event.getFile().getFileName());
 
-	/**
-	 * Listener method for wizard flow processes.
-	 *
-	 * @param event flow event
-	 * @return string representing the next step to go to
-	 */
-	public String onFlowProcess(final FlowEvent event) {
-		//logger.info("Current wizard step:" + event.getOldStep());
-		//logger.info("Next step:" + event.getNewStep());
+        try {
+            // write temporary file to a real file destination
+            FileHelper.writeInputToOutputStream(event.getFile().getInputstream(), new FileOutputStream(midiFile));
+            // set uploaded file for current wizard process
+            midiUploadFile = midiFile;
+            // success message
+            growl.showMessage("MIDI Upload erfolgreich", event.getFile().getFileName() +
+                    " wurde erfolgreich hochgeladen.");
+            setStatus("TEST 123");
+        } catch (IOException e) {
+            // error message
+            growl.showErrorMessage("Fehler", event.getFile().getFileName() + " konnte nicht hochgeladen werden.");
+        }
+    }
 
-		logger.info("Testnachricht");
+    public String getStatus() {
+        return status;
+    }
 
-		return event.getNewStep();
-	}
+    public void setStatus(String status) {
+        this.status = status;
+    }
 
-	public Logger getLogger() {
-		return logger;
-	}
+    /**
+     * Listener method for wizard flow processes.
+     *
+     * @param event flow event
+     * @return string representing the next step to go to
+     */
+    public String onFlowProcess(final FlowEvent event) {
+        if (event.getOldStep().compareTo("tabSelectEvaluation") == 0) {
+            return "tabSelectSong";
+        }
+        return event.getNewStep();
+    }
 
-	public void setLogger(Logger logger) {
-		this.logger = logger;
-	}
+    public void setLogger(Logger logger) {
+        this.logger = logger;
+    }
 
-	@Override
-	public void loggingEvent(final String logEvent) {
-		FacesContext.getCurrentInstance().addMessage(null, new FacesMessage("lala","po"));
-	}
+    @Override
+    public void loggingEvent(final String logEvent) {
+        growl.showMessage(logEvent);
+    }
+
+    /**
+     * Called if the wizard processes to the next step.
+     *
+     * @param actionEvent the action event of wizard next step button
+     */
+    public void onNext(final ActionEvent actionEvent) {
+        if (wizard.getStep().compareTo("tabSelectEvaluation") == 0) {
+            JSWizardDialog.close(DIALOG_WIDGET_VAR);
+            JSWizardDialog.next(WIZARD_WIDGET_VAR);
+        } else {
+            JSWizardDialog.next(WIZARD_WIDGET_VAR);
+        }
+    }
+
+    public void startConversation(){
+        if(conversation.isTransient()){
+            conversation.begin();
+            testBean.setTestString(System.currentTimeMillis()+"");
+        }
+    }
+
+    /**
+     * Called on wizard dialog opening.
+     *
+     * @param actionEvent the action event of the component opening the dialog
+     */
+    public void onDialogOpen(final ActionEvent actionEvent) {
+        // start conversation on first wizard step
+        //if (wizard.getStep().compareTo("tabSelectSong") == 0) {
+        //    conversation.begin();
+        //}
+        // start a new conversation on first wizard step
+        JSWizardDialog.open(DIALOG_WIDGET_VAR);
+    }
+
+    /**
+     * Zurücksetzen der Wizard Backing Bean.
+     *
+     * @param closeEvent the close event of the closing dialog
+     */
+    public void onDialogClose(final CloseEvent closeEvent) {
+        // end conversation when wizard dialog closes
+        if(!conversation.isTransient()){
+            conversation.end();
+        }
+    }
 }

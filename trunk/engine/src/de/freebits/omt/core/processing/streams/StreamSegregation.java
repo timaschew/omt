@@ -14,7 +14,7 @@ import de.freebits.omt.core.tools.events.ProgressEventListener;
 /**
  * The stream segregation engine tries to detect streams on the basis of
  * psychoacoustic phenomena.
- * 
+ *
  * @author Marcel Karras
  */
 public class StreamSegregation {
@@ -33,6 +33,7 @@ public class StreamSegregation {
 
 	// constant defining the weight of time in the euclidian distance of events
 	private static final double TIME_WEIGHT = 1000.0;
+
 	// constant defining the weight of pitch in the euclidian distance of events
 	/**
 	 * TODO: needs to be quite dynamic (parallel chord movements can make
@@ -48,7 +49,7 @@ public class StreamSegregation {
 
 	/**
 	 * Calculate the distance in pitch between two music events.
-	 * 
+	 *
 	 * @param e1
 	 *            first event
 	 * @param e2
@@ -62,7 +63,7 @@ public class StreamSegregation {
 
 	/**
 	 * Calculate the distance in time between two music events.
-	 * 
+	 *
 	 * @param e1
 	 *            first event
 	 * @param e2
@@ -98,7 +99,7 @@ public class StreamSegregation {
 
 	/**
 	 * Initialize the stream segregation class.
-	 * 
+	 *
 	 * @param eventList
 	 */
 	public StreamSegregation(final List<MusicEvent> eventList) {
@@ -107,7 +108,7 @@ public class StreamSegregation {
 
 	/**
 	 * Add a listener to be signalled on progress changes.
-	 * 
+	 *
 	 * @param pel
 	 *            progress listener
 	 */
@@ -119,7 +120,7 @@ public class StreamSegregation {
 	 * Calculate the distance between two clusters. The distance between time
 	 * intersecting (simultanous) clusters is infinite. The calculation is
 	 * hashed until {@link #generateClustering()} is called.
-	 * 
+	 *
 	 * @param c1
 	 *            first cluster
 	 * @param c2
@@ -198,7 +199,7 @@ public class StreamSegregation {
 	 * Calculate the distance between two music events. The distance between
 	 * time intersecting (parallel) events is infinite. (euclidian distance) The
 	 * calculation is hashed until {@link #generateClustering()} is called.
-	 * 
+	 *
 	 * @param e1
 	 *            first event
 	 * @param e2
@@ -244,7 +245,7 @@ public class StreamSegregation {
 
 	/**
 	 * Calculate the chord bias distance of two given chord bias values.
-	 * 
+	 *
 	 * @param cBias1
 	 *            first bias
 	 * @param cBias2
@@ -259,7 +260,7 @@ public class StreamSegregation {
 
 	/**
 	 * Generate a clustering of streams.
-	 * 
+	 *
 	 * @return stream clustering
 	 */
 	public final Clustering generateClustering() {
@@ -309,7 +310,7 @@ public class StreamSegregation {
 
 	/**
 	 * Get the pitch co-modulation neighbor count.
-	 * 
+	 *
 	 * @return neighbor count (each assigned to the left and right)
 	 */
 	public int getCoModNeighborCount() {
@@ -341,7 +342,7 @@ public class StreamSegregation {
 
 	/**
 	 * Set the pitch co-modulation neighbor count.
-	 * 
+	 *
 	 * @param coModNeighborCount
 	 *            neighbor count (each assigned to the left and right)
 	 */
@@ -351,7 +352,7 @@ public class StreamSegregation {
 
 	/**
 	 * Signal progress events to registered listeners.
-	 * 
+	 *
 	 * @param event
 	 *            progress event
 	 */

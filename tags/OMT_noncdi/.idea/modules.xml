@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/OMT.iml" filepath="$PROJECT_DIR$/OMT.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../OMT-Engine/OMT-Engine.iml" filepath="$PROJECT_DIR$/../OMT-Engine/OMT-Engine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../OMT-Engine_noncdi/OMT-Engine.iml" filepath="$PROJECT_DIR$/../OMT-Engine_noncdi/OMT-Engine.iml" />
     </modules>
   </component>
 </project>

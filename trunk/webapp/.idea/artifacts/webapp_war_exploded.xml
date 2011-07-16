@@ -8,12 +8,12 @@
           <element id="module-output" name="webapp" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="application" name="Commons IO 2.0.1" />
-          <element id="library" level="application" name="Commons Fileupload 1.2.2" />
-          <element id="library" level="application" name="Mojarra.2.2.1" />
-          <element id="library" level="application" name="Primefaces 3.0 Prime 1" />
-          <element id="library" level="application" name="Java Inject" />
-          <element id="library" level="application" name="CDI API 1.0-SP2" />
+          <element id="library" level="application" name="Javax Inject 1.0-PFD-1" />
+          <element id="library" level="application" name="Primefaces 3.0 SNAPSHOT" />
+          <element id="library" level="application" name="Apache Commons-IO 2.0.1" />
+          <element id="library" level="application" name="Apache Commons-Fileupload 1.2.2" />
+          <element id="library" level="application" name="CDI API 1.0 SP2" />
+          <element id="library" level="application" name="Mojarra 2.1.1" />
         </element>
       </element>
     </root>

@@ -6,7 +6,8 @@ import jm.music.data.Note;
 
 /**
  * Processing event for trills.
- * 
+ *
+ * @see <a href="http://en.wikipedia.org/wiki/Trill_(music)">Wikipedia: Trill</a>
  * @author Marcel Karras
  */
 public class TrillEvent implements ProcessingEvent {

@@ -24,13 +24,12 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Commons IO 2.0.1" level="application" />
-    <orderEntry type="library" name="Commons Fileupload 1.2.2" level="application" />
-    <orderEntry type="library" name="Mojarra.2.2.1" level="application" />
-    <orderEntry type="library" name="Java EE 6" level="application" />
-    <orderEntry type="library" name="Primefaces 3.0 Prime 1" level="application" />
-    <orderEntry type="library" name="Java Inject" level="application" />
-    <orderEntry type="library" name="CDI API 1.0-SP2" level="application" />
+    <orderEntry type="library" name="CDI API 1.0 SP2" level="application" />
+    <orderEntry type="library" name="Apache Commons-Fileupload 1.2.2" level="application" />
+    <orderEntry type="library" name="Apache Commons-IO 2.0.1" level="application" />
+    <orderEntry type="library" name="Primefaces 3.0 SNAPSHOT" level="application" />
+    <orderEntry type="library" name="Javax Inject 1.0-PFD-1" level="application" />
+    <orderEntry type="library" name="Mojarra 2.1.1" level="application" />
   </component>
 </module>
 

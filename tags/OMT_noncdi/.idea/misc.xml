@@ -38,6 +38,37 @@
   <component name="EntryPointsManager">
     <entry_points version="2.0" />
   </component>
+  <component name="FacetAutodetectingManager">
+    <autodetection-disabled>
+      <facet-type id="javaeeApplication">
+        <modules>
+          <module name="OMT">
+            <files>
+              <file url="file://$PROJECT_DIR$/META-INF/application.xml" />
+            </files>
+          </module>
+        </modules>
+      </facet-type>
+      <facet-type id="web">
+        <modules>
+          <module name="OMT">
+            <files>
+              <file url="file://$PROJECT_DIR$/WEB-INF/web.xml" />
+            </files>
+          </module>
+        </modules>
+      </facet-type>
+      <facet-type id="WebBeans">
+        <modules>
+          <module name="OMT">
+            <files>
+              <file url="file://$PROJECT_DIR$/META-INF/beans.xml" />
+            </files>
+          </module>
+        </modules>
+      </facet-type>
+    </autodetection-disabled>
+  </component>
   <component name="IdProvider" IDEtalkID="85468E99D0208DB910F1E8E2394C8412" />
   <component name="InspectionPassRegistrar">
     <option name="LOAD_NEW_PROBLEMS" value="true" />

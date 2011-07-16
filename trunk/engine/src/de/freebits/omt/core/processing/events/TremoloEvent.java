@@ -6,7 +6,8 @@ import jm.music.data.Note;
 
 /**
  * Processing event for tremoli.
- * 
+ *
+ * @see <a href="http://en.wikipedia.org/wiki/Tremolo">Wikipedia: Tremolo</a>
  * @author Marcel Karras
  */
 public class TremoloEvent implements ProcessingEvent {

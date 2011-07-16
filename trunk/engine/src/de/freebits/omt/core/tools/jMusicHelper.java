@@ -45,6 +45,18 @@ public class jMusicHelper {
 						String name = f.getName();
 						if (name.contains("FF"))
 							return name.replace("FF", "E");
+                        if (name.contains("CF"))
+							return name.replace("CF", "H");
+                        if (name.contains("DF"))
+							return name.replace("DF", "C#");
+                        if (name.contains("EF"))
+							return name.replace("EF", "D#");
+                        if (name.contains("GF"))
+							return name.replace("GF", "F#");
+                        if (name.contains("AF"))
+							return name.replace("AF", "G#");
+                        if (name.contains("BF"))
+							return name.replace("BF", "Bb");
 						return f.getName();
 					}
 				} catch (IllegalArgumentException e) {
