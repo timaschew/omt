@@ -1,12 +1,12 @@
 package de.freebits.omt.core.processing;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import jm.constants.Durations;
-import jm.music.data.Note;
 import de.freebits.omt.core.processing.events.TremoloEvent;
 import de.freebits.omt.core.rhythm.RhythmDistanceHelper;
+import jm.constants.Durations;
+import jm.music.data.Note;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Processor for tremolo recognitions.

@@ -1,10 +1,10 @@
 package de.freebits.omt.core.processing.streams;
 
-import java.util.ArrayList;
-
 import de.freebits.omt.core.AcousticConstants;
 import de.freebits.omt.core.structures.Chord;
 import de.freebits.omt.core.structures.MusicEventNote;
+
+import java.util.ArrayList;
 
 /**
  * A cluster representing a stream.
