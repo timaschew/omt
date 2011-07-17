@@ -18,25 +18,44 @@ import java.util.List;
  * <li>maximum note duration of 150ms</li>
  * <li>must be in C major or F# major scale</li>
  * <li>movement direction must be kept over all notes (otherwise more than one glissando)</li>
- * <li>TODO: minimum pause of 20ms between glissando notes</li>
+ * <li>maximum pause of 50ms between glissando notes</li>
+ * <li>maximum of 3 semitone steps in movement</li>
+ * <li>minimum of 25ms onset differences from one note to the next note</li>
  * </ul>
  *
  * @author Marcel Karras
- * @see de.freebits.omt.core.processing.events.GlissandoEvent
+ * @see GlissandoEvent
  */
 public class GlissandoProcessor extends DefaultProcessor implements NoteProcessor {
 
-    // maximum of note duration time in seconds
+    /**
+     * maximum of note duration time in seconds
+     */
     private static final double MAX_NOTE_DURATION = 0.15;
-    private static final double MAX_NOTE_PAUSE = 0.03;
-    // Cmaj scale
-    private static final byte[] C_MAJOR_SCALE = Scales.MAJOR_SCALE;
-    // F#maj scale
-    private static final byte[] F_MAJOR_SCALE = HarmonyHelper.shiftScale(Scales.MAJOR_SCALE, 6);
-    // minimum of 4 notes
+    /**
+     * maximum pause of 50ms between glissando notes
+     */
+    private static final double MAX_NOTE_PAUSE = 0.05;
+    /**
+     * maximum of 3 semitone steps in movement
+     */
+    private static final double MAX_PITCH_STEP = 3;
+    /**
+     * minimum of 4 notes
+     */
     private static final int MIN_NOTES_COUNT = 4;
 
-    // the note components
+    /**
+     * Cmaj scale
+     */
+    private static final byte[] C_MAJOR_SCALE = Scales.MAJOR_SCALE;
+    /**
+     * F#maj scale
+     */
+    private static final byte[] F_MAJOR_SCALE = HarmonyHelper.shiftScale(Scales.MAJOR_SCALE, 6);
+    /**
+     * the candidate notes
+     */
     private List<Note> glissandoNotes = new ArrayList<Note>();
 
     @Override
@@ -62,12 +81,13 @@ public class GlissandoProcessor extends DefaultProcessor implements NoteProcesso
                 final Note lastNote = glissandoNotes.get(glissandoNotes.size() - 1);
                 double lastNoteDuration = lastNote.getRhythmValue() * 60.0 / s.getTempo();
                 if (glissandoNotes.size() == 1) {
-                    // solo note always meets requirements
+                    // solo note always meets requirements - TODO: if entfernen
                     meetRequirements = true;
                 } else {
-                    // condition: pause between notes
+                    // condition: pause between notes, pitch difference
                     if (note.getSampleStartTime() - (lastNote.getSampleStartTime() +
-                            lastNoteDuration) <= MAX_NOTE_PAUSE) {
+                            lastNoteDuration) <= MAX_NOTE_PAUSE &&
+                            Math.abs(lastNote.getPitch() - note.getPitch()) <= MAX_PITCH_STEP) {
                         // check if the movement is kept
                         if (movementUp && lastNote.getPitch() < note.getPitch()) {
                             meetRequirements = true;
@@ -90,7 +110,7 @@ public class GlissandoProcessor extends DefaultProcessor implements NoteProcesso
                 // here the glissando detection failed too soon to build a full one,
                 // so remove first note and retry using the remaining ones
                 glissandoNotes.remove(0);
-                // recursive processing
+                // recursive reprocessing of the current note without first candidate note
                 processNote(note);
                 return;
             }
@@ -99,7 +119,6 @@ public class GlissandoProcessor extends DefaultProcessor implements NoteProcesso
             if (meetStartNoteReq) {
                 glissandoNotes.add(note);
             }
-            return;
         } else {
             glissandoNotes.add(note);
         }

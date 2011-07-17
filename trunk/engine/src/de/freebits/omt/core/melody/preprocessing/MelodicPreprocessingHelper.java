@@ -26,7 +26,7 @@ public class MelodicPreprocessingHelper {
         // create tremolo processor
         final TremoloProcessor tremProc = new TremoloProcessor();
         // create arpeggio processor
-        final ArpeggioProcessor arpProc = new ArpeggioProcessor();
+        final ArpeggioProcessor arpProc = new ArpeggioProcessor(scale);
         // create acciaccatura processor
         final AcciaccaturaProcessor accProc = new AcciaccaturaProcessor();
         // create glissando processor
@@ -39,25 +39,25 @@ public class MelodicPreprocessingHelper {
                 if (processingEvent instanceof TrillEvent) {
                     System.out.print("==> Trill found: ");
                     for (Note n : ((TrillEvent) processingEvent).getTrillNotes()) {
-                        System.out.print(n.getNote() + " ");
+                        System.out.print(jMusicHelper.getNameOfMidiPitch(n.getPitch()) + " ");
                     }
                     System.out.println();
                 } else if (processingEvent instanceof TremoloEvent) {
                     System.out.print("==> Tremolo found: ");
                     for (Note n : ((TremoloEvent) processingEvent).getTremoloNotes()) {
-                        System.out.print(n.getNote() + " ");
+                        System.out.print(jMusicHelper.getNameOfMidiPitch(n.getPitch()) + " ");
                     }
                     System.out.println();
                 } else if (processingEvent instanceof ArpeggioEvent) {
                     System.out.print("==> Arpeggio found: ");
                     for (Note n : ((ArpeggioEvent) processingEvent).getArpeggioNotes()) {
-                        System.out.print(n.getNote() + " ");
+                        System.out.print(jMusicHelper.getNameOfMidiPitch(n.getPitch()) + " ");
                     }
                     System.out.println();
                 } else if (processingEvent instanceof AcciaccaturaEvent) {
                     System.out.print("==> Acciaccatura found: ");
                     for (Note n : ((AcciaccaturaEvent) processingEvent).getAcciaccaturaNotes()) {
-                        System.out.print(n.getNote() + " ");
+                        System.out.print(jMusicHelper.getNameOfMidiPitch(n.getPitch()) + " ");
                     }
                     System.out.println();
                 } else if (processingEvent instanceof GlissandoEvent) {
@@ -82,7 +82,7 @@ public class MelodicPreprocessingHelper {
                 noteList.add(((SingleNote) me).getNote());
             } else if (me instanceof Chord) {
                 //System.out.println("Chord found!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-                noteList = ((Chord) me).getNoteList();
+                noteList = ((Chord) me).getNoteList(true);
             }
             // process single note or chord all chord notes
             for (final Note n : noteList) {
@@ -91,13 +91,13 @@ public class MelodicPreprocessingHelper {
                 else
                     System.out.println("Processing note: " + n.getPitch() + "(" +
                             jMusicHelper.getNameOfMidiPitch(n.getPitch()) + ")"
-                            + " - " + n.getRhythmValue());
+                            + " - " + n.getSampleStartTime());
                 // TODO: re-enable pre-processing processors
                 //trillProc.processNote(n);
                 //tremProc.processNote(n);
-                //arpProc.processNote(n);
+                arpProc.processNote(n);
                 //accProc.processNote(n);
-                glissProc.processNote(n);
+                //glissProc.processNote(n);
             }
         }
         // finish processor

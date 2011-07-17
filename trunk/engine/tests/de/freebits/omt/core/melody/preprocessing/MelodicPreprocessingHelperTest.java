@@ -16,8 +16,8 @@ import de.freebits.omt.core.structures.MusicEvent;
 import de.freebits.omt.core.tools.jMusicHelper;
 
 /**
- * Test Cases for the {@link de.freebits.omt.core.melody.preprocessing.MelodicPreprocessingHelper} class.
- * 
+ * Test Cases for the {@link MelodicPreprocessingHelper} class.
+ *
  * @author Marcel Karras
  */
 public class MelodicPreprocessingHelperTest {
@@ -32,12 +32,12 @@ public class MelodicPreprocessingHelperTest {
 	public static void initialize() {
 		// read midi score
 		score = new Score();
-		Read.midi(score, "tests/ressources/preprocessing/Glissando_002.mid");
+		Read.midi(score, "tests/ressources/preprocessing/Arpeggio_002.mid");
 	}
 
 	/**
 	 * Test method for
-	 * {@link de.freebits.omt.core.melody.preprocessing.MelodicPreprocessingHelper#preprocess(java.util.List, byte[])}
+	 * {@link MelodicPreprocessingHelper#preprocess(java.util.List, byte[])}
 	 * .
 	 */
 	@Test

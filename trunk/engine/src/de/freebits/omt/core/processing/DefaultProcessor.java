@@ -1,12 +1,12 @@
 package de.freebits.omt.core.processing;
 
+import de.freebits.omt.core.processing.events.ProcessingEvent;
+import de.freebits.omt.core.processing.listener.ProcessingListener;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-import de.freebits.omt.core.processing.events.ProcessingEvent;
-import de.freebits.omt.core.processing.listener.ProcessingListener;
 
 /**
  * Default implementation of a generic music event processor.

@@ -1,15 +1,15 @@
 package de.freebits.omt.core.processing.streams;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 import de.freebits.omt.core.AcousticConstants;
 import de.freebits.omt.core.structures.MusicEvent;
 import de.freebits.omt.core.structures.MusicEventNote;
 import de.freebits.omt.core.tools.events.ProgressEvent;
 import de.freebits.omt.core.tools.events.ProgressEventListener;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * The stream segregation engine tries to detect streams on the basis of

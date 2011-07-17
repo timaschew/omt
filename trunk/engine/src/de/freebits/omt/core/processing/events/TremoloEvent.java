@@ -1,8 +1,8 @@
 package de.freebits.omt.core.processing.events;
 
-import java.util.List;
-
 import jm.music.data.Note;
+
+import java.util.List;
 
 /**
  * Processing event for tremoli.

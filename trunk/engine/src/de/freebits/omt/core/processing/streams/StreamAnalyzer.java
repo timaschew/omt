@@ -1,13 +1,12 @@
 package de.freebits.omt.core.processing.streams;
 
+import de.freebits.omt.core.structures.MusicEvent;
+import jm.music.data.Note;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-import de.freebits.omt.core.structures.MusicEvent;
-
-import jm.music.data.Note;
 
 /**
  * Stream recognition helper.
