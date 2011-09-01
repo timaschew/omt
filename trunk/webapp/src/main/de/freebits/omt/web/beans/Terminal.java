@@ -1,7 +1,6 @@
 package de.freebits.omt.web.beans;
 
 import javax.enterprise.context.SessionScoped;
-import javax.faces.bean.ViewScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
 import java.io.Serializable;

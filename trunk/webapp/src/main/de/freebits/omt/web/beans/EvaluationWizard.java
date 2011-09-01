@@ -4,15 +4,14 @@ import de.freebits.omt.web.handler.LoggingHandler;
 import de.freebits.omt.web.helpers.FileHelper;
 import de.freebits.omt.web.javascript.JSWizardDialog;
 import org.primefaces.component.wizard.Wizard;
+import org.primefaces.context.RequestContext;
 import org.primefaces.event.CloseEvent;
 import org.primefaces.event.FileUploadEvent;
 import org.primefaces.event.FlowEvent;
 
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.Conversation;
-import javax.enterprise.context.ConversationScoped;
 import javax.enterprise.context.SessionScoped;
-import javax.faces.bean.ViewScoped;
 import javax.faces.context.ExternalContext;
 import javax.faces.context.FacesContext;
 import javax.faces.event.ActionEvent;
@@ -29,7 +28,7 @@ import java.io.Serializable;
  * @author Marcel Karras
  */
 @Named
-@ConversationScoped
+@SessionScoped
 public class EvaluationWizard implements Serializable, LoggingHandler {
 
     /**
@@ -38,8 +37,9 @@ public class EvaluationWizard implements Serializable, LoggingHandler {
     public static final String WIZARD_WIDGET_VAR = "wvWizard";
     public static final String DIALOG_WIDGET_VAR = "wvCreationWizard";
 
+    // dashboard containing evaluation setups
     @Inject
-    private TestBean testBean;
+    private Dashboard dashboard;
 
     @Inject
     private Conversation conversation;
@@ -51,6 +51,10 @@ public class EvaluationWizard implements Serializable, LoggingHandler {
     // song database of available songs
     @Inject
     private SongDatabase songDatabase;
+
+    // uploaded file object
+    @Inject
+    private UploadedFile uploadedFile;
 
     // growl bean for display of messages
     @Inject
@@ -66,9 +70,6 @@ public class EvaluationWizard implements Serializable, LoggingHandler {
         this.wizard = wizard;
     }
 
-    // uploaded midi file resource
-    private File midiUploadFile;
-
     private String status;
 
     @Inject
@@ -82,7 +83,6 @@ public class EvaluationWizard implements Serializable, LoggingHandler {
         logger.addHandler(this);
         // set default selected song
         selectedSong = (Song) songDatabase.getSongList()[0].getValue();
-        testBean.setTestString(System.currentTimeMillis()+"");
     }
 
     /**
@@ -111,20 +111,25 @@ public class EvaluationWizard implements Serializable, LoggingHandler {
     public void handleFileUpload(final FileUploadEvent event) {
         // get the real path for the upload directory
         ExternalContext extContext = FacesContext.getCurrentInstance().getExternalContext();
-        File midiFile = new File(extContext.getRealPath("/upload") + "/" + event.getFile().getFileName());
+        File midiFile = new File(extContext.getRealPath("/upload") + "/" + event.getFile()
+                .getFileName());
 
         try {
             // write temporary file to a real file destination
-            FileHelper.writeInputToOutputStream(event.getFile().getInputstream(), new FileOutputStream(midiFile));
+            FileHelper.writeInputToOutputStream(event.getFile().getInputstream(),
+                    new FileOutputStream(midiFile));
             // set uploaded file for current wizard process
-            midiUploadFile = midiFile;
+            uploadedFile = UploadedFile.createUploadedFile(midiFile, selectedSong);
             // success message
             growl.showMessage("MIDI Upload erfolgreich", event.getFile().getFileName() +
                     " wurde erfolgreich hochgeladen.");
-            setStatus("TEST 123");
+            setStatus("Ihre MIDI Datei mit dem Namen \"" + event.getFile().getFileName() + "\" " +
+                    "wurde " +
+                    "erfolgeich hochgeladen.");
         } catch (IOException e) {
             // error message
-            growl.showErrorMessage("Fehler", event.getFile().getFileName() + " konnte nicht hochgeladen werden.");
+            growl.showErrorMessage("Fehler", event.getFile().getFileName() + " konnte nicht " +
+                    "hochgeladen werden.");
         }
     }
 
@@ -167,15 +172,21 @@ public class EvaluationWizard implements Serializable, LoggingHandler {
         if (wizard.getStep().compareTo("tabSelectEvaluation") == 0) {
             JSWizardDialog.close(DIALOG_WIDGET_VAR);
             JSWizardDialog.next(WIZARD_WIDGET_VAR);
+            dashboard.addEvaluationSetup(new EvaluationSetup(
+                    FacesContext.getCurrentInstance().getViewRoot().createUniqueId(),
+                    selectedSong.getTitle(), uploadedFile));
+            status = null;
+            RequestContext.getCurrentInstance().addPartialUpdateTarget("dashboard");
+            RequestContext.getCurrentInstance().addPartialUpdateTarget("testPanel");
+
         } else {
             JSWizardDialog.next(WIZARD_WIDGET_VAR);
         }
     }
 
-    public void startConversation(){
-        if(conversation.isTransient()){
+    public void startConversation() {
+        if (conversation.isTransient()) {
             conversation.begin();
-            testBean.setTestString(System.currentTimeMillis()+"");
         }
     }
 
@@ -200,8 +211,21 @@ public class EvaluationWizard implements Serializable, LoggingHandler {
      */
     public void onDialogClose(final CloseEvent closeEvent) {
         // end conversation when wizard dialog closes
-        if(!conversation.isTransient()){
+        if (!conversation.isTransient()) {
             conversation.end();
         }
+    }
+
+    /**
+     * Get the name of the uploaded file.
+     *
+     * @return file name or null
+     */
+    public String getUploadFilename() {
+        if (uploadedFile == null)
+            return null;
+        if (uploadedFile.getFile() == null)
+            return null;
+        return uploadedFile.getFile().getName();
     }
 }

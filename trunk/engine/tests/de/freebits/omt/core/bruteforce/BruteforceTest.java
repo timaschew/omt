@@ -55,7 +55,7 @@ public class BruteforceTest {
 				+ "/Patterns.xml");
 		// read midi score
 		score = new Score();
-		Read.midi(score, "src/tests/ressources/ContourHelperTest.mid");
+		Read.midi(score, "tests/ressources/ContourHelperTest.mid");
 	}
 
 	/**

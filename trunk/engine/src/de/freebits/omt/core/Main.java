@@ -6,6 +6,7 @@ import javax.swing.JFileChooser;
 import javax.xml.bind.JAXBException;
 
 import de.freebits.omt.core.xml.JAXBHelper;
+import de.freebits.omt.core.xml.entities.motifextraction.MexType;
 import de.freebits.omt.core.xml.entities.patterns.PatternsType;
 
 public class Main {
@@ -23,9 +24,9 @@ public class Main {
 		fs.showOpenDialog(null);
 		final File xmlFile = fs.getSelectedFile();
 
-		Class<?> clss = PatternsType.class;
+		Class<?> clss = MexType.class;
 
-		PatternsType pRoot = (PatternsType) JAXBHelper.unmarshal(xmlFile, clss);
+		MexType pRoot = (MexType) JAXBHelper.unmarshal(xmlFile, clss);
 		if (pRoot != null) {
 			System.out.println(":)");
 		}

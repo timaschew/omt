@@ -15,25 +15,82 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="6a451d9b-263c-44e7-ad01-ef99e965c711" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../engine/tests/ressources/xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/images/ajax-loader.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/javascript/libraries/qunit" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/javascript/libraries/raphael" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/javascript/libraries/vexflow/SConstruct" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/javascript/libraries/vexflow/fonts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/javascript/libraries/vexflow" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/javascript/libraries" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/de/freebits/omt/web/beans/Dashboard.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/de/freebits/omt/web/beans/EvaluationResult.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/de/freebits/omt/web/beans/EvaluationSetup.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/de/freebits/omt/web/beans/Settings.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/de/freebits/omt/web/beans/UploadedFile.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/de/freebits/omt/web/helpers/PageHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/de/freebits/omt/web/javascript/JSDialog.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/de/freebits/omt/web/javascript/JSEvaluationDialog.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/javascript/libraries/qunit/qunit.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/javascript/libraries/vexflow/accidental.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/javascript/libraries/vexflow/annotation.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/javascript/libraries/vexflow/barnote.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/javascript/libraries/vexflow/beam.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/javascript/libraries/vexflow/bend.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/javascript/libraries/vexflow/clef.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/javascript/libraries/vexflow/dot.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/javascript/libraries/vexflow/flow.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/javascript/libraries/vexflow/fonts/gonville.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/javascript/libraries/vexflow/fonts/gonville_all.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/javascript/libraries/vexflow/fonts/gonville_original.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/javascript/libraries/vexflow/fonts/vexflow_font.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/javascript/libraries/vexflow/formatter.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/javascript/libraries/vexflow/ghostnote.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/javascript/libraries/vexflow/glyph.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/javascript/libraries/vexflow/glyphs.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/javascript/libraries/vexflow/header.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/javascript/libraries/vexflow/keymanager.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/javascript/libraries/vexflow/keysignature.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/javascript/libraries/vexflow/modifier.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/javascript/libraries/vexflow/modifiercontext.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/javascript/libraries/vexflow/music.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/javascript/libraries/vexflow/note.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/javascript/libraries/vexflow/raphaelcontext.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/javascript/libraries/vexflow/renderer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/javascript/libraries/vexflow/stave.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/javascript/libraries/vexflow/staveconnector.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/javascript/libraries/vexflow/stavemodifier.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/javascript/libraries/vexflow/stavenote.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/javascript/libraries/vexflow/stavetie.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/javascript/libraries/vexflow/tables.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/javascript/libraries/vexflow/tabnote.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/javascript/libraries/vexflow/tabslide.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/javascript/libraries/vexflow/tabstave.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/javascript/libraries/vexflow/tabtie.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/javascript/libraries/vexflow/tickable.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/javascript/libraries/vexflow/tickcontext.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/javascript/libraries/vexflow/timesignature.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/javascript/libraries/vexflow/transform.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/javascript/libraries/vexflow/tuning.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/javascript/libraries/vexflow/vex.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/javascript/libraries/vexflow/vibrato.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/javascript/libraries/vexflow/voice.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resources/javascript/libraries/vexflow/voicegroup.js" />
+      <change type="DELETED" beforePath="C:\Programmierung\OMT\trunk\webapp\src\main\de\freebits\omt\web\beans\TestBean.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Programmierung\OMT\trunk\webapp\src\main\de\freebits\omt\web\beans\TestButton.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../engine/engine.iml" afterPath="$PROJECT_DIR$/../engine/engine.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/melody/preprocessing/MelodicPreprocessingHelper.java" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/melody/preprocessing/MelodicPreprocessingHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/AcciaccaturaProcessor.java" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/AcciaccaturaProcessor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/ArpeggioProcessor.java" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/ArpeggioProcessor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/DefaultProcessor.java" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/DefaultProcessor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/GlissandoProcessor.java" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/GlissandoProcessor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/Main.java" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/TremoloProcessor.java" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/TremoloProcessor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/TrillProcessor.java" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/TrillProcessor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/events/AcciaccaturaEvent.java" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/events/AcciaccaturaEvent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/events/ArpeggioEvent.java" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/events/ArpeggioEvent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/events/TremoloEvent.java" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/events/TremoloEvent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/events/TrillEvent.java" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/events/TrillEvent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/streams/Cluster.java" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/streams/Cluster.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/streams/StreamAnalyzer.java" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/streams/StreamAnalyzer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/streams/StreamSegregation.java" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/streams/StreamSegregation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/structures/Chord.java" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/structures/Chord.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/tools/jMusicHelper.java" afterPath="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/tools/jMusicHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../engine/tests/de/freebits/omt/core/melody/preprocessing/MelodicPreprocessingHelperTest.java" afterPath="$PROJECT_DIR$/../engine/tests/de/freebits/omt/core/melody/preprocessing/MelodicPreprocessingHelperTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../engine/tests/de/freebits/omt/core/bruteforce/BruteforceTest.java" afterPath="$PROJECT_DIR$/../engine/tests/de/freebits/omt/core/bruteforce/BruteforceTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/webapp_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/webapp_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/de/freebits/omt/web/beans/EvaluationWizard.java" afterPath="$PROJECT_DIR$/src/main/de/freebits/omt/web/beans/EvaluationWizard.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/de/freebits/omt/web/beans/Song.java" afterPath="$PROJECT_DIR$/src/main/de/freebits/omt/web/beans/Song.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/de/freebits/omt/web/beans/Terminal.java" afterPath="$PROJECT_DIR$/src/main/de/freebits/omt/web/beans/Terminal.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/de/freebits/omt/web/javascript/JSWizardDialog.java" afterPath="$PROJECT_DIR$/src/main/de/freebits/omt/web/javascript/JSWizardDialog.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/home.xhtml" afterPath="$PROJECT_DIR$/web/home.xhtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/resources/css/standard.css" afterPath="$PROJECT_DIR$/web/resources/css/standard.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp.iml" afterPath="$PROJECT_DIR$/webapp.iml" />
     </list>
     <ignored path="webapp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -53,7 +110,20 @@
   </component>
   <component name="DebuggerManager">
     <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/de/freebits/omt/web/beans/EvaluationWizard.java" line="175" class="de.freebits.omt.web.beans.EvaluationWizard" package="de.freebits.omt.web.beans">
+      <breakpoint url="file://$PROJECT_DIR$/../engine/src/de/freebits/omt/core/Main.java" line="29" class="de.freebits.omt.core.Main" package="de.freebits.omt.core">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/../engine/tests/de/freebits/omt/core/bruteforce/BruteforceTest.java" line="56" class="de.freebits.omt.core.bruteforce.BruteforceTest" package="de.freebits.omt.core.bruteforce">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -124,98 +194,54 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AcciaccaturaProcessor.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/AcciaccaturaProcessor.java">
+      <file leaf-file-name="home.xhtml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/home.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="23" selection-start="744" selection-end="744" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AcciaccaturaEvent.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/events/AcciaccaturaEvent.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="26" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GlissandoProcessor.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/GlissandoProcessor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="8" selection-start="2187" selection-end="2247" vertical-scroll-proportion="0.0">
+            <state line="419" column="38" selection-start="21745" selection-end="21745" vertical-scroll-proportion="-35.73077">
               <folding>
-                <element signature="imports" expanded="true" />
+                <marker date="1314867778513" expanded="true" signature="8037:8051" placeholder="{...}" />
+                <marker date="1314867778513" expanded="true" signature="8868:8886" placeholder="{...}" />
+                <marker date="1314867778513" expanded="true" signature="10376:10406" placeholder="{...}" />
+                <marker date="1314867778513" expanded="true" signature="11257:11275" placeholder="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArpeggioProcessor.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/ArpeggioProcessor.java">
+      <file leaf-file-name="standard.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/resources/css/standard.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="44" selection-start="586" selection-end="586" vertical-scroll-proportion="0.0">
+            <state line="85" column="34" selection-start="1758" selection-end="1758" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EvaluationSetup.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/de/freebits/omt/web/beans/EvaluationSetup.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="22" selection-start="472" selection-end="472" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EvaluationResult.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/de/freebits/omt/web/beans/EvaluationResult.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="36" column="51" selection-start="1032" selection-end="1032" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dashboard.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/de/freebits/omt/web/beans/Dashboard.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="117" column="111" selection-start="3899" selection-end="3899" vertical-scroll-proportion="0.7889088">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GlissandoEvent.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/events/GlissandoEvent.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="3" selection-start="146" selection-end="224" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProcessingEvent.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/events/ProcessingEvent.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="17" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TremoloEvent.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/events/TremoloEvent.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="42" selection-start="303" selection-end="303" vertical-scroll-proportion="0.27621862">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AcousticConstants.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../engine/src/de/freebits/omt/core/AcousticConstants.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="45" selection-start="356" selection-end="356" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MelodicPreprocessingHelper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../engine/src/de/freebits/omt/core/melody/preprocessing/MelodicPreprocessingHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="97" column="0" selection-start="4854" selection-end="4854" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MelodicPreprocessingHelperTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../engine/tests/de/freebits/omt/core/melody/preprocessing/MelodicPreprocessingHelperTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="54" selection-start="1166" selection-end="1166" vertical-scroll-proportion="0.0">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -234,22 +260,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/events/ArpeggioEvent.java" />
-        <option value="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/events/TremoloEvent.java" />
-        <option value="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/events/TrillEvent.java" />
-        <option value="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/DefaultProcessor.java" />
-        <option value="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/events/GlissandoEvent.java" />
-        <option value="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/AcousticConstants.java" />
-        <option value="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/harmony/HarmonyHelper.java" />
-        <option value="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/structures/Chord.java" />
-        <option value="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/tools/jMusicHelper.java" />
-        <option value="$PROJECT_DIR$/../engine/tests/de/freebits/omt/core/streams/StreamSegregationTest.java" />
-        <option value="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/melody/preprocessing/MelodicPreprocessingHelper.java" />
-        <option value="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/GlissandoProcessor.java" />
-        <option value="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/AcciaccaturaProcessor.java" />
-        <option value="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/events/AcciaccaturaEvent.java" />
-        <option value="$PROJECT_DIR$/../engine/tests/de/freebits/omt/core/melody/preprocessing/MelodicPreprocessingHelperTest.java" />
-        <option value="$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/ArpeggioProcessor.java" />
+        <option value="$PROJECT_DIR$/src/main/de/freebits/omt/web/javascript/JSWizardDialog.java" />
+        <option value="$PROJECT_DIR$/../engine/src/marcelkarras/diploma/model/hofmanengl/MelodicSimilarity.java" />
+        <option value="$PROJECT_DIR$/src/main/de/freebits/omt/web/helpers/PageHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/de/freebits/omt/web/beans/Song.java" />
+        <option value="$PROJECT_DIR$/src/main/de/freebits/omt/web/beans/UploadedFile.java" />
+        <option value="$PROJECT_DIR$/src/main/de/freebits/omt/web/beans/SettingsBean.java" />
+        <option value="$PROJECT_DIR$/src/main/de/freebits/omt/web/javascript/JSSettingsDialog.java" />
+        <option value="$PROJECT_DIR$/src/main/de/freebits/omt/web/beans/EvaluationWizard.java" />
+        <option value="$PROJECT_DIR$/src/main/de/freebits/omt/web/beans/Settings.java" />
+        <option value="$PROJECT_DIR$/web/resources/javascript/libraries/vexflow/glyph.js" />
+        <option value="$PROJECT_DIR$/web/resources/javascript/libraries/vexflow/stavenote.js" />
+        <option value="$PROJECT_DIR$/src/main/de/freebits/omt/web/beans/EvaluationSetup.java" />
+        <option value="$PROJECT_DIR$/src/main/de/freebits/omt/web/beans/EvaluationResult.java" />
+        <option value="$PROJECT_DIR$/web/home.xhtml" />
+        <option value="$PROJECT_DIR$/web/resources/css/standard.css" />
+        <option value="$PROJECT_DIR$/src/main/de/freebits/omt/web/beans/Dashboard.java" />
       </list>
     </option>
   </component>
@@ -259,6 +285,9 @@
     <option name="FILTER_INFO" value="false" />
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState />
   </component>
   <component name="MavenRunner">
     <option name="jreName" value="#JAVA_INTERNAL" />
@@ -296,6 +325,7 @@
     </navigator>
     <panes>
       <pane id="Favorites" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -346,7 +376,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -365,6 +395,122 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vexflow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="raphael" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qunit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -449,10 +595,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascript" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -557,32 +699,6 @@
               <option name="myItemId" value="tests" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ressources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="engine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ressources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="preprocessing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -599,76 +715,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="engine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="streams" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="engine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="melody" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="engine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="melody" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="preprocessing" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -708,71 +754,18 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="processing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="engine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="processing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="listener" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="engine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="processing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="events" />
+              <option name="myItemId" value="tools" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
@@ -792,15 +785,16 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="de.freebits.omt.web.javascript" />
       <recent name="de.freebits.omt.core.processing" />
       <recent name="de.freebits.omt.core.processing.events" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Programmierung\OMT\trunk\webapp\web\resources\javascript\libraries\qunit" />
+      <recent name="C:\Programmierung\OMT\trunk\webapp\web\resources\javascript\libraries\vexflow" />
+      <recent name="C:\Programmierung\OMT\trunk\engine\src" />
       <recent name="C:\Programmierung\OMT\trunk\engine\tests\ressources\streaming" />
       <recent name="C:\Programmierung\OMT\trunk\engine" />
-      <recent name="C:\Programmierung\OMT\trunk\engine\src" />
-      <recent name="C:\Programmierung\OMT\trunk\webapp\web" />
-      <recent name="C:\Programmierung\OMT\trunk\webapp\web\WEB-INF" />
     </key>
   </component>
   <component name="Regex">
@@ -814,39 +808,31 @@
     <option name="referencePos" value="0" />
     <option name="showLabels" value="true" />
   </component>
-  <component name="RunManager" selected="JUnit.MelodicPreprocessingHelperTest">
-    <configuration default="false" name="StreamSegregationTest" type="JUnit" factoryName="JUnit" temporary="true">
+  <component name="RunManager" selected="Glassfish Server.Glassfish 3.1">
+    <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="de.freebits.omt.core.streams.*" />
+          <option name="PATTERN" value="de.freebits.omt.core.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="engine" />
+      <option name="MAIN_CLASS_NAME" value="de.freebits.omt.core.Main" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="PACKAGE_NAME" value="de.freebits.omt.core.streams" />
-      <option name="MAIN_CLASS_NAME" value="de.freebits.omt.core.streams.StreamSegregationTest" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
+      <module name="engine" />
       <envs />
-      <patterns />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="63468" />
+        <option name="DEBUG_PORT" value="58823" />
         <option name="TRANSPORT" value="0" />
         <option name="LOCAL" value="true" />
       </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
     <configuration default="false" name="StreamSegregationTest.testCalcEventTimeDistance" type="JUnit" factoryName="JUnit" temporary="true">
@@ -937,6 +923,40 @@
       <patterns />
       <RunnerSettings RunnerId="Debug">
         <option name="DEBUG_PORT" value="58791" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="BruteforceTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="de.freebits.omt.core.bruteforce.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="engine" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="PACKAGE_NAME" value="de.freebits.omt.core.bruteforce" />
+      <option name="MAIN_CLASS_NAME" value="de.freebits.omt.core.bruteforce.BruteforceTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="58876" />
         <option name="TRANSPORT" value="0" />
         <option name="LOCAL" value="true" />
       </RunnerSettings>
@@ -1110,6 +1130,18 @@
         <option name="PhingTarget" enabled="false" />
       </method>
     </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Remote">
+      <JSRemoteDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSRemoteDebuggerConfigurationSettings>
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+        <option name="PhingTarget" enabled="false" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" />
       <module name="" />
@@ -1200,12 +1232,24 @@
         </option>
       </method>
     </configuration>
-    <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Glassfish Server.Glassfish 3.1" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.StreamSegregationTest" />
+    <configuration default="false" name="Glassfish 3.1 JavaScript" type="JavascriptDebugSession" factoryName="Remote">
+      <JSRemoteDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" value="http://localhost:8080/OMT/" />
+        <mapping local-file="$PROJECT_DIR$/web" url="http://localhost:8080/OMT/" />
+      </JSRemoteDebuggerConfigurationSettings>
+      <RunnerSettings RunnerId="JavascriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
+      <method />
+    </configuration>
+    <list size="7">
+      <item index="0" class="java.lang.String" itemvalue="Application.Main" />
+      <item index="1" class="java.lang.String" itemvalue="Glassfish Server.Glassfish 3.1" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.StreamSegregationTest.testCalcEventTimeDistance" />
       <item index="3" class="java.lang.String" itemvalue="JUnit.StreamSegregationTest.testClustering" />
       <item index="4" class="java.lang.String" itemvalue="JUnit.MelodicPreprocessingHelperTest" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.BruteforceTest" />
+      <item index="6" class="java.lang.String" itemvalue="JavaScript Debug.Glassfish 3.1 JavaScript" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -1297,26 +1341,26 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32994652" sideWeight="0.63106793" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973261" sideWeight="0.53505933" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24056095" sideWeight="0.0" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973261" sideWeight="0.71305287" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36785328" sideWeight="0.0" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32994652" sideWeight="0.6321467" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32994652" sideWeight="0.73247033" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32994652" sideWeight="0.63106793" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2837109" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24973261" sideWeight="0.2286947" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20855615" sideWeight="0.22977346" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32994652" sideWeight="0.6321467" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24973261" sideWeight="0.52211434" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973261" sideWeight="0.56634307" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20641711" sideWeight="0.6321467" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="simpleUML" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973261" sideWeight="0.6289105" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="SQL" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1372,123 +1416,122 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/TremoloProcessor.java">
+    <entry file="file://$PROJECT_DIR$/web/resources/javascript/libraries/vexflow/stavemodifier.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="25" selection-start="812" selection-end="812" vertical-scroll-proportion="0.44325152">
+        <state line="13" column="33" selection-start="226" selection-end="226" vertical-scroll-proportion="-0.3685152">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../engine/src/de/freebits/omt/core/harmony/HarmonyHelper.java">
+    <entry file="file://$PROJECT_DIR$/web/resources/javascript/libraries/vexflow/keysignature.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="108" column="41" selection-start="3024" selection-end="3044" vertical-scroll-proportion="0.5153374">
+        <state line="17" column="36" selection-start="492" selection-end="492" vertical-scroll-proportion="-0.06440072">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/TrillProcessor.java">
+    <entry file="file://$PROJECT_DIR$/web/resources/javascript/libraries/vexflow/flow.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="4" selection-start="992" selection-end="1060" vertical-scroll-proportion="0.0">
+        <state line="16" column="0" selection-start="208" selection-end="208" vertical-scroll-proportion="0.48658317">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../engine/tests/de/freebits/omt/core/streams/StreamSegregationTest.java">
+    <entry file="file://$PROJECT_DIR$/web/resources/javascript/libraries/vexflow/formatter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="10" selection-start="1856" selection-end="1856" vertical-scroll-proportion="0.0">
+        <state line="201" column="13" selection-start="6018" selection-end="6018" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/javascript/libraries/vexflow/modifier.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="28" selection-start="2067" selection-end="2067" vertical-scroll-proportion="0.63506263">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/javascript/libraries/vexflow/glyph.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="179" column="31" selection-start="5274" selection-end="5274" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/javascript/libraries/vexflow/stavenote.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="370" column="50" selection-start="11307" selection-end="11307" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/javascript/libraries/vexflow/voice.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="26" selection-start="2127" selection-end="2127" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/javascript/libraries/vexflow/stave.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="173" column="25" selection-start="4792" selection-end="4792" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/de/freebits/omt/web/beans/EvaluationSetup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="22" selection-start="472" selection-end="472" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/de/freebits/omt/web/beans/EvaluationResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="51" selection-start="1032" selection-end="1032" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/css/standard.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="34" selection-start="1758" selection-end="1758" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/home.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="419" column="38" selection-start="21745" selection-end="21745" vertical-scroll-proportion="-35.73077">
+          <folding>
+            <marker date="1314867778513" expanded="true" signature="8037:8051" placeholder="{...}" />
+            <marker date="1314867778513" expanded="true" signature="8868:8886" placeholder="{...}" />
+            <marker date="1314867778513" expanded="true" signature="10376:10406" placeholder="{...}" />
+            <marker date="1314867778513" expanded="true" signature="11257:11275" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../engine/tests/de/freebits/omt/core/melody/ContourHelperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="13" selection-start="377" selection-end="377" vertical-scroll-proportion="0.14847943">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../engine/src/de/freebits/omt/core/tools/jMusicHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="37" selection-start="1325" selection-end="1325" vertical-scroll-proportion="0.0">
+        <state line="33" column="49" selection-start="1128" selection-end="1146" vertical-scroll-proportion="0.4257603">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/de/freebits/omt/web/beans/Dashboard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="117" column="111" selection-start="3899" selection-end="3899" vertical-scroll-proportion="0.7889088">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../engine/src/de/freebits/omt/core/harmony/Scales.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="94" selection-start="175" selection-end="175" vertical-scroll-proportion="0.30722892">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../engine/src/de/freebits/omt/core/melody/preprocessing/MelodicPreprocessingHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="0" selection-start="4854" selection-end="4854" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/events/AcciaccaturaEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="26" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/GlissandoProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="8" selection-start="2187" selection-end="2247" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/AcciaccaturaProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="23" selection-start="744" selection-end="744" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../engine/src/de/freebits/omt/core/AcousticConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="45" selection-start="356" selection-end="356" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../engine/tests/de/freebits/omt/core/melody/preprocessing/MelodicPreprocessingHelperTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="54" selection-start="1166" selection-end="1166" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/ArpeggioProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="44" selection-start="586" selection-end="586" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/events/GlissandoEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="3" selection-start="146" selection-end="224" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/events/ProcessingEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="17" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../engine/src/de/freebits/omt/core/processing/events/TremoloEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="42" selection-start="303" selection-end="303" vertical-scroll-proportion="0.27621862">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1523,7 +1566,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Jetbrains Annotations</last-edited>
+          <last-edited>Seam Catch 3.0.0-FINAL</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1547,7 +1590,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>engine</last-edited>
+          <last-edited>webapp</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1571,6 +1614,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Unnamed</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

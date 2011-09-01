@@ -22,6 +22,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/main" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/test" isTestSource="true" />
     </content>
+    <orderEntry type="module" module-name="engine" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="CDI API 1.0 SP2" level="application" />
@@ -30,6 +31,7 @@
     <orderEntry type="library" name="Primefaces 3.0 SNAPSHOT" level="application" />
     <orderEntry type="library" name="Javax Inject 1.0-PFD-1" level="application" />
     <orderEntry type="library" name="Mojarra 2.1.1" level="application" />
+    <orderEntry type="library" name="Javax EL Api 1.1" level="application" />
   </component>
 </module>
 

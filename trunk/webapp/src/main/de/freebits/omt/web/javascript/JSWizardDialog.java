@@ -7,31 +7,13 @@ import org.primefaces.context.RequestContext;
  *
  * @author Marcel Karras
  */
-public class JSWizardDialog {
+public class JSWizardDialog extends JSDialog{
     /**
      * Process to the next wizard step.
      *
      * @param widgetVar wizard widget variable
      */
-    public static final void next(final String widgetVar) {
+    public static void next(final String widgetVar) {
         RequestContext.getCurrentInstance().execute(widgetVar + ".next();");
-    }
-
-    /**
-     * Open the wizard dialog.
-     *
-     * @param widgetVar wizard dialog widget variable
-     */
-    public static final void open(final String widgetVar) {
-        RequestContext.getCurrentInstance().execute(widgetVar + ".show();");
-    }
-
-    /**
-     * Close the wizard dialog.
-     *
-     * @param widgetVar wizard dialog widget variable
-     */
-    public static final void close(final String widgetVar) {
-        RequestContext.getCurrentInstance().execute(widgetVar + ".hide();");
     }
 }

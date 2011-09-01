@@ -5,144 +5,448 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://java.sun.com/jsf/html"
-      xmlns:p="http://primefaces.prime.com.tr/ui" xmlns:f="http://java.sun.com/jsf/core">
+      xmlns:p="http://primefaces.prime.com.tr/ui" xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"
+        >
 
 <h:head>
-    <link type="text/css" rel="stylesheet" href="#{request.contextPath}/resources/css/standard.css"/>
+    <link type="text/css" rel="stylesheet"
+          href="#{request.contextPath}/resources/css/standard.css"/>
+    <!--<script type="text/javascript"
+            src="#{request.contextPath}/resources/javascript/libraries/vexflow/vexflow-free.js"></script>-->
+
+    <script type="text/javascript"
+            src="#{request.contextPath}/resources/javascript/libraries/raphael/raphael-min.js"></script>
+    <script type="text/javascript"
+            src="#{request.contextPath}/resources/javascript/libraries/vexflow/vex.js"></script>
+    <script type="text/javascript"
+            src="#{request.contextPath}/resources/javascript/libraries/vexflow/flow.js"></script>
+    <script type="text/javascript"
+            src="#{request.contextPath}/resources/javascript/libraries/vexflow/fonts/vexflow_font.js"></script>
+    <script type="text/javascript"
+            src="#{request.contextPath}/resources/javascript/libraries/vexflow/glyph.js"></script>
+    <script type="text/javascript"
+            src="#{request.contextPath}/resources/javascript/libraries/vexflow/tables.js"></script>
+    <script type="text/javascript"
+            src="#{request.contextPath}/resources/javascript/libraries/vexflow/stave.js"></script>
+    <script type="text/javascript"
+            src="#{request.contextPath}/resources/javascript/libraries/vexflow/staveconnector.js"></script>
+    <script type="text/javascript"
+            src="#{request.contextPath}/resources/javascript/libraries/vexflow/tabstave.js"></script>
+    <script type="text/javascript"
+            src="#{request.contextPath}/resources/javascript/libraries/vexflow/voice.js"></script>
+    <script type="text/javascript"
+            src="#{request.contextPath}/resources/javascript/libraries/vexflow/modifier.js"></script>
+    <script type="text/javascript"
+            src="#{request.contextPath}/resources/javascript/libraries/vexflow/modifiercontext.js"></script>
+    <script type="text/javascript"
+            src="#{request.contextPath}/resources/javascript/libraries/vexflow/accidental.js"></script>
+    <script type="text/javascript"
+            src="#{request.contextPath}/resources/javascript/libraries/vexflow/dot.js"></script>
+    <script type="text/javascript"
+            src="#{request.contextPath}/resources/javascript/libraries/vexflow/tickcontext.js"></script>
+    <script type="text/javascript"
+            src="#{request.contextPath}/resources/javascript/libraries/vexflow/tickable.js"></script>
+    <script type="text/javascript"
+            src="#{request.contextPath}/resources/javascript/libraries/vexflow/note.js"></script>
+    <script type="text/javascript"
+            src="#{request.contextPath}/resources/javascript/libraries/vexflow/bend.js"></script>
+    <script type="text/javascript"
+            src="#{request.contextPath}/resources/javascript/libraries/vexflow/stavenote.js"></script>
+    <script type="text/javascript"
+            src="#{request.contextPath}/resources/javascript/libraries/vexflow/stavetie.js"></script>
+    <script type="text/javascript"
+            src="#{request.contextPath}/resources/javascript/libraries/vexflow/tabtie.js"></script>
+    <script type="text/javascript"
+            src="#{request.contextPath}/resources/javascript/libraries/vexflow/tabslide.js"></script>
+    <script type="text/javascript"
+            src="#{request.contextPath}/resources/javascript/libraries/vexflow/beam.js"></script>
+    <script type="text/javascript"
+            src="#{request.contextPath}/resources/javascript/libraries/vexflow/vibrato.js"></script>
+    <script type="text/javascript"
+            src="#{request.contextPath}/resources/javascript/libraries/vexflow/annotation.js"></script>
+    <script type="text/javascript"
+            src="#{request.contextPath}/resources/javascript/libraries/vexflow/tuning.js"></script>
+    <script type="text/javascript"
+            src="#{request.contextPath}/resources/javascript/libraries/vexflow/stavemodifier.js"></script>
+    <script type="text/javascript"
+            src="#{request.contextPath}/resources/javascript/libraries/vexflow/keysignature.js"></script>
+    <script type="text/javascript"
+            src="#{request.contextPath}/resources/javascript/libraries/vexflow/timesignature.js"></script>
+    <script type="text/javascript"
+            src="#{request.contextPath}/resources/javascript/libraries/vexflow/clef.js"></script>
+    <script type="text/javascript"
+            src="#{request.contextPath}/resources/javascript/libraries/vexflow/music.js"></script>
+    <script type="text/javascript"
+            src="#{request.contextPath}/resources/javascript/libraries/vexflow/keymanager.js"></script>
+    <script type="text/javascript"
+            src="#{request.contextPath}/resources/javascript/libraries/vexflow/barnote.js"></script>
+    <script type="text/javascript"
+            src="#{request.contextPath}/resources/javascript/libraries/vexflow/formatter.js"></script>
+    <script type="text/javascript"
+            src="#{request.contextPath}/resources/javascript/libraries/vexflow/ghostnote.js"></script>
+    <script type="text/javascript"
+            src="#{request.contextPath}/resources/javascript/libraries/vexflow/header.js"></script>
+    <script type="text/javascript"
+            src="#{request.contextPath}/resources/javascript/libraries/vexflow/raphaelcontext.js"></script>
+    <script type="text/javascript"
+            src="#{request.contextPath}/resources/javascript/libraries/vexflow/renderer.js"></script>
+    <script type="text/javascript"
+            src="#{request.contextPath}/resources/javascript/libraries/vexflow/tabnote.js"></script>
+    <script type="text/javascript"
+            src="#{request.contextPath}/resources/javascript/libraries/vexflow/voicegroup.js"></script>
+
+
     <title>OMT - Online Music Tutor</title>
 </h:head>
 
 <h:body onload="#{growl.showInitialMessage()}">
-    <!-- main menu -->
-    <p:menubar styleClass="mainmenu">
-        <p:submenu label="Hilfe">
-            <p:menuitem value="Über" url="#"/>
-        </p:submenu>
-    </p:menubar>
+<!-- main menu -->
+<p:menubar styleClass="mainmenu">
+    <p:submenu label="Hilfe">
+        <p:menuitem value="Über" url="#"/>
+    </p:submenu>
+</p:menubar>
 
-    <!-- terminal -->
-    <p:dialog widgetVar="wvTerminalDialog" width="700" height="400" header="OMT Engine Konsole" showEffect="fade"
-              hideEffect="fade" styleClass="terminalDialog">
-        <h:form>
-            <p:terminal prompt="OMT >" width="100%" height="100%" widgetVar="wvTerminal"
-                        welcomeMessage="Geben Sie hier Befehle zur Interaktion mit der OMT Engine ein..."
-                        commandHandler="#{terminal.handleCommand}"/>
-        </h:form>
-    </p:dialog>
+<p:dashboard id="dashboard" model="#{dashboard.model}">
+    <p:ajax event="reorder" listener="#{dashboard.handleReorder}" update="growl"/>
 
-    <!-- logging window -->
-    <p:dialog widgetVar="wvLoggingDialog" width="700" height="400" header="OMT Engine Log" showEffect="fade"
-              hideEffect="fade" styleClass="terminalDialog">
-        <h:panelGroup layout="block">
-            Test 123
-        </h:panelGroup>
-    </p:dialog>
+    <c:forEach items="#{dashboard.evaluationSetups}" var="evaluation">
+        <p:panel closeListener="#{dashboard.handleClose}" id="#{evaluation.id}"
+                 collapsed="true"
+                 styleClass="performance_panel"
+                 closable="true" toggleable="true"
+                 header="#{evaluation.title}">
+            <br/>
+            <h:panelGrid columns="2" width="100%">
+                <h:outputText value="MIDI Datei:"/>
+                <h:outputText value="#{evaluation.uploadedFileName}"/>
+                <h:outputText value="Datum:"/>
+                <h:outputText value="#{evaluation.getFormattedDate(evaluation.date)}"/>
+            </h:panelGrid>
+            <h:panelGroup layout="block">
 
-
-    <!-- growl container -->
-    <p:growl id="messages" showDetail="true" sticky="false" showSummary="true" life="5000"/>
-
-    <!-- dock container at bottom -->
-    <h:form widgetVar="dockForm" styleClass="dockingMenu">
-        <p:dock position="bottom" itemWidth="50" maxWidth="150">
-            <p:menuitem value="Neu" icon="#{resource['images:music-stand.png']}"
-                        actionListener="#{evaluationWizard.onDialogOpen}"/>
-            <p:menuitem value="Einstellungen" icon="#{resource['images:config.png']}" url="#"/>
-            <p:menuitem value="Konsole" icon="#{resource['images:keyboard.png']}" url="#"
-                        onclick="wvTerminalDialog.show();wvTerminal.focus();"/>
-            <p:menuitem value="Logfenster" icon="#{resource['images:terminal.png']}" url="#"
-                        onclick="wvLoggingDialog.show();"/>
-            <p:menuitem value="Zurücksetzen" icon="#{resource['images:trash.png']}" url="#"/>
-        </p:dock>
-    </h:form>
-
-    <!-- wizard dialog for the creation of new evaluation instances -->
-    <p:dialog widgetVar="wvCreationWizard" width="750" height="400"
-              header="Ähnlichkeits-Analyse vorbereiten"
-              showEffect="fade" hideEffect="fade" resizable="false">
-        <p:ajax event="close" listener="#{evaluationWizard.onDialogClose}" update="wvWizard"/>
-        <h:form widgetVar="wizardForm" enctype="multipart/form-data">
-            <p:wizard binding="#{evaluationWizard.wizard}" id="wizard" styleClass="creationWizard" showNavBar="false"
-                      widgetVar="wvWizard"
-                      flowListener="#{evaluationWizard.onFlowProcess}">
-                <f:event type="preRenderView" listener="#{evaluationWizard.startConversation}"/>
-                <!-- 1. step: choose song -->
-                <p:tab title="Songauswahl" id="tabSelectSong">
-                    <h:panelGrid columns="2" width="100%" styleClass="songChooserGrid">
-                        <p:graphicImage value="#{resource['images/music-stand.png']}"/>
-                        <p:panel header="Song auswählen" styleClass="songChooserPanel">
-                            <h:panelGroup layout="block" styleClass="songChooserDescription">
-                                Wählen Sie bitte den Song, für welchen Sie eine Bewertung erhalten möchten:
-                            </h:panelGroup>
-                            <h:panelGroup>
-                                <p:selectOneRadio unselectable="false" layout="pageDirection"
-                                                  value="#{evaluationWizard.selectedSong}"
-                                                  converter="#{songConverter}">
-                                    <f:selectItems value="#{songDatabase.songList}"/>
-                                </p:selectOneRadio>
-                            </h:panelGroup>
-                        </p:panel>
-                    </h:panelGrid>
-                </p:tab>
-                <!-- 2. step: midi upload -->
-                <p:tab title="Hochladen" id="tabUploadSample">
-                    <h:panelGrid columns="2" width="100%" styleClass="midiUploadGrid">
-                        <p:graphicImage value="#{resource['images/midi.png']}"/>
-                        <p:panel header="Midi Datei hochladen" styleClass="midiUploadPanel" id="midiUploadContainer">
-                            <h:panelGroup rendered="#{evaluationWizard.status == null}" layout="block"
-                                          styleClass="midiUploadDescription">
-                                Wählen Sie bitte Ihre MIDI-Aufnahme, welche Sie zur Bewertung vorlegen möchten:
-                                <br/><br/>
-                                <p:fileUpload
-                                        id="fileupload"
-                                        fileUploadListener="#{evaluationWizard.handleFileUpload}"
-                                        uploadLabel="Hochladen"
-                                        cancelLabel="Abbrechen"
-                                        label="Datei wählen"
-                                        mode="advanced"
-                                        update="messages,wizardMidiUploadStatus,midiUploadContainer"
-                                        sizeLimit="100000"
-                                        allowTypes="midi,mid"/>
-                            </h:panelGroup>
-                            <h:outputText id="wizardMidiUploadStatus" value="#{evaluationWizard.status}"/>
-                        </p:panel>
-                    </h:panelGrid>
-                </p:tab>
-                <!-- 3. step: evaluation -->
-                <p:tab title="Auswertung" id="tabSelectEvaluation">
-                    <h:panelGrid columns="2">
-                        <h:outputText value="Gwählter Song:"/>
-                        <h:outputText value="#{evaluationWizard.selectedSong}"/>
-                    </h:panelGrid>
-                </p:tab>
-            </p:wizard>
-            <h:panelGroup layout="block" styleClass="ui-wizard-navbar">
-                <p:commandButton widgetVar="nextButton" image="ui-button-icon-primary ui-icon-arrowthick-1-e"
-                                 value="Weiter" styleClass="ui-wizard-nav-next"
-                                 actionListener="#{evaluationWizard.onNext}"/>
             </h:panelGroup>
+            <br/><br/>
+            <h:form>
+                <p:commandButton value="Auswertung anzeigen"
+                                 update="wvEvaluationDialog,idEvaluationResult"
+                                 onclick="$('#e');$('#ajaxLoader').show();"
+                                 actionListener="#{dashboard.onEvaluationOpen}"
+                                 ajax="true">
+                    <f:param id="evaluationSetup" name="evaluationSetup"
+                             value="#{evaluation.getId()}"/>
+                </p:commandButton>
+            </h:form>
+        </p:panel>
+    </c:forEach>
+</p:dashboard>
 
-        </h:form>
-    </p:dialog>
+<h:panelGroup id="ajaxLoader" layout="block" styleClass="ajaxLoader" style="display: none;"/>
 
-    <h:panelGroup id="additionalJavascript">
-        <script type="text/javascript">
-            /* <![CDATA[ */
-            $(function() {
-                /**
-                 * Always scroll to terminal bottom.
-                 */
-                $('div.ui-terminal form').submit(function() {
-                    $(this).find('input[type="text"]').each(function() {
-                        var terminalDialog = $('div.terminalDialog div.ui-dialog-content');
-                        $(terminalDialog).animate({
-                                    scrollTop: $(terminalDialog).find('div.ui-terminal').outerHeight()
-                                });
+<!-- terminal -->
+<p:dialog widgetVar="wvTerminalDialog" width="700" height="400" header="OMT Engine Konsole"
+          showEffect="fade"
+          hideEffect="fade" styleClass="terminalDialog">
+    <h:form>
+        <p:terminal prompt="OMT >" width="100%" height="100%" widgetVar="wvTerminal"
+                    welcomeMessage="Geben Sie hier Befehle zur Interaktion mit der OMT Engine
+                         ein..."
+                    commandHandler="#{terminal.handleCommand}"/>
+    </h:form>
+</p:dialog>
+
+<!-- settings dialog -->
+<p:dialog widgetVar="wvSettingsDialog" width="700" height="245" header="OMT Einstellungen"
+          showEffect="fade"
+          hideEffect="fade">
+    <h:form>
+        <p:panel widgetVar="wvLevelSettings" header="Schwierigkeit">
+
+            <h:panelGrid columns="2" style="margin-bottom:10px" cellpadding="5">
+                <h:outputText value="Schwierigkeitsgrad:"/>
+                <p:selectOneRadio id="levelChooser" layout="pageDirection"
+                                  value="#{settings.level}">
+                    <p:ajax/>
+                    <f:selectItem itemLabel="Anfänger" itemValue="level_easy"/>
+                    <f:selectItem itemLabel="Fortgeschritten" itemValue="level_medium"/>
+                    <f:selectItem itemLabel="Professionell" itemValue="level_hard"/>
+                </p:selectOneRadio>
+            </h:panelGrid>
+        </p:panel>
+        <p:commandButton style="margin-top:10px; float: right;" value="Schließen"
+                         actionListener="#{dashboard.onSettingsSave}"/>
+    </h:form>
+</p:dialog>
+
+<!-- evaluation dialog -->
+<p:dialog header="Auswertung" widgetVar="wvEvaluationDialog" height="450"
+          width="695" showEffect="fade" hideEffect="fade"
+          onShow="$('#ajaxLoader').hide();$.drawStaveAlleVoegel()">
+    <p:outputPanel id="idEvaluationResult">
+        <h:panelGrid columns="2" width="100%">
+            <h:outputText value="Gewähltes Stück:"/>
+            <h:outputText value="#{dashboard.currentEvaluationSetup.title}"/>
+            <h:outputText value="Gesamtbewertung:"/>
+            <h:outputText
+                    value="#{dashboard.currentEvaluationSetup.result.formattedSimilarity
+                    (dashboard.currentEvaluationSetup.result.overallSimilarity)} %"
+                    style="color:green;font-weight: bold;"/>
+        </h:panelGrid>
+        <br/>
+        <div id="canvas_viewport_1"></div>
+        <br/><br/>
+        <h:panelGrid columns="2" width="90%" title="Test" border="1" styleClass="evaluationTable">
+            <f:facet name="header">
+                <h:outputText value="Fehlermuster Tabelle"/>
+            </f:facet>
+            <c:forEach items="#{dashboard.currentEvaluationSetup.result.errorTable}" var="errorRow">
+                <h:outputText value="#{errorRow.get(0)}"/>
+                <h:outputText value="#{errorRow.get(1)}"/>
+            </c:forEach>
+        </h:panelGrid>
+    </p:outputPanel>
+</p:dialog>
+
+<p:dialog widgetVar="wvSettingsDialog" width="700" height="245" header="OMT Einstellungen"
+        >
+    <h:form>
+        <p:panel widgetVar="wvLevelSettings" header="Schwierigkeit">
+
+            <h:panelGrid columns="2" style="margin-bottom:10px" cellpadding="5">
+                <h:outputText value="Schwierigkeitsgrad:"/>
+                <p:selectOneRadio id="levelChooser" layout="pageDirection"
+                                  value="#{settings.level}">
+                    <p:ajax/>
+                    <f:selectItem itemLabel="Anfänger" itemValue="level_easy"/>
+                    <f:selectItem itemLabel="Fortgeschritten" itemValue="level_medium"/>
+                    <f:selectItem itemLabel="Professionell" itemValue="level_hard"/>
+                </p:selectOneRadio>
+            </h:panelGrid>
+        </p:panel>
+        <p:commandButton style="margin-top:10px; float: right;" value="Schließen"
+                         actionListener="#{dashboard.onSettingsSave}"/>
+    </h:form>
+</p:dialog>
+
+<!-- logging window -->
+<p:dialog widgetVar="wvLoggingDialog" width="700" height="400" header="OMT Engine Log"
+          showEffect="fade"
+          hideEffect="fade" styleClass="terminalDialog">
+    <h:panelGroup layout="block">
+    </h:panelGroup>
+</p:dialog>
+
+
+<!-- growl container -->
+<p:growl id="messages" showDetail="true" sticky="false" showSummary="true" life="5000"/>
+
+<!-- dock container at bottom -->
+<h:form widgetVar="dockForm" styleClass="dockingMenu">
+    <p:dock position="bottom" itemWidth="50" maxWidth="150">
+        <p:menuitem value="Neu" icon="#{resource['images:music-stand.png']}"
+                    actionListener="#{evaluationWizard.onDialogOpen}"/>
+        <p:menuitem value="Einstellungen" icon="#{resource['images:config.png']}" url="#"
+                    onclick="wvSettingsDialog.show();"/>
+        <p:menuitem value="Konsole" icon="#{resource['images:keyboard.png']}" url="#"
+                    onclick="wvTerminalDialog.show();wvTerminal.focus();"/>
+        <p:menuitem value="Logfenster" icon="#{resource['images:terminal.png']}" url="#"
+                    onclick="wvLoggingDialog.show();"/>
+        <p:menuitem value="Zurücksetzen" icon="#{resource['images:trash.png']}"
+                    actionListener="#{dashboard.onReset}"/>
+    </p:dock>
+</h:form>
+
+<!-- wizard dialog for the creation of new evaluation instances -->
+<p:dialog widgetVar="wvCreationWizard" width="750" height="400"
+          header="Ähnlichkeits-Analyse vorbereiten"
+          showEffect="fade" hideEffect="fade" resizable="false">
+    <p:ajax event="close" listener="#{evaluationWizard.onDialogClose}" update="wvWizard"/>
+    <h:form widgetVar="wizardForm" enctype="multipart/form-data">
+        <p:wizard binding="#{evaluationWizard.wizard}" id="wizard" styleClass="creationWizard"
+                  showNavBar="false"
+                  widgetVar="wvWizard"
+                  flowListener="#{evaluationWizard.onFlowProcess}">
+            <f:event type="preRenderView" listener="#{evaluationWizard.startConversation}"/>
+            <!-- 1. step: choose song -->
+            <p:tab title="Songauswahl" id="tabSelectSong">
+                <h:panelGrid columns="2" width="100%" styleClass="songChooserGrid">
+                    <p:graphicImage value="#{resource['images/music-stand.png']}"/>
+                    <p:panel header="Song auswählen" styleClass="songChooserPanel">
+                        <h:panelGroup layout="block" styleClass="songChooserDescription">
+                            Wählen Sie bitte den Song, für welchen Sie eine Bewertung
+                            erhalten möchten:
+                        </h:panelGroup>
+                        <h:panelGroup>
+                            <p:selectOneRadio unselectable="false" layout="pageDirection"
+                                              value="#{evaluationWizard.selectedSong}"
+                                              converter="#{songConverter}">
+                                <f:selectItems value="#{songDatabase.songList}"/>
+                            </p:selectOneRadio>
+                        </h:panelGroup>
+                    </p:panel>
+                </h:panelGrid>
+            </p:tab>
+            <!-- 2. step: midi upload -->
+            <p:tab title="Hochladen" id="tabUploadSample">
+                <h:panelGrid columns="2" width="100%" styleClass="midiUploadGrid">
+                    <p:graphicImage value="#{resource['images/midi.png']}"/>
+                    <p:panel header="Midi Datei hochladen" styleClass="midiUploadPanel"
+                             id="midiUploadContainer">
+                        <h:panelGroup rendered="#{evaluationWizard.status == null}"
+                                      layout="block"
+                                      styleClass="midiUploadDescription">
+                            Wählen Sie bitte Ihre MIDI-Aufnahme,
+                            welche Sie zur Bewertung vorlegen möchten:
+                            <br/><br/>
+                            <p:fileUpload
+                                    id="fileupload"
+                                    fileUploadListener="#{evaluationWizard.handleFileUpload}"
+                                    uploadLabel="Hochladen"
+                                    cancelLabel="Abbrechen"
+                                    label="Datei wählen"
+                                    mode="advanced"
+                                    update="messages,wizardMidiUploadStatus,
+                                        midiUploadContainer"
+                                    sizeLimit="100000"
+                                    allowTypes="midi,mid"/>
+                        </h:panelGroup>
+                        <h:outputText id="wizardMidiUploadStatus"
+                                      value="#{evaluationWizard.status}"/>
+                    </p:panel>
+                </h:panelGrid>
+            </p:tab>
+            <!-- 3. step: evaluation -->
+            <p:tab title="Auswertung" id="tabSelectEvaluation">
+                <h:panelGrid columns="2">
+                    <h:outputText value="Gewählter Song:"/>
+                    <h:outputText value="#{evaluationWizard.selectedSong}"/>
+                    <h:outputText value="MIDI Dateiname:"/>
+                    <h:outputText value="#{evaluationWizard.uploadFilename}"/>
+                </h:panelGrid>
+                <br/><br/>
+                <h:panelGroup layout="block">
+                    Das Anlegen einer Auswertungskonfiguration ist fast abgeschlossen.
+                    Bitte kontrollieren Sie nochmals die gemachten Eingaben und bestätigen
+                    Sie diese mit einem Klick auf "Weiter".
+                </h:panelGroup>
+            </p:tab>
+        </p:wizard>
+        <h:panelGroup layout="block" styleClass="ui-wizard-navbar">
+            <p:commandButton widgetVar="nextButton"
+                             image="ui-button-icon-primary ui-icon-arrowthick-1-e"
+                             value="Weiter" styleClass="ui-wizard-nav-next"
+                             actionListener="#{evaluationWizard.onNext}"/>
+        </h:panelGroup>
+
+    </h:form>
+</p:dialog>
+
+<h:panelGroup id="additionalJavascript">
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        $(function() {
+            /**
+             * Always scroll to terminal bottom.
+             */
+            $('div.ui-terminal form').submit(function() {
+                $(this).find('input[type="text"]').each(function() {
+                    var terminalDialog = $('div.terminalDialog div.ui-dialog-content');
+                    $(terminalDialog).animate({
+                        scrollTop: $(terminalDialog).find('div.ui-terminal').outerHeight()
                     });
                 });
             });
-            /* ]]> */
-        </script>
-    </h:panelGroup>
+
+
+            /**
+             * Set the current active evaluation setup.
+             * @param id
+             */
+            $.setActiveEvaluationSetup = function(id) {
+                $('#evaluationSetup').val(id);
+            };
+            /**
+             * Test 1: Alle Vögel Sind Schon Da
+             */
+            $.drawStaveAlleVoegel = function() {
+                $('div#canvas_viewport_1').replaceWith(
+                        '<canvas id="canvas_viewport_1"></canvas>');
+                //jQuery('#canvas_viewport_1').width(700);
+                $('#canvas_viewport_1').attr('width', 650);
+                $('#canvas_viewport_1').attr('height', 150);
+                //$('#canvas_viewport_1').css('background', 'rgba(255, 255, 255, 0.85)');
+                $('#canvas_viewport_1').css('background-image', 'url("#{request.contextPath}/resources/images/paper_background.gif")');
+                $('#canvas_viewport_1').css('border', '4px solid black');
+                $('#canvas_viewport_1').css('padding', '4px');
+
+
+
+                var canvas = $("#canvas_viewport_1")[0];
+                var renderer = new Vex.Flow.Renderer(canvas, Vex.Flow.Renderer.Backends.CANVAS);
+
+                var ctx = renderer.getContext();
+
+                var stave = new Vex.Flow.Stave(10, 0, 600);
+
+                // Add a treble clef
+                stave.addClef("treble");
+                stave.addTimeSignature("4/4");
+                stave.setContext(ctx).draw();
+
+                var matchedFill = "#007700";
+                var notMatchedFill = "#cc0000";
+
+                // melody: bar 1
+                var notes = [
+                    new Vex.Flow.StaveNote({ keys: ["c/4"], duration: "q", colors: [matchedFill] }),
+                    new Vex.Flow.StaveNote({ keys: ["d/4"], duration: "8r"}),
+                    new Vex.Flow.StaveNote({ keys: ["d/4"], duration: "8", colors: [matchedFill] }),
+                    new Vex.Flow.StaveNote({ keys: ["e/4"], duration: "q", colors: [notMatchedFill] }),
+                    new Vex.Flow.StaveNote({ keys: ["c/5"], duration: "q", colors: [matchedFill] }),
+                    // bar 2
+                    new Vex.Flow.StaveNote({ keys: ["a/4"], duration: "q", colors: [matchedFill] }),
+                    new Vex.Flow.StaveNote({ keys: ["c/5"], duration: "8", colors: [notMatchedFill] }),
+                    new Vex.Flow.StaveNote({ keys: ["a/4"], duration: "8", colors: [matchedFill] }),
+                    new Vex.Flow.StaveNote({ keys: ["g/4"], duration: "h", colors: [matchedFill] })
+                ];
+
+                // Create a second voice, with just one whole note
+                var notes2 = [
+                    // bar 1
+                    new Vex.Flow.StaveNote({ keys: ["c/3", "e/3","g/3"], duration: "w",
+                        colors: [matchedFill,notMatchedFill,matchedFill]}),
+                    // bar 2
+                    new Vex.Flow.StaveNote({ keys: ["f/3", "a/3","c/4"], duration: "w",
+                        colors: [matchedFill, matchedFill, matchedFill]})
+                ];
+
+                // Create a voice in 4/4
+                function create_4_4_voice() {
+                    return new Vex.Flow.Voice({
+                        num_beats: 8,
+                        beat_value: 4,
+                        resolution: Vex.Flow.RESOLUTION
+                    });
+                }
+
+                // Create voices and add notes to each of them.
+                var v_mel_bar1 = create_4_4_voice().addTickables(notes);
+                var v_bass_bar1 = create_4_4_voice().addTickables(notes2);
+
+                // Format and justify the notes to 600 pixels
+                var formatter = new Vex.Flow.Formatter().
+                        joinVoices([v_mel_bar1, v_bass_bar1 ]).
+                        format([v_mel_bar1, v_bass_bar1 ], 600);
+
+                // Render voice
+                v_mel_bar1.draw(ctx, stave);
+                stave.drawVerticalBar(350);
+                v_bass_bar1 .draw(ctx, stave);
+            };
+        });
+        /* ]]> */
+    </script>
+</h:panelGroup>
 </h:body>
 </html>
