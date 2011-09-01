@@ -1,0 +1,75 @@
+<mex leadsheet-id="115" is-a-id="0" title="Alle Voegel sind schon da" xmlns="http://freebits.de/OMT-engine/schemas/MotivEXtraction">
+	<patterns>
+		<node id="1" deltalength="1.5000" length="2.0000" tempo="120" beats-per-metre="4" beatlength="0.2500" deltatime-metre="0.0000">
+			<note deltatone="0" deltatime="0.0000" length="0.3750" />
+			<note deltatone="4" deltatime="0.3750" length="0.1250" />
+			<note deltatone="3" deltatime="0.1250" length="0.2500" />
+			<note deltatone="5" deltatime="0.2500" length="0.2500" />
+			<note deltatone="-3" deltatime="0.2500" length="0.2500" />
+			<note deltatone="3" deltatime="0.2500" length="0.1250" />
+			<note deltatone="-3" deltatime="0.1250" length="0.1250" />
+			<note deltatone="-2" deltatime="0.1250" length="0.5000" />
+		</node>
+		<node id="2" deltalength="1.5000" length="2.0000" tempo="120" beats-per-metre="4" beatlength="0.2500" deltatime-metre="0.0000">
+			<note deltatone="0" deltatime="0.0000" length="0.3750" />
+			<note deltatone="2" deltatime="0.3750" length="0.1250" />
+			<note deltatone="-3" deltatime="0.1250" length="0.2500" />
+			<note deltatone="-4" deltatime="0.2500" length="0.2500" />
+			<note deltatone="2" deltatime="0.2500" length="0.5000" />
+			<note deltatone="-2" deltatime="0.5000" length="0.5000" />
+		</node>
+		<node id="3" deltalength="1.5000" length="2.0000" tempo="120" beats-per-metre="4" beatlength="0.2500" deltatime-metre="0.0000">
+			<note deltatone="0" deltatime="0.0000" length="0.2500" />
+			<note deltatone="0" deltatime="0.2500" length="0.2500" />
+			<note deltatone="-2" deltatime="0.2500" length="0.2500" />
+			<note deltatone="0" deltatime="0.2500" length="0.2500" />
+			<note deltatone="-1" deltatime="0.2500" length="0.2500" />
+			<note deltatone="3" deltatime="0.2500" length="0.1250" />
+			<note deltatone="-3" deltatime="0.1250" length="0.1250" />
+			<note deltatone="-2" deltatime="0.1250" length="0.5000" />
+		</node>
+	</patterns>
+	<chords>
+		<node id="1" root="1" level="0" deltatime="0.0000" deltatone="0" deltalength="11.5000" length="12.0000">
+			<chord deltatone="0" time="0.0000" deltatime="0.0000" length="1.0000" harmonyform="00000000000010001001000000000000" />
+			<chord deltatone="5" time="1.0000" deltatime="1.0000" length="0.5000" harmonyform="00000000000010001001000000000000" />
+			<chord deltatone="7" time="1.5000" deltatime="0.5000" length="0.5000" harmonyform="00000000000010001001000000000000" />
+			<chord deltatone="7" time="2.0000" deltatime="0.5000" length="0.5000" harmonyform="00000000000010001001000000000000" />
+			<chord deltatone="5" time="2.5000" deltatime="0.5000" length="0.5000" harmonyform="00000000000010001001000000000000" />
+			<chord deltatone="7" time="3.0000" deltatime="0.5000" length="0.5000" harmonyform="00000000000010001001000000000000" />
+			<chord deltatone="5" time="3.5000" deltatime="0.5000" length="1.0000" harmonyform="00000000000010001001000000000000" />
+			<chord deltatone="7" time="4.5000" deltatime="1.0000" length="0.5000" harmonyform="00000000000010001001000000000000" />
+			<chord deltatone="5" time="5.0000" deltatime="0.5000" length="0.5000" harmonyform="00000000000010001001000000000000" />
+			<chord deltatone="7" time="5.5000" deltatime="0.5000" length="0.5000" harmonyform="00000000000010001001000000000000" />
+			<chord deltatone="5" time="6.0000" deltatime="0.5000" length="0.5000" harmonyform="00000000000010001001000000000000" />
+			<chord deltatone="7" time="6.5000" deltatime="0.5000" length="0.5000" harmonyform="00000000000010001001000000000000" />
+			<chord deltatone="5" time="7.0000" deltatime="0.5000" length="0.5000" harmonyform="00000000000010001001000000000000" />
+			<chord deltatone="7" time="7.5000" deltatime="0.5000" length="0.5000" harmonyform="00000000000010001001000000000000" />
+			<chord deltatone="5" time="8.0000" deltatime="0.5000" length="1.0000" harmonyform="00000000000010001001000000000000" />
+			<chord deltatone="5" time="9.0000" deltatime="1.0000" length="0.5000" harmonyform="00000000000010001001000000000000" />
+			<chord deltatone="7" time="9.5000" deltatime="0.5000" length="0.5000" harmonyform="00000000000010001001000000000000" />
+			<chord deltatone="7" time="10.0000" deltatime="0.5000" length="0.5000" harmonyform="00000000000010001001000000000000" />
+			<chord deltatone="5" time="10.5000" deltatime="0.5000" length="0.5000" harmonyform="00000000000010001001000000000000" />
+			<chord deltatone="7" time="11.0000" deltatime="0.5000" length="0.5000" harmonyform="00000000000010001001000000000000" />
+			<chord deltatone="5" time="11.5000" deltatime="0.5000" length="0.5000" harmonyform="00000000000010001001000000000000" />
+		</node>
+	</chords>
+	<melody>
+		<node id="1" root="0" level="0" deltalength="1.5000" length="2.0000"/>
+		<node id="2" root="0" level="0" deltalength="1.5000" length="2.0000"/>
+		<node id="3" root="0" level="0" deltalength="1.5000" length="2.0000"/>
+		<node id="4" root="0" level="1" deltalength="3.5000" length="4.0000">
+			<node id="1" time="0.0000" deltatime="0.0000" deltatone="0" />
+			<node id="2" time="2.0000" deltatime="2.0000" deltatone="5" />
+		</node>
+		<node id="5" root="0" level="1" deltalength="3.5000" length="4.0000">
+			<node id="3" time="0.0000" deltatime="0.0000" deltatone="0" />
+			<node id="3" time="2.0000" deltatime="2.0000" deltatone="0" />
+		</node>
+		<node id="6" root="1" level="2" deltatime="0.0000" basicnote="60" deltalength="11.5000" length="12.0000">
+			<node id="4" time="0.0000" deltatime="0.0000" deltatone="0" />
+			<node id="5" time="4.0000" deltatime="4.0000" deltatone="7" />
+			<node id="4" time="8.0000" deltatime="4.0000" deltatone="-7" />
+		</node>
+	</melody>
+</mex>

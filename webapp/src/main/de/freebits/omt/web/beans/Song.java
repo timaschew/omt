@@ -1,6 +1,5 @@
 package de.freebits.omt.web.beans;
 
-import javax.enterprise.context.ConversationScoped;
 import javax.enterprise.context.SessionScoped;
 import javax.faces.model.SelectItem;
 import javax.inject.Named;

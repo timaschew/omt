@@ -9,18 +9,34 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Processor for tremolo recognitions.
- * 
+ * Processor for tremolo (slides between two notes) recognitions.
+ * <h3>Conditions to be met for tremolo recognition:</h3>
+ * <ul>
+ * <li>minimum of 4 notes</li>
+ * <li>34% speed change from one note to another is allowed (quarter to triplet)</li>
+ * <li>maximum note duration of 150ms</li>
+ * <li>must be in C major or F# major scale</li>
+ * <li>movement direction must be kept over all notes (otherwise more than one glissando)</li>
+ * <li>maximum pause of 50ms between glissando notes</li>
+ * <li>maximum of 3 semitone steps in movement</li>
+ * <li>minimum of 25ms onset differences from one note to the next note</li>
+ * </ul>
+ *
  * @author Marcel Karras
+ * @see TremoloEvent
  */
 public class TremoloProcessor extends DefaultProcessor implements NoteProcessor {
 
+
+    // minimum of 4 notes per tremolo
+	private static final int MIN_NOTES_COUNT = 4;
+    	// 34% speed change from one note to another is allowed (quarter to triplet)
+	private static final double MAX_DURATION_CHANGE = 0.34;
+
 	// 16th note is the maximum duration value for a note inside a trill
 	private static final double MAX_DURATION_VALUE = Durations.QUARTER_NOTE;
-	// minimum of 4 notes per tremolo
-	private static final int MIN_NOTES_COUNT = 4;
-	// 34% speed change from one note to another is allowed (quarter to triplet)
-	private static final double MAX_DURATION_CHANGE = 0.34;
+
+
 	// the note components of the tremolo
 	private List<Note> tremoloNotes = new ArrayList<Note>();
 	// property for single pitched or double pitched tremoli
