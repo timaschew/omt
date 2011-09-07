@@ -157,7 +157,7 @@
 </p:dialog>
 
 <!-- settings dialog -->
-<p:dialog widgetVar="wvSettingsDialog" width="700" height="245" header="OMT Einstellungen"
+<p:dialog widgetVar="wvSettingsDialog" width="700" height="255" header="OMT Einstellungen"
           showEffect="fade"
           hideEffect="fade">
     <h:form>
@@ -180,9 +180,9 @@
 </p:dialog>
 
 <!-- evaluation dialog -->
-<p:dialog header="Auswertung" widgetVar="wvEvaluationDialog" height="450"
+<p:dialog header="Auswertung" widgetVar="wvEvaluationDialog" height="455"
           width="695" showEffect="fade" hideEffect="fade"
-          onShow="$('#ajaxLoader').hide();$.drawStaveAlleVoegel()">
+          onShow="$('#ajaxLoader').hide();$.drawStaveAlleVoegel();">
     <p:outputPanel id="idEvaluationResult">
         <h:panelGrid columns="2" width="100%">
             <h:outputText value="Gewähltes Stück:"/>
@@ -417,7 +417,9 @@
                     new Vex.Flow.StaveNote({ keys: ["c/3", "e/3","g/3"], duration: "w",
                         colors: [matchedFill,notMatchedFill,matchedFill]}),
                     // bar 2
-                    new Vex.Flow.StaveNote({ keys: ["f/3", "a/3","c/4"], duration: "w",
+                    new Vex.Flow.StaveNote({ keys: ["f/3", "a/3","c/4"], duration: "h",
+                        colors: [matchedFill, matchedFill, matchedFill]}),
+                    new Vex.Flow.StaveNote({ keys: ["c/3", "e/3","g/3"], duration: "h",
                         colors: [matchedFill, matchedFill, matchedFill]})
                 ];
 

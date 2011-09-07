@@ -16,10 +16,15 @@ import jm.music.data.Score;
 import jm.util.View;
 
 import java.lang.reflect.Field;
+import java.math.BigDecimal;
+import java.math.MathContext;
+import java.math.RoundingMode;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class jMusicHelper {
     /**
@@ -31,7 +36,7 @@ public class jMusicHelper {
      * @see Class description of {@link Pitches}.
      * @see Class description of {@link Frequencies}.
      */
-    public static final String getNameOfMidiPitch(final int pitch) {
+    public static String getNameOfMidiPitch(final int pitch) {
         // use java reflection API
         final Field[] fields = Pitches.class.getFields();
         if (fields != null) {
@@ -81,11 +86,11 @@ public class jMusicHelper {
      * Generate the music events list from the given jMusic Part object sorted
      * by event start time.
      *
-     * @param part the midi part in jMusic context
+     * @param s the midi score in jMusic context
      * @return list of higher semantic music structures
      * @author Marcel Karras
      */
-    public static final List<MusicEvent> generateMusicEventList(final Score s) {
+    public static List<MusicEvent> generateMusicEventList(final Score s) {
         final Part partCopy = s.getPart(0).copy();
         List<MusicEvent> eventList = new ArrayList<MusicEvent>();
         // array of phrase note start times (initialized to 0)
@@ -340,7 +345,7 @@ public class jMusicHelper {
      * @param meList music event list
      * @throws Exception if list is empty
      */
-    public static final void visualizeMusicEventList(
+    public static void visualizeMusicEventList(
             final List<MusicEvent> meList, final String title) throws Exception {
         if (meList.size() == 0) {
             throw (new Exception(
@@ -375,7 +380,7 @@ public class jMusicHelper {
         View.show(score);
     }
 
-    public static final void visualizeClustering(final Clustering clustering)
+    public static void visualizeClustering(final Clustering clustering)
             throws Exception {
         int i = 1;
         for (final Cluster c : clustering) {
@@ -392,7 +397,7 @@ public class jMusicHelper {
      * @return note array
      * @author Marcel Karras
      */
-    public static final Note[] convertToNoteArray(
+    public static Note[] convertToNoteArray(
             final List<MusicEventNote> menList) {
         final Note[] noteArray = new Note[menList.size()];
         // double length = menList.get(0).getRhythmValue();
@@ -413,7 +418,7 @@ public class jMusicHelper {
      * @return music event list
      * @author Marcel Karras
      */
-    public static final List<MusicEvent> convertMusicEventList(
+    public static List<MusicEvent> convertMusicEventList(
             final List<MusicEventNote> menList) {
         final List<MusicEvent> meList = new ArrayList<MusicEvent>();
         // double length = menList.get(0).getRhythmValue();
@@ -439,7 +444,7 @@ public class jMusicHelper {
      * @param s string to be calculated
      * @return md5 hash value
      */
-    public static final String calcMD5Hash(final String s) {
+    public static String calcMD5Hash(final String s) {
         MessageDigest digest;
         try {
             digest = MessageDigest.getInstance("MD5");
@@ -458,8 +463,263 @@ public class jMusicHelper {
      * @param tempo tempo in bpm
      * @return beat time relative to tempo
      */
-    public static final double convertToBeatTime(final double time,
-                                                 final double tempo) {
+    public static double convertToBeatTime(final double time,
+                                           final double tempo) {
         return time * tempo / 60.0;
+    }
+
+
+    /**
+     * Fixed consonant values according to euler's gradus suavis.
+     * <p/>
+     * (TODO: don't use modulo 12 operations and calculate the values using euler function)
+     */
+    static final Map<Integer, Integer> fixedConsonanceValues = new HashMap<Integer, Integer>();
+
+    static {
+        // prime
+        fixedConsonanceValues.put(0, 1);
+        // reine Oktave
+        fixedConsonanceValues.put(12, 2);
+        // große Septime
+        fixedConsonanceValues.put(11, 10);
+        // kleine Septime
+        fixedConsonanceValues.put(10, 9);
+        // große Sexte
+        fixedConsonanceValues.put(9, 7);
+        // kleine Sexte
+        fixedConsonanceValues.put(8, 8);
+        // reine Quinte
+        fixedConsonanceValues.put(7, 4);
+        // übermäßige Quarte (Tritonus)
+        fixedConsonanceValues.put(6, 14);
+        // reine Quarte
+        fixedConsonanceValues.put(5, 5);
+        // große Terz
+        fixedConsonanceValues.put(4, 7);
+        // kleine Terz
+        fixedConsonanceValues.put(3, 8);
+        // große Sekunde
+        fixedConsonanceValues.put(2, 8);
+        // kleine Sekunde
+        fixedConsonanceValues.put(1, 13);
+    }
+
+    /**
+     * Get the consonance of the two given midi pitches. (values aren't caluclated but fetched
+     * from fixed Euler value table)
+     *
+     * @param midiPitch1 first pitch
+     * @param midiPitch2 second pitch
+     * @return gradus suavis (degree of consonance)
+     */
+    public static int calcGradusSuavis(int midiPitch1, int midiPitch2) {
+        if (midiPitch1 > midiPitch2) {
+            int tmp = midiPitch1;
+            midiPitch1 = midiPitch2;
+            midiPitch2 = tmp;
+        }
+
+        assert (midiPitch2 >= midiPitch1);
+
+        // absolute difference
+        int diff = midiPitch2 - midiPitch1;
+
+        if (diff == 0) {
+            return fixedConsonanceValues.get(0);
+        } else if (diff % 12 == 0) {
+            return fixedConsonanceValues.get(12);
+        }
+
+        assert (diff > 0);
+
+        String midiPitchName1 = getNameOfMidiPitch(midiPitch1);
+        String midiPitchName2 = getNameOfMidiPitch(midiPitch2);
+
+        // case 1: (pitch2 > pitch1 &&) name(pitch2) < name(pitch1)
+        // i.e. C5, G3 -> direction is G to C (5 semis), not C to G (7 semis)
+        if (compareMidiPitchNames(midiPitchName2, midiPitchName1) == -1) {
+            diff = diff % 12;
+        } else {
+            // not necessary here, just for clarification
+            // case2: name(pitch1) > name(pitch2) (== is not possible due to % 12 operation above)
+            assert (compareMidiPitchNames(midiPitchName1, midiPitchName2) == 1);
+            diff = diff % 12;
+        }
+
+
+        return fixedConsonanceValues.get(diff);
+    }
+
+    /**
+     * Compare two pitch names without considering the interval.
+     *
+     * @param name1 first name
+     * @param name2 second name
+     * @return -1 if first name is smaller, 0 if equal, 1 else
+     */
+    public static int compareMidiPitchNames(final String name1, final String name2) {
+        if (name1.equals(name2))
+            return 0;
+
+        // 1. condition: first letters are different
+        if (name1.charAt(0) != name2.charAt(0)) {
+            if (name1.charAt(0) == 'A') {
+                if (name2.charAt(0) != 'H') {
+                    // name1 is greatest
+                    return 1;
+                } else {
+                    // name2 contains 'H', so is greatest
+                    return -1;
+                }
+            } else if (name1.charAt(0) == 'H') {
+                // name1 is greatest, name2 will be below 'H'
+                return 1;
+            } else if (name2.charAt(0) == 'A') {
+                if (name1.charAt(0) != 'H') {
+                    // name2 is greatest
+                    return -1;
+                } else {
+                    // name1 contains 'H', so is greatest (code should never be reached)
+                    return 1;
+                }
+            } else if (name2.charAt(0) == 'H') {
+                // name2 is greatest, name1 will be below 'H'
+                return -1;
+            }
+            // fallback to lexicographic comparison
+            return (name1.charAt(0) > name2.charAt(0)) ? 1 : -1;
+        }
+        // here first letters are equal, but interval or decoration is not
+        else {
+            // 2. condition: check for "#" decoration
+            if (name1.contains("#") || name2.contains("#")) {
+                // 2.1. condition: both have "#", disregard interval
+                if (name1.contains("#") && name2.contains("#")) {
+                    return 0;
+                }
+                // 2.1. condition: one has a "#", this one is always greater
+                else {
+                    if (name1.contains("#")) {
+                        // first pitch name has "#", not second
+                        return 1;
+                    } else {
+                        // second pitch name has "#", not first
+                        return -1;
+                    }
+                }
+            }
+            // here no decoration has been found, disregard interval
+            return 0;
+        }
+    }
+
+    static final int BEST_CONSONANCE_VALUE = 1;
+    static final int WORST_CONSONANCE_VALUE = 14;
+
+    /**
+     * Calculate the degree of consonance of the two given frequencies.
+     *
+     * @param f1 first frequency
+     * @param f2 seconds frequency
+     * @return degree of consonance between 1 and 14
+     */
+    public static int calcGradusSuavis(double f1, double f2) {
+        double minFreq = Math.min(f1, f2);
+        double u, v;
+
+        // gcd
+        while (minFreq > 1) {
+            u = f1 / (double) minFreq;
+            v = f2 / (double) minFreq;
+            // check if there is a division rest
+            if (((double) ((int) u)) == u && ((double) ((int) v)) == v) {
+                f1 = u;
+                f2 = v;
+            } else {
+                minFreq--;
+            }
+        }
+
+        double P = f1 * f2;
+        int G = 1;
+        int S = 2;
+        double W;
+        while (S <= P) {
+            W = P / (double) S;
+            if (W == (int) W) {
+                G = G + S - 1;
+                P = W;
+            } else {
+                S++;
+            }
+        }
+
+        // double check if prim is really correct
+        if (G == 1) {
+            if (f1 == f2) {
+                return BEST_CONSONANCE_VALUE;
+            } else {
+                // TODO: investigate the precision issue that leads to value 1
+                return WORST_CONSONANCE_VALUE;
+            }
+        }
+
+        assert (G <= 14 && G >= 1);
+
+        return G;
+    }
+
+    // decimal precision of 200
+    static final int DECIMAL_SCALE = 200;
+    static final int DECIMAL_ROUND = BigDecimal.ROUND_HALF_DOWN;
+
+    /**
+     * TODO: method stub for future attempts on precision issue avoidance
+     * <p/>
+     * In order to use this method you'll have to renew the license in the suanshu library folder.
+     *
+     * @param f1 first frequency
+     * @param f2 seconds frequency
+     * @return degree of consonance
+     */
+    public static int calcGradusSuavis(BigDecimal f1, BigDecimal f2) {
+        BigDecimal minFreq = f1.compareTo(f2) > 0 ? f2 : f1;
+        BigDecimal u, v;
+
+        // gcd (minFreq > 1?)
+        while (minFreq.compareTo(new BigDecimal(1)) > 0) {
+            u = f1.divide(minFreq, DECIMAL_SCALE, DECIMAL_ROUND);
+            v = f2.divide(minFreq, DECIMAL_SCALE, DECIMAL_ROUND);
+            // check if there is a division rest
+            if (u.subtract(new BigDecimal(u.intValue())).compareTo(new BigDecimal(0.001)) <= 0 &&
+                    v.subtract(new BigDecimal(v.intValue())).compareTo(new BigDecimal(0.001)) <=
+                            0) {
+                f1 = u;
+                f2 = v;
+            } else {
+                minFreq = minFreq.round(new MathContext(3, RoundingMode.HALF_UP));
+                minFreq = minFreq.subtract(new BigDecimal(1));
+            }
+        }
+
+        BigDecimal P = f1.multiply(f2);
+        int G = 1;
+        int S = 2;
+        BigDecimal W;
+        while (P.compareTo(new BigDecimal(S)) > 0) {
+            W = P.divide(new BigDecimal(S), DECIMAL_SCALE, DECIMAL_ROUND);
+            if (W.compareTo(new BigDecimal(W.intValue())) == 0) {
+                G = G + S - 1;
+                P = W;
+            } else {
+                S++;
+            }
+        }
+
+        // !!! REMOVE THIS LINE FOR METHOD TO WORK !!!
+        assert false;
+
+        return G;
     }
 }

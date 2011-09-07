@@ -23,10 +23,13 @@
 
 package jm.util;
 
+import java.math.BigDecimal;
+import java.math.MathContext;
 import java.util.Enumeration;
 import java.util.Vector;
 import java.lang.reflect.Field;
 
+import com.numericalmethod.suanshu.number.big.BigDecimalUtils;
 import jm.music.data.Note;
 import jm.music.data.Part;
 import jm.music.data.Phrase;
@@ -380,6 +383,10 @@ public class Convert {
 
     // Addition by Andrew Brown
 
+    // decimal precision of 200
+    static final int DECIMAL_SCALE = 3;
+    static final int DECIMAL_ROUND = BigDecimal.ROUND_HALF_DOWN;
+
     /**
      * Get the frequency of a given MIDI pitch
      *
@@ -388,10 +395,34 @@ public class Convert {
      * @see Class description of {@link Pitches}.
      * @see Class description of {@link Frequencies}.
      */
-    public static final float getFrequencyByMidiPitch(final int midiPitch) {
-	float freq = -1.0f;
+    public static BigDecimal getFrequencyByMidiPitch(final int midiPitch) {
+	BigDecimal freq = new BigDecimal(-1.0);
 	if (midiPitch >= 0 && midiPitch <= 127) {
-	    freq = (float)(6.875 * Math.pow(2.0, ((3 + midiPitch) / 12.0)));
+
+        BigDecimal dFreqA = new BigDecimal(440);
+        BigDecimal dTwo = new BigDecimal(2);
+        BigDecimal dSixtyNine = new BigDecimal(69);
+        BigDecimal dTwelve = new BigDecimal(12);
+        BigDecimal dMidiPitch = new BigDecimal(midiPitch);
+
+        // m - 69
+        freq = dMidiPitch.subtract(dSixtyNine);
+        // (m-69) / 12
+        freq = freq.divide(dTwelve, DECIMAL_SCALE, DECIMAL_ROUND);
+        // 2 ^ ((m-69) / 12)
+        if(freq.compareTo(new BigDecimal(0))>1){
+            // positive power
+            freq = BigDecimalUtils.pow(dTwo, freq);
+        }else {
+            BigDecimal dOne = new BigDecimal(1);
+            BigDecimal dMinusOne = new BigDecimal(-1);
+            BigDecimal dPow = BigDecimalUtils.pow(dTwo, freq.multiply(dMinusOne));
+            freq = dOne.divide(dPow, DECIMAL_SCALE,DECIMAL_ROUND);
+        }
+        // 440 * 2 ^ ((m-69) / 12)
+        freq = dFreqA.multiply(freq);
+
+        return freq;
 	}
 	return freq;
     }

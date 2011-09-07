@@ -16,7 +16,7 @@ public class SongDatabase implements Serializable {
 
 	// list of songs
 	private SelectItem[] songList = {
-			new SelectItem(Song.createSong("Alle meine Entchen", "Alle Meine Entchen.mid")),
+			//new SelectItem(Song.createSong("Alle meine Entchen", "Alle Meine Entchen.mid")),
 			new SelectItem(Song.createSong("Alle Vögel Sind Schon Da", "Alle Vögel Sind Schon Da.mid"))
 	};
 

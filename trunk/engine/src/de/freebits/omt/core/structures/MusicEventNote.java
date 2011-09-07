@@ -1,14 +1,15 @@
 package de.freebits.omt.core.structures;
 
 import de.freebits.omt.core.AcousticConstants;
+import de.freebits.omt.core.processing.events.ProcessingEvent;
 import de.freebits.omt.core.tools.jMusicHelper;
 import jm.music.data.Note;
 
 /**
  * A music event note is a note that is contained by a music event.
- * 
+ *
  * @see {@link MusicEvent}
- * 
+ *
  * @author Marcel Karras
  */
 public class MusicEventNote extends Note {
@@ -16,11 +17,12 @@ public class MusicEventNote extends Note {
 	private static final long serialVersionUID = -8988415942870837377L;
 
 	private MusicEvent me;
+    private ProcessingEvent preprocessingEvent = null;
 
 	/**
 	 * Create a music event note without a music event (call
 	 * {@link #setMusicEvent(MusicEvent)} before further computations)
-	 * 
+	 *
 	 * @param note
 	 */
 	public MusicEventNote(final Note note) {
@@ -29,7 +31,7 @@ public class MusicEventNote extends Note {
 
 	/**
 	 * Create a music event note and link it to the given music event.
-	 * 
+	 *
 	 * @param note
 	 *            jmusic note object
 	 * @param me
@@ -42,7 +44,7 @@ public class MusicEventNote extends Note {
 
 	/**
 	 * Get the music event this event note belongs to.
-	 * 
+	 *
 	 * @return music event or null if no music event container found
 	 */
 	public final MusicEvent getMusicEvent() {
@@ -51,7 +53,7 @@ public class MusicEventNote extends Note {
 
 	/**
 	 * Specifies the music event this music event note belongs to.
-	 * 
+	 *
 	 * @param me
 	 *            music event
 	 */
@@ -62,7 +64,7 @@ public class MusicEventNote extends Note {
 	/**
 	 * Get the music event note end time in seconds (based on rhythm value).
 	 * TODO: evaluate rhythm value vs. duration value usage
-	 * 
+	 *
 	 * @return end time in seconds
 	 */
 	public final double getEndTime() {
@@ -74,7 +76,7 @@ public class MusicEventNote extends Note {
 	 * equal to real entime for notes that won't be perceived as an impuls. If
 	 * the impuls character is given, the virtual endtime is just a view
 	 * microseconds greater than the start time.
-	 * 
+	 *
 	 * @return virtual end time
 	 */
 	public final double getVirtualEndTime() {
@@ -87,7 +89,7 @@ public class MusicEventNote extends Note {
 
 	/**
 	 * Check if the given event note is simultaneous in time to this note.
-	 * 
+	 *
 	 * @param e
 	 *            event to be checked against
 	 * @return true if event e is simultaneous in time to current one, false
@@ -118,7 +120,7 @@ public class MusicEventNote extends Note {
 	/**
 	 * Calculate the pitch co-modulation with the given musical event note over
 	 * the given amount of neighbors.
-	 * 
+	 *
 	 * @param e
 	 *            musical event note to check against
 	 * @param neighborCount
@@ -208,7 +210,7 @@ public class MusicEventNote extends Note {
 
 	/**
 	 * Calculate the rating for interval jumps within a stream.
-	 * 
+	 *
 	 * @param pitchDiff1
 	 *            first pitch difference
 	 * @param pitchDiff2
@@ -236,7 +238,7 @@ public class MusicEventNote extends Note {
 
 	/**
 	 * Get the frequency pitch of this music event in mel (mel scale).
-	 * 
+	 *
 	 * @return pitch in mel (dimension-less)
 	 */
 	public final double getPitchMel() {
@@ -252,4 +254,12 @@ public class MusicEventNote extends Note {
 				+ getEndTime() + "] [RhythmValue=" + getRhythmValue()
 				+ "] [FreqMel=" + getPitchMel() + "]";
 	}
+
+    public ProcessingEvent getPreprocessingEvent() {
+        return preprocessingEvent;
+    }
+
+    public void setPreprocessingEvent(final ProcessingEvent preprocessingEvent) {
+        this.preprocessingEvent = preprocessingEvent;
+    }
 }
