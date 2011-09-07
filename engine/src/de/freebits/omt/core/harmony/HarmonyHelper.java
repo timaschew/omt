@@ -77,7 +77,7 @@ public class HarmonyHelper {
 	 * 
 	 * @param scale
 	 *            the scale array to shift
-	 * @param deltaTone
+	 * @param deltatone
 	 *            the offset value (can also be negative)
 	 * @return the shifted scale
 	 * 

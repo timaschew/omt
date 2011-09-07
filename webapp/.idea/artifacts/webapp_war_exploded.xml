@@ -17,6 +17,7 @@
           <element id="library" level="application" name="Mojarra 2.1.1" />
           <element id="library" level="application" name="Javax EL Api 1.1" />
           <element id="library" level="application" name="Jetbrains Annotations" />
+          <element id="library" level="application" name="Sanshu" />
         </element>
       </element>
     </root>

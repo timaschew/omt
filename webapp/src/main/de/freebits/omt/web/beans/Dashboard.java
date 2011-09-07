@@ -1,13 +1,13 @@
 package de.freebits.omt.web.beans;
 
+import de.freebits.omt.core.evaluation.OMTEvaluator;
+import de.freebits.omt.core.tools.jMusicHelper;
 import de.freebits.omt.web.javascript.JSDialog;
 import org.primefaces.event.CloseEvent;
 import org.primefaces.event.DashboardReorderEvent;
 import org.primefaces.model.DashboardModel;
 import org.primefaces.model.DefaultDashboardColumn;
 import org.primefaces.model.DefaultDashboardModel;
-
-import de.freebits.omt.core.tools.*;
 
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.SessionScoped;
@@ -84,6 +84,9 @@ public class Dashboard implements Serializable {
         this.currentEvaluationSetup = currentEvaluationSetup;
     }
 
+    /**
+     * Perform backend evaluation and set evaluation results.
+     */
     public void onEvaluationOpen() {
         Map<String, String> params =
                 FacesContext.getCurrentInstance().getExternalContext().getRequestParameterMap();
@@ -102,19 +105,17 @@ public class Dashboard implements Serializable {
         this.currentEvaluationSetup = evaluationSetup;
         final EvaluationResult er = new EvaluationResult();
 
-        // TEST: Bezug zu CORE Library
-        er.setOverallSimilarity(0.689);
-        er.addErrorTableEntry("Note entfernt","hehe 123 -> "+jMusicHelper.getNameOfMidiPitch(65));
-        er.addErrorTableEntry("Note entfernt","hehe asdas dasd asd");
-        this.currentEvaluationSetup.setResult(er);
+        /**
+         * Here the evaluation process takes place in the background engine.
+         */
+        double similarity = OMTEvaluator.calcSimilarity(OMTEvaluator.LS_ID_ALLE_VOEGEL_SIND_SCHON_DA,
+                currentEvaluationSetup.getUploadedFile().getFile());
 
-        for (int i = 0; i < 10; i++) {
-            try {
-                Thread.sleep(100);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
+
+        er.setOverallSimilarity(similarity);
+        er.addErrorTableEntry("Note entfernt", "hehe 123 -> " + jMusicHelper.getNameOfMidiPitch(65));
+        er.addErrorTableEntry("Note entfernt", "hehe asdas dasd asd");
+        this.currentEvaluationSetup.setResult(er);
 
         // show evaluation dialog
         JSDialog.open(EVALUATION_DIALOG_WIDGET_VAR);

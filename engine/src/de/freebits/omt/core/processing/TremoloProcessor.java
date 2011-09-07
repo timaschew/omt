@@ -17,7 +17,7 @@ import java.util.List;
  * <li>maximum note duration of 150ms</li>
  * <li>must be in C major or F# major scale</li>
  * <li>movement direction must be kept over all notes (otherwise more than one glissando)</li>
- * <li>maximum pause of 50ms between glissando notes</li>
+ * <li>maximum pause of 50ms between tremolo notes</li>
  * <li>maximum of 3 semitone steps in movement</li>
  * <li>minimum of 25ms onset differences from one note to the next note</li>
  * </ul>
