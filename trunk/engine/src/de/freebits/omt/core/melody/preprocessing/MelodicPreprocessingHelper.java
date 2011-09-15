@@ -95,7 +95,7 @@ public class MelodicPreprocessingHelper {
                 System.out.println("Processing note: " + n.getPitch() + "(" +
                         jMusicHelper.getNameOfMidiPitch(n.getPitch()) + ")"
                         + " - " + n.getSampleStartTime());
-            // TODO: re-enable pre-processing processors
+            // process note inside every pr
             trillProc.processNote(n);
             tremProc.processNote(n);
             arpProc.processNote(n);

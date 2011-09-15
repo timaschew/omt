@@ -23,6 +23,8 @@ public class AbstractDatabase {
         alleVoegel.setBeatLength(RhythmValues.QUARTER_NOTE);
         alleVoegel.setBeatsPerMetre(4);
         alleVoegel.setTempo(120);
+        alleVoegel.setMetricLvl(2);
+        alleVoegel.setMetricBase(2);
 
         //---- Melodielinie im ersten Motiv ----
         AbstractMelody alleVoegelMelody = alleVoegel.getMelody();
@@ -39,9 +41,9 @@ public class AbstractDatabase {
         // Scho-
         alleVoegelMelody.addMelodyNote(new AbstractNote(Pitches.C5, 2.500, 0.248));
         // on
-        alleVoegelMelody.addMelodyNote(new AbstractNote(Pitches.A4, 2.750, 0.248));
+        //alleVoegelMelody.addMelodyNote(new AbstractNote(Pitches.A4, 2.750, 0.248));
         // da
-        alleVoegelMelody.addMelodyNote(new AbstractNote(Pitches.G4, 3.000, 0.998));
+        //alleVoegelMelody.addMelodyNote(new AbstractNote(Pitches.G4, 3.000, 0.998));
 
         // ---- Akkorde im ersten Motiv ----
         List<AbstractChord> alleVoegelChords = alleVoegel.getChords();
