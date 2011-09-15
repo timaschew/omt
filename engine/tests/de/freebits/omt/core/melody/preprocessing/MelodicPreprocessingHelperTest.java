@@ -1,7 +1,10 @@
 package de.freebits.omt.core.melody.preprocessing;
 
+import java.io.IOException;
 import java.util.List;
 
+import de.freebits.omt.core.processing.streams.Clustering;
+import de.freebits.omt.core.processing.streams.StreamSegregation;
 import jm.music.data.Score;
 import jm.util.Read;
 
@@ -43,14 +46,24 @@ public class MelodicPreprocessingHelperTest {
 	@Test
 	public void testPreprocess() {
 		final List<MusicEvent> eventList = jMusicHelper.generateMusicEventList(score);
-        /*
-        TODO: new test with List<MusicEventNote>
 		try {
-
-			*MelodicPreprocessingHelper.preprocess(eventList, HarmonyHelper.getScaleByHarmony(
+                                            // 1. stream segregation of midi file
+        final StreamSegregation strSegr = new StreamSegregation(eventList);
+        final Clustering clustering = strSegr.generateClustering();
+            try {
+                jMusicHelper.visualizeClustering(clustering);
+            } catch (Exception e) {
+                e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+            }
+            MelodicPreprocessingHelper.preprocess(clustering.get(0), HarmonyHelper.getScaleByHarmony(
 					Scales.MAJOR_SCALE, 0));
 		} catch (ScaleNotSupportedException e) {
 			e.printStackTrace();
-		} */
-	}
+		}
+        try {
+            System.in.read(new byte[20]);
+        } catch (IOException e) {
+            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+        }
+    }
 }

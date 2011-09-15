@@ -14,6 +14,8 @@ public class AbstractSong {
     private double tempo;
     // beats per metre
     private int beatsPerMetre;
+    private int metricLvl;
+    private int metricBase;
     // beat length
     private double beatLength;
     // song melody line
@@ -67,5 +69,21 @@ public class AbstractSong {
 
     public void addChord(AbstractChord chord) {
         chords.add(chord);
+    }
+
+    public void setMetricLvl(int metricLvl) {
+        this.metricLvl = metricLvl;
+    }
+
+    public void setMetricBase(int metricBase) {
+        this.metricBase = metricBase;
+    }
+
+    public int getMetricBase(){
+        return metricBase;
+    }
+
+    public int getMetricLvl(){
+        return metricLvl;
     }
 }

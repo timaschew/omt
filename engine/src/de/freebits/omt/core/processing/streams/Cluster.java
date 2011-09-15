@@ -63,7 +63,7 @@ public class Cluster extends ArrayList<MusicEventNote> {
 	/**
 	 * Check if the given cluster is simultaneous in time to this cluster.
 	 * 
-	 * @param c
+	 * @param e
 	 *            cluster to be checked against
 	 * @return true if cluster c is simultaneous in time to current one, false
 	 *         else

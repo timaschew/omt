@@ -17,4 +17,12 @@ public class AbstractMelody {
     public List<AbstractNote> getMelodyNotes(){
         return melodyNotes;
     }
+
+    public int getSize(){
+        return melodyNotes.size();
+    }
+
+    public AbstractNote getNoteAt(final int pos){
+        return melodyNotes.get(pos);
+    }
 }

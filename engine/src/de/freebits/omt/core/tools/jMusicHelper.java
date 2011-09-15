@@ -543,7 +543,8 @@ public class jMusicHelper {
         } else {
             // not necessary here, just for clarification
             // case2: name(pitch1) > name(pitch2) (== is not possible due to % 12 operation above)
-            assert (compareMidiPitchNames(midiPitchName1, midiPitchName2) == 1);
+            assert (compareMidiPitchNames(midiPitchName2, midiPitchName1) == 1) : "result=" +
+                    compareMidiPitchNames(midiPitchName1, midiPitchName2);
             diff = diff % 12;
         }
 
@@ -623,6 +624,7 @@ public class jMusicHelper {
      * @param f1 first frequency
      * @param f2 seconds frequency
      * @return degree of consonance between 1 and 14
+     * @deprecated
      */
     public static int calcGradusSuavis(double f1, double f2) {
         double minFreq = Math.min(f1, f2);
@@ -682,6 +684,7 @@ public class jMusicHelper {
      * @param f1 first frequency
      * @param f2 seconds frequency
      * @return degree of consonance
+     * @deprecated
      */
     public static int calcGradusSuavis(BigDecimal f1, BigDecimal f2) {
         BigDecimal minFreq = f1.compareTo(f2) > 0 ? f2 : f1;

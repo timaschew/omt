@@ -38,7 +38,8 @@ import java.util.List;
  */
 public class StreamSegregationTest {
 
-    private static final String TEST_FILE_DIR = "tests/ressources/alle_voegel_sind_schon_da/";
+    //private static final String TEST_FILE_DIR = "tests/ressources/alle_voegel_sind_schon_da/";
+    private static final String TEST_FILE_DIR = "tests/ressources/streaming/";
 
     private static List<MusicEvent> eventList = null;
     private static JProgressBar progressBar = null;
@@ -161,8 +162,7 @@ public class StreamSegregationTest {
                             }
                         });
                         // generate clustering
-                        final Clustering clustering = strSegr
-                                .generateClustering();
+                        final Clustering clustering = strSegr.generateClustering();
                         return clustering;
                     }
 
